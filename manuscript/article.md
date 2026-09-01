@@ -100,7 +100,7 @@ An NCBI Datasets metadata audit was run without downloading sequence archives. I
 
 The KB’s assembly comparison table makes the confounders explicit: the *A. annua* NCBI reference is scaffold-level, the literature *A. argyi* input is a 3.89-Gb haplotype-A projection, and NCBI also exposes larger or differently assembled *A. argyi* resources. Genome length and chromosome count should therefore not be interpreted as evidence for terpene-family expansion without a common annotation and orthology workflow.
 
-The execution gate is also explicit: NCBI reports an annotation with 63,226 protein-coding genes for the *A. annua* reference, but no annotation metadata for the NCBI *A. argyi* candidates; the validated literature assembly remains an external NGDC/CNCB input. A cross-species copy-number result is therefore not reported here until a matched *A. argyi* annotation is archived and checksummed.
+The execution gate is also explicit: NCBI reports an annotation with 63,226 protein-coding genes for the *A. annua* reference, and the validated NGDC/CNCB *A. argyi* assembly exposes a 62,843-protein annotation. A seed-centered DIAMOND screen of 31 annotated *A. annua* pathway/TPS queries returned 105 *A. argyi* candidate hits; the exact inputs and hashes are archived in the KB. These are homology candidates only. A cross-species copy-number or orthology result is not reported until a common annotation, reciprocal/phylogenetic validation, and gene-tree reconciliation are completed.
 
 ## 6. Antiparasitic evidence
 
