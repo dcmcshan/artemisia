@@ -32,9 +32,13 @@ Representative volatile classes include pinene, limonene, myrcene, camphor, 1,8-
 
 The unevenness of this evidence map is itself a result: volatile mono- and sesquiterpenes are overrepresented because they are accessible to routine GC analysis, whereas nonvolatile diterpenes, triterpenes, and lactones require extraction workflows that are less directly comparable across studies.
 
+Primary studies show that the under-sampled classes are not merely theoretical. In *A. annua*, seed isolation recovered fourteen sesquiterpenes, three monoterpenes, and one diterpene ([Brown et al. 2003](https://pubmed.ncbi.nlm.nih.gov/12946429/)). Separate trichome transcriptome and heterologous-expression work functionally characterized the oxidosqualene cyclase OSC2 and P450 CYP716A14v2 in aerial-cuticle triterpenoid production ([Moses et al. 2015](https://pubmed.ncbi.nlm.nih.gov/25576188/)), while a diterpene-synthase study identified ten *A. annua* diTPS genes in a glandular-trichome and stress-resilience context ([Chen et al. 2021](https://pubmed.ncbi.nlm.nih.gov/33740256/)). These are class-specific anchors, not evidence that all *Artemisia* species share the same diterpene or triterpene repertoire.
+
 ## 3. Biosynthesis and compartmentalization
 
 The plastidial MEP pathway and cytosolic mevalonate pathway supply IPP and DMAPP, which are condensed into prenyl diphosphates. GPPS and related enzymes provide C10 substrates for monoterpene synthases; FPPS provides the C15 substrate FPP for sesquiterpene synthases, including germacrene A synthase and ADS. Cytochrome P450s, reductases, dehydrogenases, oxidases, acyltransferases, glycosyltransferases, and spontaneous reactions expand the scaffold space.
+
+Functionally characterized *A. annua* monoterpene synthases illustrate why copy number alone is insufficient: recombinant AaTPS2, AaTPS5, and AaTPS6 produced different product spectra, and transcript abundance changed after wounding and hormone treatments ([Ruan et al. 2016](https://pubmed.ncbi.nlm.nih.gov/27242840/)). Product specificity, inducibility, and tissue localization therefore need to be modeled together in evolutionary comparisons.
 
 The artemisinin pathway in *A. annua* is the strongest gene-to-metabolite reference. ADS converts FPP to amorpha-4,11-diene; CYP71AV1 oxidizes pathway intermediates; DBR2 and ALDH1 support the route toward dihydroartemisinic acid, after which terminal chemistry includes nonenzymatic steps. Glandular secretory trichomes provide a relevant biosynthetic and storage context. These statements are pathway anchors, not proof that homologous genes in another species produce artemisinin or confer antiparasitic activity.
 
