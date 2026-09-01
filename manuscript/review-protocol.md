@@ -2,7 +2,7 @@
 
 ## Status
 
-The current article is a **living scoping review in progress**. A screened seed set is archived in `screened-seed-set.csv`; the PubMed search snapshot is archived in `search-results.json`. This is not yet a completed systematic review because deduplication, full-text screening, and exhaustive extraction remain open.
+The current article is a **living scoping review in progress**. A screened seed set is archived in `screened-seed-set.csv`; the PubMed search snapshot is archived in `search-results.json`; and a title-priority queue with retrieved abstracts is archived in `screening-candidates.csv` and `screening-abstracts.csv`. This is not yet a completed systematic review because manual title/abstract screening, full-text screening, and exhaustive extraction remain open.
 
 ## Review questions
 

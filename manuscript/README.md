@@ -21,6 +21,8 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `search-union-summary.json` — high-cap retrieval, overlap, and checksum summary.
 - `build_screening_candidates.py` — reproducible ESearch/ESummary candidate-queue builder.
 - `screening-summary.json` and `screening-candidates.csv` — title-level prioritization outputs.
+- `fetch_screening_abstracts.py` — reproducible PubMed abstract retrieval for the priority queue.
+- `screening-abstract-summary.json` and `screening-abstracts.csv` — abstract retrieval outputs; records remain pending manual screening.
 - `screened-seed-set.csv` — auditable screening decisions for the current seed sources.
 - `submission-checklist.md` — journal-readiness and evidence-audit checklist.
 

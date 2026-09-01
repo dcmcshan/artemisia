@@ -1,0 +1,12 @@
+{
+  "retrieved_at": "2026-09-01T22:55:24.305679+00:00",
+  "database": "PubMed",
+  "input": "screening-candidates.csv",
+  "output": "screening-abstracts.csv",
+  "records": 1387,
+  "abstracts_retrieved": 1323,
+  "no_abstract": 64,
+  "not_returned": 0,
+  "not_an_inclusion_decision": true,
+  "next_action": "manual title/abstract screening followed by full-text verification"
+}
