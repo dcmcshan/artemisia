@@ -15,7 +15,7 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `evidence-matrix.csv` — specimen-, compound-, pathway-, genome-, and assay-level evidence table.
 - `sources.json` — stable source registry with identifiers, URLs, evidence class, and retrieval date.
 - `chemotype-table.csv` — representative chemistry records with specimen/context qualifiers.
-- `antiparasitic-evidence.csv` — quantitative, stage-aware parasite assay records with host-control and translation boundaries.
+- `antiparasitic-evidence.csv` — quantitative, stage-aware parasite/vector assay records with host-control and translation boundaries.
 - `references.bib` — citation-ready bibliography for manuscript tooling.
 - `search-log.md` — reproducible literature-search and screening plan.
 - `search-results.json` — executed PubMed search snapshot with counts and top identifiers.
