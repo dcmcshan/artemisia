@@ -7,7 +7,7 @@ This is the pre-registration-style search record for the review. The sources cur
 - Search date: 2026-09-01
 - Review scope: *Artemisia* terpenes, terpenoids, sesquiterpene lactones, biosynthesis, evolution, chemotype/environment variation, antiparasitic activity, and safety
 - Databases and discovery surfaces: PubMed/PMC, Crossref/DOI landing pages, NCBI BioProject/GEO, Kew Plants of the World Online, and Terpedia KB records
-- Search result counts: recorded in `search-results.json` as a database snapshot
+- Search result counts: recorded in `search-results.json` and the high-cap deduplicated retrieval summary in `search-union-summary.json` (9,741 query hits; 4,765 unique PMIDs; 4,976 duplicate hits)
 
 ## Core query families
 

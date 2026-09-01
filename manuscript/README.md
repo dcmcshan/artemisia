@@ -18,6 +18,7 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `references.bib` — citation-ready bibliography for manuscript tooling.
 - `search-log.md` — reproducible literature-search and screening plan.
 - `search-results.json` — executed PubMed search snapshot with counts and top identifiers.
+- `search-union-summary.json` — high-cap retrieval, overlap, and checksum summary.
 - `screened-seed-set.csv` — auditable screening decisions for the current seed sources.
 - `submission-checklist.md` — journal-readiness and evidence-audit checklist.
 

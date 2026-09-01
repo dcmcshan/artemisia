@@ -14,6 +14,7 @@
 ## Evidence and reporting still required before journal submission
 
 - [x] Run and archive the initial PubMed database searches and result counts.
+- [x] Archive a high-cap retrieval and cross-query deduplication summary.
 - [ ] Deduplicate records and archive excluded records with reasons.
 - [ ] Replace seed-set-only language with a completed screening statement.
 - [ ] Verify every quantitative claim against the primary source and specimen context.

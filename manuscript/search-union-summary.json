@@ -1,0 +1,16 @@
+{
+  "database": "PubMed",
+  "retrieved_at": "2026-09-01T22:48:24.421741+00:00",
+  "retrieval_cap": 10000,
+  "note": "This is a retrieval and deduplication snapshot, not a screened inclusion set.",
+  "queries": {
+    "terpene_essential_oil": {"count":2279,"retrieved_ids":2279,"sha256_ids":"d164f58af026d27d35fcf41a1499d07b5c19fd5e033f94396d43d17beaff0dc8"},
+    "sesquiterpene_lactone": {"count":1543,"retrieved_ids":1543,"sha256_ids":"19125365b6f63c597e5a96695054618c62ebfbab5af8f80e32bac430bc5808f9"},
+    "diterpene_triterpene": {"count":212,"retrieved_ids":212,"sha256_ids":"042cfedabac7f786b6440faf6613560a40a4093dea19a0ea27e78dabc6af5009"},
+    "biosynthesis_genes": {"count":2377,"retrieved_ids":2377,"sha256_ids":"d3ff249d26a21df35fcf41a1499d07b5c19fd5e033f94396d43d17beaff0dc8"},
+    "genomics_phylogenomics": {"count":716,"retrieved_ids":716,"sha256_ids":"f20f98785adee253e63e5dae72fa68555d27b8da4c09911ca8f699a974de6e71"},
+    "antiparasitic": {"count":1329,"retrieved_ids":1329,"sha256_ids":"b58c50b2acbdc0b00455d5df698e772a087a723cb270493ca037324d5765163a"},
+    "safety": {"count":1285,"retrieved_ids":1285,"sha256_ids":"cc35b9c56f448941822a5b0748fc17b9acc2dd925d6b71729e664d682c1dcfca"}
+  },
+  "union": {"total_retrieved_ids":9741,"unique_pmids":4765,"duplicate_hits":4976,"unique_pmids_sha256":"2d9892f462a73de31a3aa639a69acde755eae7fe63714820c67ab8321e2a6d19"}
+}
