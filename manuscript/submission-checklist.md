@@ -15,6 +15,7 @@
 
 - [x] Run and archive the initial PubMed database searches and result counts.
 - [x] Archive a high-cap retrieval and cross-query deduplication summary.
+- [x] Generate a reproducible title-priority queue for the 4,765-record deduplicated union (1,387 candidates).
 - [ ] Deduplicate records and archive excluded records with reasons.
 - [ ] Replace seed-set-only language with a completed screening statement.
 - [ ] Verify every quantitative claim against the primary source and specimen context.

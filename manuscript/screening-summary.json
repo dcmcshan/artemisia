@@ -1,0 +1,18 @@
+{
+  "retrieved_at": "2026-09-01T22:51:32.645178+00:00",
+  "database": "PubMed",
+  "method": "ESearch union followed by ESummary metadata retrieval and transparent title-keyword prioritization",
+  "unique_pmids": 4765,
+  "candidate_records_score_ge_2": 1387,
+  "not_an_inclusion_decision": true,
+  "query_families": [
+    "terpene_essential_oil",
+    "sesquiterpene_lactone",
+    "diterpene_triterpene",
+    "biosynthesis_genes",
+    "genomics_phylogenomics",
+    "antiparasitic",
+    "safety"
+  ],
+  "output": "screening-candidates.csv"
+}
