@@ -102,6 +102,8 @@ The KB’s assembly comparison table makes the confounders explicit: the *A. ann
 
 The execution gate is also explicit: NCBI reports an annotation with 63,226 protein-coding genes for the *A. annua* reference, and the validated NGDC/CNCB *A. argyi* assembly exposes a 62,843-protein annotation. A seed-centered DIAMOND screen of 31 annotated *A. annua* pathway/TPS queries returned 105 *A. argyi* candidate hits; the exact inputs and hashes are archived in the KB. These are homology candidates only. A cross-species copy-number or orthology result is not reported until a common annotation, reciprocal/phylogenetic validation, and gene-tree reconciliation are completed.
 
+Reciprocal checking re-searched 67 unique *A. argyi* candidates against the *A. annua* proteome and produced 26 reciprocal-best-hit candidate rows. Because a duplicated *A. argyi* locus can share the same best *A. annua* seed, this count is not a one-to-one ortholog count and is not interpreted as gene-family expansion.
+
 ## 6. Antiparasitic evidence
 
 Published essential-oil studies provide useful phenotype anchors. *A. annua* leaf oil has been tested against *Leishmania donovani* in in-vitro and in-vivo contexts. Oils from *A. campestris* and *A. herba-alba* have been tested against *L. infantum* promastigotes, with apoptosis-like and cell-cycle-associated effects reported. These results support mixture-level activity under the reported experimental conditions. They do not establish a single active terpene, whole-life-cycle efficacy, host safety, or clinical benefit.
