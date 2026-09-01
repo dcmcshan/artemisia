@@ -14,6 +14,10 @@ This review has two aims. First, it organizes the major terpene classes reported
 
 The evidence extraction unit is a specimen, accession, or explicitly bounded experimental preparation. Representative records are provided in `chemotype-table.csv`; they are not species means. The review follows the protocol in `review-protocol.md` and the source identifiers in `sources.json`.
 
+### 1.1 What previous reviews establish—and what remains open
+
+Yes, *Artemisia* terpene and terpenoid reviews have been published. The principal precedents include a genus-level essential-oil review, a 2012–2017 essential-oil update, a dedicated sesquiterpene-lactone analysis and methods review, a review of edible species and selected sesquiterpene lactones, and a 2024 genus-wide phytochemistry, pharmacology, and toxicology review ([Abad et al. 2012](https://pmc.ncbi.nlm.nih.gov/articles/PMC6268508/); [Pandey and Singh 2017](https://pubmed.ncbi.nlm.nih.gov/28930281/); [Ivanescu et al. 2015](https://pmc.ncbi.nlm.nih.gov/articles/PMC4606394/); [Trendafilova et al. 2021](https://pubmed.ncbi.nlm.nih.gov/33396790/); [Hussain et al. 2024](https://pubmed.ncbi.nlm.nih.gov/37711006/)). These reviews establish the breadth of reported chemistry and biological claims, but they generally do not provide one specimen-level, class-balanced, phylogeny-aware evidence model connecting terpene chemistry, evolutionary genomics, tissue context, antiparasitic stage, and safety. The present package is designed as an auditable update and integration, not as a claim that prior reviews were absent or noncomprehensive.
+
 ## 2. Chemical scope and terminology
 
 Terpenes are assembled from C5 isoprenoid units. Monoterpenes are principally C10, sesquiterpenes C15, diterpenes C20, and triterpenes C30; oxygenated and rearranged products are more precisely terpenoids. Sesquiterpene lactones are C15 terpenoids containing a lactone ring and are generally treated as extractable specialized metabolites rather than ordinary essential-oil constituents.
