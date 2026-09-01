@@ -112,6 +112,8 @@ The broader antiparasitic record is heterogeneous but not limited to Leishmania.
 
 The strongest causal bridge would require matched specimen chemistry, parasite-stage assays, host-cell cytotoxicity, fractionation or defined mixtures, and ideally purified-compound plus combination testing. Gene expression or a predicted pathway can prioritize candidates but cannot replace those experiments.
 
+Purified-compound evidence provides an important contrast to oil studies: helenalin, mexicanin, and dehydroleucodine inhibited cultured *Leishmania mexicana* promastigotes at approximately low-micromolar concentrations, but that result cannot be assumed for an *Artemisia* oil or a different parasite stage ([Barrera et al. 2008](https://pubmed.ncbi.nlm.nih.gov/18576826/)). Likewise, methanolic aerial-part extracts of *A. sieberi* and *A. khorassanica* have been evaluated in *Plasmodium berghei* mouse models ([PubMed](https://pubmed.ncbi.nlm.nih.gov/22315701/); [PubMed](https://pubmed.ncbi.nlm.nih.gov/22347230/)). These records broaden the evidence base while reinforcing the need to retain extraction polarity, dose, parasite model, and compound identity.
+
 ## 7. Safety and translation
 
 Thujone is neurotoxic and must be tracked as a quantified, preparation-specific analyte. Artemisinin-derived antimalarial treatment should not be conflated with crude *A. annua* tea, essential oil, or an unidentified *Artemisia* preparation. In-vitro antioxidant, antimicrobial, insecticidal, cytotoxic, or antiparasitic results do not establish a safe human dose or therapeutic efficacy.
