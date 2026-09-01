@@ -20,7 +20,7 @@
 - [ ] Replace seed-set-only language with a completed screening statement.
 - [ ] Verify every quantitative claim against the primary source and specimen context.
 - [ ] Complete author/year/journal/volume/pages/DOI metadata in `references.bib`.
-- [ ] Add a final PRISMA-style flow diagram if the review is submitted as systematic or scoping.
+- [x] Add a living-review flow diagram with frozen retrieval counts; convert to a final PRISMA-style diagram only after manual screening is complete.
 - [ ] Add a supplementary compound-by-specimen table once extraction is complete.
 - [ ] Resolve *A. argyi* ADS/TPS annotation differences across assembly releases.
 - [ ] Pin software versions, scripts, manifests, and checksums for comparative-genomics analyses.

@@ -4,6 +4,8 @@
 
 The current article is a **living scoping review in progress**. A screened seed set is archived in `screened-seed-set.csv`; the PubMed search snapshot is archived in `search-results.json`; and a title-priority queue with retrieved abstracts is archived in `screening-candidates.csv` and `screening-abstracts.csv`. This is not yet a completed systematic review because manual title/abstract screening, full-text screening, and exhaustive extraction remain open.
 
+The retrieval and screening counts are represented in `review-flow.md`. The 1,387-record queue is a transparent prioritization layer, not an eligibility decision; the final synthesis denominator remains intentionally unset until manual screening is complete.
+
 ## Review questions
 
 1. Which mono-, sesqui-, diterpene, triterpene, and sesquiterpene-lactone classes are reported across *Artemisia*?

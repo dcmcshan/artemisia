@@ -23,6 +23,7 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `screening-summary.json` and `screening-candidates.csv` — title-level prioritization outputs.
 - `fetch_screening_abstracts.py` — reproducible PubMed abstract retrieval for the priority queue.
 - `screening-abstract-summary.json` and `screening-abstracts.csv` — abstract retrieval outputs; records remain pending manual screening.
+- `review-flow.md` — frozen retrieval counts and living-review flow diagram.
 - `screened-seed-set.csv` — auditable screening decisions for the current seed sources.
 - `submission-checklist.md` — journal-readiness and evidence-audit checklist.
 
