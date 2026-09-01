@@ -21,7 +21,7 @@ sources/    Source notes and citation metadata (to be added)
 
 ## Status
 
-Project initialized. The schema and first species records are the next milestones.
+Project initialized. The first research brief is available in [docs/terpenes-research-brief.md](docs/terpenes-research-brief.md); the schema and first species records are the next milestones.
 
 ## Contributing
 
