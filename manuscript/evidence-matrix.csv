@@ -6,3 +6,6 @@ E004,Artemisia argyi,comparative_genomics,six tandem ADS homologs,argyi-ads-comp
 E005,Artemisia annua,parasite_assay,leaf essential oil vs Leishmania donovani,annua-leishmania,mixture_assay,in-vitro and in-vivo scope; constituent unresolved
 E006,Artemisia campestris,parasite_assay,essential oil vs Leishmania infantum promastigotes,campestris-herba-alba-leishmania,mixture_assay,life-cycle stage must be retained
 E007,Artemisia herba-alba,parasite_assay,essential oil vs Leishmania infantum promastigotes,campestris-herba-alba-leishmania,mixture_assay,composition and cytotoxicity require matching
+E008,Artemisia annua,metabolomics,high- versus low-artemisinin chemotypes,annua-chemotype-metabolomics,primary_metabolomics,retain all eight reported metabolite classes and specimen context
+E009,Artemisia,chemical_methods,sesquiterpene-lactone diversity and analytical constraints,artemisia-stl-analysis-review,methods_review,LC/NMR and isolation evidence are not interchangeable with GC oil profiles
+E010,Artemisia abyssinica,parasite_assay_and_toxicity,oil vs Leishmania donovani stages plus mammalian toxicity,abyssinica-leishmania,primary_assay,carry parasite stage and selectivity data together

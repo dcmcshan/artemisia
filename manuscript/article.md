@@ -18,6 +18,18 @@ Terpenes are assembled from C5 isoprenoid units. Monoterpenes are principally C1
 
 Representative volatile classes include pinene, limonene, myrcene, camphor, 1,8-cineole, borneol, thujones, germacrene D, β-caryophyllene, α-humulene, davanone, spathulenol, and caryophyllene oxide. Important nonvolatile or less volatile chemistry includes artemisinin and related compounds, guaianolide and germacranolide sesquiterpene lactones, and triterpenoids associated with plant surfaces and defense.
 
+### 2.1 Evidence map by class
+
+| Class | Representative *Artemisia* chemistry | Main analytical context | Review interpretation |
+|---|---|---|---|
+| Monoterpenes and oxygenated monoterpenes | α-/β-pinene, limonene, myrcene, camphor, 1,8-cineole, borneol, thujones, artemisia ketone | GC-MS/GC-FID of volatile oils and headspace fractions | Often abundant, but highly sensitive to chemotype, tissue, stage, drying, and distillation |
+| Sesquiterpene hydrocarbons and oxygenated sesquiterpenes | germacrene D, β-caryophyllene, α-humulene, davanone, spathulenol, caryophyllene oxide | GC-MS of oils; targeted volatile profiling | Useful markers of population chemistry, not universal species signatures |
+| Sesquiterpene lactones | artemisinin, arteannuin B, artemisinic acid, santonin, guaianolides, germacranolides, absinthin-related compounds | LC-MS/HPLC, NMR, isolation; GC is often unsuitable without derivatization | Usually nonvolatile; structural and stereochemical confirmation is critical |
+| Diterpenes | species-specific diterpenoid constituents and chlorophyll-associated phytol derivatives | Solvent extraction, LC-MS, NMR; often reported in broad phytochemical surveys | Less comprehensively sampled than C10/C15 chemistry; presence should be linked to isolation or validated MS evidence |
+| Triterpenes and sterols | β-amyrin/α-amyrin-, friedelin-, cycloartane- and sterol-associated reports | Solvent extraction, LC-MS, GC-MS after derivatization, NMR | Surface and storage chemistry; not part of ordinary essential-oil comparisons |
+
+The unevenness of this evidence map is itself a result: volatile mono- and sesquiterpenes are overrepresented because they are accessible to routine GC analysis, whereas nonvolatile diterpenes, triterpenes, and lactones require extraction workflows that are less directly comparable across studies.
+
 ## 3. Biosynthesis and compartmentalization
 
 The plastidial MEP pathway and cytosolic mevalonate pathway supply IPP and DMAPP, which are condensed into prenyl diphosphates. GPPS and related enzymes provide C10 substrates for monoterpene synthases; FPPS provides the C15 substrate FPP for sesquiterpene synthases, including germacrene A synthase and ADS. Cytochrome P450s, reductases, dehydrogenases, oxidases, acyltransferases, glycosyltransferases, and spontaneous reactions expand the scaffold space.
@@ -25,6 +37,22 @@ The plastidial MEP pathway and cytosolic mevalonate pathway supply IPP and DMAPP
 The artemisinin pathway in *A. annua* is the strongest gene-to-metabolite reference. ADS converts FPP to amorpha-4,11-diene; CYP71AV1 oxidizes pathway intermediates; DBR2 and ALDH1 support the route toward dihydroartemisinic acid, after which terminal chemistry includes nonenzymatic steps. Glandular secretory trichomes provide a relevant biosynthetic and storage context. These statements are pathway anchors, not proof that homologous genes in another species produce artemisinin or confer antiparasitic activity.
 
 Germacranolide biosynthesis offers a second comparative framework: FPP can be cyclized by germacrene A synthase, oxidized by germacrene A oxidase, and converted through P450-dependent chemistry and lactonization. The broad presence of a scaffold family does not imply identical product profiles because enzyme specificity, tissue localization, substrate competition, and downstream modification differ.
+
+**Pathway evidence boundary.** The ordered pathway model is a set of evidence-qualified hypotheses. Direct enzyme characterization supports individual steps; a homologous sequence or transcript supports candidate function; a detected metabolite supports presence in the sampled material. None of these alone establishes flux, compartment, or in-vivo production in a second species. Multi-substrate requirements, physiological direction, stereochemistry, and missing transport or cofactor information must remain explicit in the Terpedia pathway records.
+
+**Figure 1. Conceptual route from precursor supply to phenotype.**
+
+```mermaid
+flowchart LR
+  A[MEP / MVA pathways<br/>IPP + DMAPP] --> B[GPPS / FPPS<br/>GPP + FPP]
+  B --> C[Terpene synthases<br/>C10/C15 scaffolds]
+  C --> D[P450s, reductases,<br/>oxidases, transferases]
+  D --> E[Volatile oils and<br/>nonvolatile terpenoids]
+  E --> F[Chemotype and tissue<br/>metabolome]
+  F --> G[Parasite assay<br/>mixture phenotype]
+  H[Species tree + gene<br/>duplication/loss] --> C
+  H --> D
+```
 
 ## 4. Species and chemotype diversity
 
@@ -42,6 +70,8 @@ The comparative analysis should infer orthogroups and gene trees for GPPS, FPPS,
 
 Published essential-oil studies provide useful phenotype anchors. *A. annua* leaf oil has been tested against *Leishmania donovani* in in-vitro and in-vivo contexts. Oils from *A. campestris* and *A. herba-alba* have been tested against *L. infantum* promastigotes, with apoptosis-like and cell-cycle-associated effects reported. These results support mixture-level activity under the reported experimental conditions. They do not establish a single active terpene, whole-life-cycle efficacy, host safety, or clinical benefit.
 
+An Ethiopian study of *A. abyssinica* further illustrates why selectivity must be reported with activity: its oxygenated-monoterpene-rich oil showed activity against *Leishmania* promastigote and amastigote systems but also variable toxicity in mammalian-cell and erythrocyte assays. This is a valuable comparative record because it carries parasite stage and host-toxicity information together, although it still does not resolve which constituents or interactions drive the result.
+
 The strongest causal bridge would require matched specimen chemistry, parasite-stage assays, host-cell cytotoxicity, fractionation or defined mixtures, and ideally purified-compound plus combination testing. Gene expression or a predicted pathway can prioritize candidates but cannot replace those experiments.
 
 ## 7. Safety and translation
@@ -52,10 +82,14 @@ Thujone is neurotoxic and must be tracked as a quantified, preparation-specific 
 
 We propose four hypotheses: (1) WGD- and lineage-specific TPS retention predicts chemical diversity only when copy number is paired with expression and metabolomics; (2) antiparasitic chemistry associated with artemisinin-like products tracks pathway completion more closely than total TPS count; (3) essential-oil activity is often a chemotype-specific mixture property; and (4) secretory-tissue expression predicts accumulated compounds better than bulk leaf expression. Discriminating tests combine frozen assemblies, standardized annotation, orthology-aware gene trees, trichome transcriptomics, targeted metabolomics, enzyme assays, and fractionated parasite assays.
 
+### 8.1 Minimum reporting standard for a future meta-analysis
+
+Each observation should be stored as a specimen-level record with a stable taxon identifier, voucher or accession, tissue, developmental stage, locality and collection date, preparation, extraction yield, analytical platform, retention-index or spectral confirmation, compound identity confidence, abundance units, and assay metadata. A quantitative synthesis should not pool normalized peak percentages with absolute concentrations, purified compounds with oils, or promastigote-only endpoints with intracellular or in-vivo endpoints. This design makes heterogeneity a modeled variable rather than an unexplained nuisance.
+
 ## 9. Conclusions
 
 *Artemisia* terpene biology is best understood as a structured interaction between evolutionary history, gene-family innovation, tissue compartmentalization, ecological context, and analytical method. A publishable comparative review must therefore preserve specimen-level provenance and separate observed chemistry, direct enzyme evidence, annotation-supported hypotheses, mixture-level phenotypes, and unestablished claims. The Terpedia-linked dataset and protocol provide the basis for expanding this draft into a fully screened, quantitatively harmonized review.
 
 ## Core sources
 
-See `sources.json` for the auditable registry. Key anchors include the genus essential-oil review (https://pmc.ncbi.nlm.nih.gov/articles/PMC6268508/), the *A. annua* genome study (https://doi.org/10.1016/j.molp.2018.03.015), the *A. argyi* chromosome-scale genome (https://pmc.ncbi.nlm.nih.gov/articles/PMC10203441/), the recent *A. argyi* comparison (https://pmc.ncbi.nlm.nih.gov/articles/PMC12702566/), the broad *Artemisia* phylogenomics framework (https://pmc.ncbi.nlm.nih.gov/articles/PMC12508166/), and the *Leishmania* assay studies (https://pmc.ncbi.nlm.nih.gov/articles/PMC4243575/; https://pmc.ncbi.nlm.nih.gov/articles/PMC5078739/).
+See `sources.json` for the auditable registry. Key anchors include the genus essential-oil review (https://pmc.ncbi.nlm.nih.gov/articles/PMC6268508/), the *Artemisia* sesquiterpene-lactone analysis review (https://pmc.ncbi.nlm.nih.gov/articles/PMC4606394/), the *A. annua* chemotype metabolomics study (https://pmc.ncbi.nlm.nih.gov/articles/PMC5968107/), the *A. annua* genome study (https://doi.org/10.1016/j.molp.2018.03.015), the *A. argyi* chromosome-scale genome (https://pmc.ncbi.nlm.nih.gov/articles/PMC10203441/), the recent *A. argyi* comparison (https://pmc.ncbi.nlm.nih.gov/articles/PMC12702566/), the broad *Artemisia* phylogenomics framework (https://pmc.ncbi.nlm.nih.gov/articles/PMC12508166/), and the *Leishmania* assay studies (https://pmc.ncbi.nlm.nih.gov/articles/PMC4243575/; https://pmc.ncbi.nlm.nih.gov/articles/PMC5078739/; https://pubmed.ncbi.nlm.nih.gov/20397218/).
