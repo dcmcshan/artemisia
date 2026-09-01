@@ -104,6 +104,8 @@ The execution gate is also explicit: NCBI reports an annotation with 63,226 prot
 
 Reciprocal checking re-searched 67 unique *A. argyi* candidates against the *A. annua* proteome and produced 26 reciprocal-best-hit candidate rows. Because a duplicated *A. argyi* locus can share the same best *A. annua* seed, this count is not a one-to-one ortholog count and is not interpreted as gene-family expansion.
 
+As a diagnostic next step, the KB built MAFFT alignments and IQ-TREE3 exploratory trees for the three reciprocal groups that retained at least four unique protein sequences (PWA60940.1, PWA68009.1, and PWA85324.1). The run used the LG+G4 model, 1,000 ultrafast-bootstrap replicates, 1,000 SH-aLRT replicates, and one thread; the exact alignments, tree files, reports, software versions, and input checksums are archived under `comparative-genomics/results/seed-gene-trees-2026-09-01/`. Eight of eleven reciprocal groups were not tree-built because they had fewer than four leaves or fewer than four unique sequences. These small, seed-biased trees are quality-control diagnostics only: they do not establish orthology, duplication/loss, or pathway function.
+
 ## 6. Antiparasitic evidence
 
 Published essential-oil studies provide useful phenotype anchors. *A. annua* leaf oil has been tested against *Leishmania donovani* in in-vitro and in-vivo contexts. Oils from *A. campestris* and *A. herba-alba* have been tested against *L. infantum* promastigotes, with apoptosis-like and cell-cycle-associated effects reported. These results support mixture-level activity under the reported experimental conditions. They do not establish a single active terpene, whole-life-cycle efficacy, host safety, or clinical benefit.
