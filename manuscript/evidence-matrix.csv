@@ -1,0 +1,8 @@
+record_id,taxon,evidence_type,subject,source_id,evidence_level,scope_note
+E001,Artemisia annua,genome,GCA_003112345.1 / PRJNA416223,annua-genome,primary_genome,freeze assembly and annotation before comparison
+E002,Artemisia annua,pathway,ADS-CYP71AV1-DBR2-ALDH1,annua-genome,biochemical_and_genomic,do not generalize ortholog function automatically
+E003,Artemisia argyi,genome,chromosome-scale assembly and WGD,argyi-genome,primary_genome,retain homeologs and version metadata
+E004,Artemisia argyi,comparative_genomics,six tandem ADS homologs,argyi-ads-comparison,primary_comparative,conflicts with earlier interpretation and requires reconciliation
+E005,Artemisia annua,parasite_assay,leaf essential oil vs Leishmania donovani,annua-leishmania,mixture_assay,in-vitro and in-vivo scope; constituent unresolved
+E006,Artemisia campestris,parasite_assay,essential oil vs Leishmania infantum promastigotes,campestris-herba-alba-leishmania,mixture_assay,life-cycle stage must be retained
+E007,Artemisia herba-alba,parasite_assay,essential oil vs Leishmania infantum promastigotes,campestris-herba-alba-leishmania,mixture_assay,composition and cytotoxicity require matching
