@@ -94,6 +94,8 @@ The comparative analysis should infer orthogroups and gene trees for GPPS, FPPS,
 
 The Terpedia KB now carries an execution specification for this analysis (`comparative-genomics/`). Its required outputs include frozen input checksums, software versions, orthology-aware gene trees, synteny/tandem-cluster calls, and a tiered gene-family evidence table. Until those outputs are generated and reviewed, the genome comparison in this article is a design-supported hypothesis framework rather than a completed comparative result.
 
+An NCBI Datasets metadata audit was run without downloading sequence archives. It returned one *A. annua* assembly report and three *A. argyi* reports, while leaving the literature resource `PRJCA010808` unresolved. This is itself a result for reproducibility: assembly choice must be documented and reconciled before copy-number or presence/absence comparisons are interpreted.
+
 ## 6. Antiparasitic evidence
 
 Published essential-oil studies provide useful phenotype anchors. *A. annua* leaf oil has been tested against *Leishmania donovani* in in-vitro and in-vivo contexts. Oils from *A. campestris* and *A. herba-alba* have been tested against *L. infantum* promastigotes, with apoptosis-like and cell-cycle-associated effects reported. These results support mixture-level activity under the reported experimental conditions. They do not establish a single active terpene, whole-life-cycle efficacy, host safety, or clinical benefit.
