@@ -1,0 +1,14 @@
+{
+  "database": "PubMed",
+  "retrieved_at": "2026-09-01T22:45:36.613555+00:00",
+  "note": "Counts are database snapshots, not deduplicated or screened study counts. The top identifiers are a retrieval aid and do not constitute inclusion decisions.",
+  "queries": {
+    "terpene_essential_oil": {"query":"Artemisia AND (terpene OR terpenoid OR essential oil OR chemotype)","count":2279,"top_pmids":["38862031","28346993","39366156","38871010","40545316","31651036","30389026","40866456","37666615","24292348","26085047","35164402","37957442","37301341","34941680","18397765","38543021","30663350","38930948","35962444"]},
+    "sesquiterpene_lactone": {"query":"Artemisia AND (sesquiterpene lactone OR artemisinin OR santonin OR guaianolide OR germacranolide)","count":1543,"top_pmids":["32777330","39202965","16612385","21989013","38054758","40620464","16722826","26563851","32710388","38346546","23464512","18977499","25204815","26631629","31703759","33973783","36541391","41028755","22866604","35301035"]},
+    "diterpene_triterpene": {"query":"Artemisia AND (diterpene OR triterpene OR phytol OR sterol)","count":212,"top_pmids":["31651036","33673527","40683423","40867523","38876402","31453659","33781859","20681755","28837410","42075986","39041081","40851290","36985759","17453937","40866456","37204684","41516183","32589757","12546720","11729755"]},
+    "biosynthesis_genes": {"query":"Artemisia AND (terpene synthase OR TPS OR biosynthesis OR CYP71AV1 OR ADS OR DBR2 OR ALDH1)","count":2377,"top_pmids":["16612385","31651036","41151450","24413765","39362811","31084212","41028755","40116969","34050229","30729589","37421981","25204815","29589124","41508496","30200700","28870011","25040292","41005496","40015404","22223333"]},
+    "genomics_phylogenomics": {"query":"Artemisia AND (genome OR transcriptome OR phylogenomics OR whole genome duplication)","count":716,"top_pmids":["31651036","41062471","24413765","32191371","41028755","36041052","33973259","38600880","41226521","29589124","36721100","36597358","39105262","26864531","36087823","30851440","36471930","34297325","24023252","42175621"]},
+    "antiparasitic": {"query":"Artemisia AND (antiparasitic OR antileishmanial OR antimalarial OR anthelmintic)","count":1329,"top_pmids":["32777330","39202965","16612385","23575629","21989013","38054758","39362811","37381950","41076144","34051675","33141328","36296479","24316259","27867026","17972063","30389026","36105486","30166103","29746932","15134519"]},
+    "safety": {"query":"Artemisia AND (thujone OR toxicity OR safety OR pharmacokinetics)","count":1285,"top_pmids":["35752074","16891209","34242729","15896935","34238198","33893998","40816579","38710427","15325732","24919378","36105486","30166103","34065533","17972063","40540239","32710388","42462527","41240544","41005496","17125242"]}
+  }
+}

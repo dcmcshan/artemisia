@@ -2,12 +2,12 @@
 
 ## Status
 
-This is the pre-registration-style search record for the review. The sources currently in `sources.json` are the seed set used to build the comparative framework. Full deduplication and title/abstract screening remain open work; no unscreened search is represented as exhaustive.
+This is the pre-registration-style search record for the review. The sources currently in `sources.json` are the seed set used to build the comparative framework. The first PubMed query run is archived in `search-results.json`; full deduplication and title/abstract screening remain open work, so no unscreened search is represented as exhaustive.
 
 - Search date: 2026-09-01
 - Review scope: *Artemisia* terpenes, terpenoids, sesquiterpene lactones, biosynthesis, evolution, chemotype/environment variation, antiparasitic activity, and safety
 - Databases and discovery surfaces: PubMed/PMC, Crossref/DOI landing pages, NCBI BioProject/GEO, Kew Plants of the World Online, and Terpedia KB records
-- Search result counts: to be recorded when the reproducible query run is executed
+- Search result counts: recorded in `search-results.json` as a database snapshot
 
 ## Core query families
 
