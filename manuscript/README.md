@@ -16,5 +16,7 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `sources.json` — stable source registry with identifiers, URLs, evidence class, and retrieval date.
 - `chemotype-table.csv` — representative chemistry records with specimen/context qualifiers.
 - `references.bib` — citation-ready bibliography for manuscript tooling.
+- `search-log.md` — reproducible literature-search and screening plan.
+- `submission-checklist.md` — journal-readiness and evidence-audit checklist.
 
 Claims are kept at the smallest source-supported unit. Essential-oil mixture activity is not treated as evidence for a single active molecule, and gene presence or expression is not treated as proof of in-vivo flux.
