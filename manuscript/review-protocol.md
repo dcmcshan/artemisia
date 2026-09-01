@@ -6,6 +6,8 @@ The current article is a **living scoping review in progress**. A screened seed 
 
 The retrieval and screening counts are represented in `review-flow.md`. The 1,387-record queue is a transparent prioritization layer, not an eligibility decision; the final synthesis denominator remains intentionally unset until manual screening is complete.
 
+Abstract-level keyword triage is archived in `screening-abstract-triage.csv`. It is a workload-ordering aid only: domain matches and priority scores cannot independently establish eligibility, study quality, or inclusion.
+
 ## Review questions
 
 1. Which mono-, sesqui-, diterpene, triterpene, and sesquiterpene-lactone classes are reported across *Artemisia*?

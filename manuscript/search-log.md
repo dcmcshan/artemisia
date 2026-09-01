@@ -10,6 +10,7 @@ This is the pre-registration-style search record for the review. The sources cur
 - Search result counts: recorded in `search-results.json` and the high-cap deduplicated retrieval summary in `search-union-summary.json` (9,741 query hits; 4,765 unique PMIDs; 4,976 duplicate hits)
 - Candidate screening: `build_screening_candidates.py` retrieved metadata for all 4,765 unique PMIDs and produced 1,387 title-priority candidates in `screening-candidates.csv`. This is not a final inclusion decision and must be followed by title/abstract and full-text review.
 - Abstract retrieval: `fetch_screening_abstracts.py` fetches PubMed XML for the 1,387 title-priority candidates into `screening-abstracts.csv`; missing abstracts are retained explicitly and all records remain pending manual screening.
+- Abstract triage: `triage_screening_abstracts.py` applies fixed keyword rules to title plus abstract and emits domain labels and a priority score; every record remains `pending_manual_review`.
 
 ## Core query families
 
