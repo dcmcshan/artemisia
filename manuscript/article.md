@@ -12,6 +12,8 @@ The genus *Artemisia* contains a chemically diverse collection of volatile terpe
 
 This review has two aims. First, it organizes the major terpene classes reported from *Artemisia* and summarizes the biosynthetic logic connecting precursor supply, synthase diversification, oxidation, lactonization, storage, and regulation. Second, it evaluates whether comparative evolutionary genomics can connect that diversity to antiparasitic phenotypes without overstating causality.
 
+The evidence extraction unit is a specimen, accession, or explicitly bounded experimental preparation. Representative records are provided in `chemotype-table.csv`; they are not species means. The review follows the protocol in `review-protocol.md` and the source identifiers in `sources.json`.
+
 ## 2. Chemical scope and terminology
 
 Terpenes are assembled from C5 isoprenoid units. Monoterpenes are principally C10, sesquiterpenes C15, diterpenes C20, and triterpenes C30; oxygenated and rearranged products are more precisely terpenoids. Sesquiterpene lactones are C15 terpenoids containing a lactone ring and are generally treated as extractable specialized metabolites rather than ordinary essential-oil constituents.
@@ -60,6 +62,8 @@ flowchart LR
 
 Geography and climate can alter both the relative abundance and the dominant chemical class. Phenological shifts may change monoterpene and sesquiterpene proportions between vegetative and flowering stages. Drying and distillation can remove, transform, or concentrate constituents. These effects explain why percentage tables cannot be pooled without specimen-level metadata and analytical harmonization.
 
+The same principle applies to apparently stable markers. Germacrene D is dominant in many *A. frigida* samples, yet the distribution of that dominance and its relationship to climate must be evaluated across populations and years. Recent *A. absinthium* work similarly shows that geography and phenological stage can change the dominant oxygenated mono- versus sesquiterpene class. These studies support stratified comparisons rather than a single canonical “wormwood oil.”
+
 ## 5. Comparative evolutionary genomics
 
 The initial controlled comparison is *A. annua* versus *A. argyi*. The former supplies a pathway-rich reference genome and functional artemisinin literature. The latter has a chromosome-scale genome with reported whole-genome duplication and terpene-synthase expansion, plus tissue transcriptomes. A recent *A. argyi* analysis reports six tandem-duplicated ADS homologs, whereas an earlier genome interpretation treated functional ADS capacity as absent or unresolved. This is a high-value reconciliation problem, not a settled presence/absence result.
@@ -89,6 +93,10 @@ Each observation should be stored as a specimen-level record with a stable taxon
 ## 9. Conclusions
 
 *Artemisia* terpene biology is best understood as a structured interaction between evolutionary history, gene-family innovation, tissue compartmentalization, ecological context, and analytical method. A publishable comparative review must therefore preserve specimen-level provenance and separate observed chemistry, direct enzyme evidence, annotation-supported hypotheses, mixture-level phenotypes, and unestablished claims. The Terpedia-linked dataset and protocol provide the basis for expanding this draft into a fully screened, quantitatively harmonized review.
+
+## Data and code availability
+
+The manuscript protocol, source registry, evidence matrix, representative chemistry table, and Terpedia-linked pathway records are versioned with this article package. Genome and transcriptome sequence data remain in their originating public repositories; the article package records accession identifiers and retrieval metadata rather than redistributing sequence files. Future analysis notebooks should use the frozen manifests and record software versions, parameters, checksums, and execution environment.
 
 ## Core sources
 

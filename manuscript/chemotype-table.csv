@@ -1,0 +1,8 @@
+record_id,taxon,material_or_context,dominant_or_representative_chemistry,measurement_or_scope,source_id,interpretation_boundary
+C001,Artemisia annua,leaf essential oil,camphor 52.06%; beta-caryophyllene 10.95%,GC-MS; hydrodistilled oil,annua-leishmania,one tested oil and not a species-wide profile
+C002,Artemisia abyssinica,leaf essential oil,yomogi alcohol 38.47%; artemisyl acetate 24.88%; artemisia alcohol 6.70%,GC-MS; 67 compounds reported,abyssinica-leishmania,composition and toxicity are linked to the tested material
+C003,Artemisia absinthium,aerial-part essential oil,cis-davanone/camphor/chamazulene-associated profiles,reviewed across studies and locations,artemisia-essential-oils-review,chemotype and provenance must be retained
+C004,Artemisia absinthium,phenology and geography,oxygenated monoterpene- and oxygenated sesquiterpene-dominant profiles,comparative location/stage study,absinthium-phenology,not transferable to an unidentified preparation
+C005,Artemisia frigida,multiple populations and years,germacrene D dominant in 67% of samples,comparative GC-MS and climate context,frigida-variability,dominance does not imply fixed chemotype or causal activity
+C006,Artemisia argyi,flowers and aerial tissues,bornyl acetate/borneol and other mono- and sesquiterpenes,reported essential-oil composition,artemisia-essential-oils-review,retain tissue and regional context
+C007,Artemisia dracunculus,aerial parts,estragole-dominant chemotypes reported,volatile-metabolite analysis,dracunculus-review,estragole is a phenylpropanoid rather than a terpene

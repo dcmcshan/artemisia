@@ -14,5 +14,7 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `review-protocol.md` — inclusion, extraction, quality-assessment, and synthesis protocol.
 - `evidence-matrix.csv` — specimen-, compound-, pathway-, genome-, and assay-level evidence table.
 - `sources.json` — stable source registry with identifiers, URLs, evidence class, and retrieval date.
+- `chemotype-table.csv` — representative chemistry records with specimen/context qualifiers.
+- `references.bib` — citation-ready bibliography for manuscript tooling.
 
 Claims are kept at the smallest source-supported unit. Essential-oil mixture activity is not treated as evidence for a single active molecule, and gene presence or expression is not treated as proof of in-vivo flux.
