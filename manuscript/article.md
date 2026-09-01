@@ -94,7 +94,7 @@ The comparative analysis should infer orthogroups and gene trees for GPPS, FPPS,
 
 The Terpedia KB now carries an execution specification for this analysis (`comparative-genomics/`). Its required outputs include frozen input checksums, software versions, orthology-aware gene trees, synteny/tandem-cluster calls, and a tiered gene-family evidence table. Until those outputs are generated and reviewed, the genome comparison in this article is a design-supported hypothesis framework rather than a completed comparative result.
 
-An NCBI Datasets metadata audit was run without downloading sequence archives. It returned one *A. annua* assembly report and three *A. argyi* reports, while leaving the literature resource `PRJCA010808` unresolved. This is itself a result for reproducibility: assembly choice must be documented and reconciled before copy-number or presence/absence comparisons are interpreted.
+An NCBI Datasets metadata audit was run without downloading sequence archives. It returned one *A. annua* assembly report and three separate *A. argyi* reports. The literature resource `PRJCA010808` was resolved to its external NGDC/CNCB project record, not to an NCBI assembly accession; the published 3.89-Gb, 17-pseudochromosome haplotype must therefore be treated as a distinct input until sequence and annotation files are obtained and checksummed. This is itself a result for reproducibility: assembly choice must be documented before copy-number or presence/absence comparisons are interpreted.
 
 ## 6. Antiparasitic evidence
 
