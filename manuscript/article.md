@@ -96,6 +96,8 @@ The Terpedia KB now carries an execution specification for this analysis (`compa
 
 An NCBI Datasets metadata audit was run without downloading sequence archives. It returned one *A. annua* assembly report and three separate *A. argyi* reports. The literature resource `PRJCA010808` was resolved to its external NGDC/CNCB project record, not to an NCBI assembly accession; the published 3.89-Gb, 17-pseudochromosome haplotype must therefore be treated as a distinct input until sequence and annotation files are obtained and checksummed. This is itself a result for reproducibility: assembly choice must be documented before copy-number or presence/absence comparisons are interpreted.
 
+The KB’s assembly comparison table makes the confounders explicit: the *A. annua* NCBI reference is scaffold-level, the literature *A. argyi* input is a 3.89-Gb haplotype-A projection, and NCBI also exposes larger or differently assembled *A. argyi* resources. Genome length and chromosome count should therefore not be interpreted as evidence for terpene-family expansion without a common annotation and orthology workflow.
+
 ## 6. Antiparasitic evidence
 
 Published essential-oil studies provide useful phenotype anchors. *A. annua* leaf oil has been tested against *Leishmania donovani* in in-vitro and in-vivo contexts. Oils from *A. campestris* and *A. herba-alba* have been tested against *L. infantum* promastigotes, with apoptosis-like and cell-cycle-associated effects reported. These results support mixture-level activity under the reported experimental conditions. They do not establish a single active terpene, whole-life-cycle efficacy, host safety, or clinical benefit.
@@ -111,6 +113,10 @@ The strongest causal bridge would require matched specimen chemistry, parasite-s
 ## 7. Safety and translation
 
 Thujone is neurotoxic and must be tracked as a quantified, preparation-specific analyte. Artemisinin-derived antimalarial treatment should not be conflated with crude *A. annua* tea, essential oil, or an unidentified *Artemisia* preparation. In-vitro antioxidant, antimicrobial, insecticidal, cytotoxic, or antiparasitic results do not establish a safe human dose or therapeutic efficacy.
+
+The regulatory boundary is preparation-specific. The EMA monograph requires the amount of thujone in covered *A. absinthium* products to be specified and sets a daily exposure limit of 6.0 mg ([EMA monograph](https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-artemisia-absinthium-l-herba_en.pdf)). For malaria, WHO recommends quality-assured artemisinin-based combination therapy and explicitly does not support promotion of *Artemisia* plant material such as teas, tablets, or capsules for prevention or treatment ([WHO treatment guidance](https://www.who.int/teams/global-malaria-programme/case-management/treatment)). These authorities address defined products and clinical policy; they do not establish the safety or efficacy of an arbitrary species, oil, extract, or terpene mixture.
+
+The record-level safety and translation boundaries are archived in `safety-translation.csv`. This prevents a low-toxicity result in one assay or a traditional-use claim from being converted into a generalized therapeutic recommendation.
 
 ## 8. Testable hypotheses and research agenda
 
