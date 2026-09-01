@@ -92,6 +92,8 @@ The initial controlled comparison is *A. annua* versus *A. argyi*. The former su
 
 The comparative analysis should infer orthogroups and gene trees for GPPS, FPPS, monoterpene synthases, sesquiterpene synthases, ADS, CYP71AV1-like P450s, DBR2, ALDH1, OSCs, and selected sesquiterpene-lactone enzymes. Duplications and losses should be mapped to a broad *Artemisia* species tree. Expression should be interpreted by tissue and developmental context, with glandular trichome data prioritized where available. Missing annotation is unresolved data, not evidence of biological absence.
 
+The Terpedia KB now carries an execution specification for this analysis (`comparative-genomics/`). Its required outputs include frozen input checksums, software versions, orthology-aware gene trees, synteny/tandem-cluster calls, and a tiered gene-family evidence table. Until those outputs are generated and reviewed, the genome comparison in this article is a design-supported hypothesis framework rather than a completed comparative result.
+
 ## 6. Antiparasitic evidence
 
 Published essential-oil studies provide useful phenotype anchors. *A. annua* leaf oil has been tested against *Leishmania donovani* in in-vitro and in-vivo contexts. Oils from *A. campestris* and *A. herba-alba* have been tested against *L. infantum* promastigotes, with apoptosis-like and cell-cycle-associated effects reported. These results support mixture-level activity under the reported experimental conditions. They do not establish a single active terpene, whole-life-cycle efficacy, host safety, or clinical benefit.
@@ -122,7 +124,7 @@ Each observation should be stored as a specimen-level record with a stable taxon
 
 ## Data and code availability
 
-The manuscript protocol, source registry, evidence matrix, representative chemistry table, and Terpedia-linked pathway records are versioned with this article package. Genome and transcriptome sequence data remain in their originating public repositories; the article package records accession identifiers and retrieval metadata rather than redistributing sequence files. Future analysis notebooks should use the frozen manifests and record software versions, parameters, checksums, and execution environment.
+The manuscript protocol, source registry, evidence matrix, representative chemistry table, and Terpedia-linked pathway records are versioned with this article package. The execution-ready comparative-genomics specification is versioned in the linked Terpedia KB study. Genome and transcriptome sequence data remain in their originating public repositories; the article package records accession identifiers and retrieval metadata rather than redistributing sequence files. Future analysis notebooks should use the frozen manifests and record software versions, parameters, checksums, and execution environment.
 
 ## Core sources
 
