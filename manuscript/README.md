@@ -18,6 +18,7 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `references.bib` — citation-ready bibliography for manuscript tooling.
 - `search-log.md` — reproducible literature-search and screening plan.
 - `search-results.json` — executed PubMed search snapshot with counts and top identifiers.
+- `screened-seed-set.csv` — auditable screening decisions for the current seed sources.
 - `submission-checklist.md` — journal-readiness and evidence-audit checklist.
 
 Claims are kept at the smallest source-supported unit. Essential-oil mixture activity is not treated as evidence for a single active molecule, and gene presence or expression is not treated as proof of in-vivo flux.

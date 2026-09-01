@@ -1,0 +1,14 @@
+screen_id,source_id,decision,reason,evidence_scope,limitations
+S001,artemisia-essential-oils-review,include,genus-wide volatile terpene synthesis and variability,review,secondary synthesis and heterogeneous underlying studies
+S002,artemisia-stl-analysis-review,include,Artemisia sesquiterpene-lactone classes and analytical methods,review_and_methods,not a specimen-level systematic dataset
+S003,annua-chemotype-metabolomics,include,high- versus low-artemisinin chemotype metabolomics,primary_metabolomics,focused on A. annua chemotypes
+S004,annua-genome,include,reference genome and artemisinin pathway context,genome/pathway,one species and annotation-version dependence
+S005,argyi-genome,include,chromosome-scale assembly WGD and TPS expansion,primary_genome,one assembly and inferred functions require validation
+S006,argyi-ads-comparison,include,reported ADS/TPS asymmetry and tandem duplication,primary_comparative_genomics,requires reconciliation with earlier A. argyi interpretation
+S007,artemisia-phylogenomics,include,broad species-tree framework,phylogenomics,not a terpene-phenotype dataset by itself
+S008,annua-leishmania,include,leaf-oil Leishmania donovani assay anchor,parasite_assay,mixture-level evidence and study-specific chemistry
+S009,campestris-herba-alba-leishmania,include,comparative Leishmania infantum promastigote assay,parasite_assay,life-cycle and constituent attribution limitations
+S010,abyssinica-leishmania,include,parasite-stage activity with mammalian toxicity context,parasite_assay_and_toxicity,oil constituents remain unresolved
+S011,absinthium-phenology,include,geographic and phenological oil variation,primary_chemotype_study,not a genus-wide estimate
+S012,frigida-variability,include,population and climate-associated oil variability,primary_chemotype_study,not a causal evolutionary test
+S013,dracunculus-review,include,species-level terpene and non-terpene volatile context,species_review,review evidence and estragole is not a terpene

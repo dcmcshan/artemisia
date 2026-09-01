@@ -1,5 +1,9 @@
 # Review protocol
 
+## Status
+
+The current article is a **living scoping review in progress**. A screened seed set is archived in `screened-seed-set.csv`; the PubMed search snapshot is archived in `search-results.json`. This is not yet a completed systematic review because deduplication, full-text screening, and exhaustive extraction remain open.
+
 ## Review questions
 
 1. Which mono-, sesqui-, diterpene, triterpene, and sesquiterpene-lactone classes are reported across *Artemisia*?
