@@ -100,6 +100,8 @@ An NCBI Datasets metadata audit was run without downloading sequence archives. I
 
 The KB’s assembly comparison table makes the confounders explicit: the *A. annua* NCBI reference is scaffold-level, the literature *A. argyi* input is a 3.89-Gb haplotype-A projection, and NCBI also exposes larger or differently assembled *A. argyi* resources. Genome length and chromosome count should therefore not be interpreted as evidence for terpene-family expansion without a common annotation and orthology workflow.
 
+The execution gate is also explicit: NCBI reports an annotation with 63,226 protein-coding genes for the *A. annua* reference, but no annotation metadata for the NCBI *A. argyi* candidates; the validated literature assembly remains an external NGDC/CNCB input. A cross-species copy-number result is therefore not reported here until a matched *A. argyi* annotation is archived and checksummed.
+
 ## 6. Antiparasitic evidence
 
 Published essential-oil studies provide useful phenotype anchors. *A. annua* leaf oil has been tested against *Leishmania donovani* in in-vitro and in-vivo contexts. Oils from *A. campestris* and *A. herba-alba* have been tested against *L. infantum* promastigotes, with apoptosis-like and cell-cycle-associated effects reported. These results support mixture-level activity under the reported experimental conditions. They do not establish a single active terpene, whole-life-cycle efficacy, host safety, or clinical benefit.
