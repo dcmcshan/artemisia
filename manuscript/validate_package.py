@@ -27,6 +27,10 @@ def main():
     registry = json.loads((ROOT / "sources.json").read_text())
     source_ids = {item["id"] for item in registry["sources"]}
     matrix = read_csv("evidence-matrix.csv")
+    antiparasitic = read_csv("antiparasitic-evidence.csv")
+    chemotypes = read_csv("chemotype-table.csv")
+    safety = read_csv("safety-translation.csv")
+    assert all(None not in row for row in matrix + antiparasitic + chemotypes + safety)
     matrix_missing = []
     for row in matrix:
         for source_id in row["source_id"].split("; "):
@@ -37,13 +41,15 @@ def main():
     assert screening["records"] == len(read_csv("screening-abstracts.csv")) == 1387
     assert screening["abstracts_retrieved"] + screening["no_abstract"] == screening["records"]
     assert triage["manual_status_for_all_records"] == "pending_manual_review"
-    assert len(matrix) == 29 and not matrix_missing
-    assert len(re.findall(r"^@", (ROOT / "references.bib").read_text(), re.MULTILINE)) == 38
+    bibliography_entries = len(re.findall(r"^@", (ROOT / "references.bib").read_text(), re.MULTILINE))
+    assert len(matrix) == 31 and len(antiparasitic) == 12 and len(chemotypes) == 7 and len(safety) == 4 and not matrix_missing
+    assert bibliography_entries == 40
     result = {
         "validated": True,
         "source_count": len(source_ids),
         "evidence_matrix_records": len(matrix),
-        "bibliography_entries": 38,
+        "antiparasitic_records": len(antiparasitic),
+        "bibliography_entries": bibliography_entries,
         "screening_records": screening["records"],
         "abstracts_retrieved": screening["abstracts_retrieved"],
         "records_without_abstract": screening["no_abstract"],

@@ -1,17 +1,18 @@
 {
   "validated": true,
-  "source_count": 38,
-  "evidence_matrix_records": 29,
-  "bibliography_entries": 38,
+  "source_count": 40,
+  "evidence_matrix_records": 31,
+  "antiparasitic_records": 12,
+  "bibliography_entries": 40,
   "screening_records": 1387,
   "abstracts_retrieved": 1323,
   "records_without_abstract": 64,
   "manual_screening_complete": false,
   "referential_integrity": "passed",
   "core_file_sha256": {
-    "article.md": "73d7cf0e855b9c6e702d0aecb2138d2dfad67824a4ebee87c4f6b03fe493fe9f",
-    "sources.json": "fe967c2f49b7bafcfb1cd7a360806f948f70365a21a6cd6d5f6912a6b9eee5b6",
-    "evidence-matrix.csv": "151ea1b3b404ab59e2fd3a1bddabd1891ff1c7169d1a4439259fa60f849ece38",
-    "references.bib": "2c2006c435e8f5f13f3841c972af2f89b7e0b87de25c3d3553305c38ad64a161"
+    "article.md": "120d0cfa270d82cf3103f2a010731c561cf93406fd0c25ae97e88f7efb1b10b2",
+    "sources.json": "76b8268044d1d25202654eebd6699894cf1e5c2089196403f71d9bf1aaafe076",
+    "evidence-matrix.csv": "c1762512f6781b5b100a524caf0a6df2198bb395340218a3235f4d1798060403",
+    "references.bib": "7533375415af3d9489c5b224ea4b830ebdeb999f8a9b302bb259b06ff8ca3051"
   }
 }
