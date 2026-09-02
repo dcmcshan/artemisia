@@ -55,8 +55,8 @@ def main():
     assert screening["abstracts_retrieved"] + screening["no_abstract"] == screening["records"]
     assert triage["manual_status_for_all_records"] == "pending_manual_review"
     bibliography_entries = len(re.findall(r"^@", (ROOT / "references.bib").read_text(), re.MULTILINE))
-    assert len(matrix) == 417 and len(antiparasitic) == 97 and len(interactions) == 16 and len(chemotypes) == 10 and len(safety) == 18 and len(manual) == 595 and len({row['pmid'] for row in manual}) == len(manual) and len(supplementary) == 85 and len(claims) == 220 and not matrix_missing
-    assert bibliography_entries == len(set(re.findall(r"^@\w+\{([^,]+)", (ROOT / "references.bib").read_text(), re.MULTILINE))) == 414
+    assert len(matrix) == 422 and len(antiparasitic) == 97 and len(interactions) == 16 and len(chemotypes) == 10 and len(safety) == 18 and len(manual) == 600 and len({row['pmid'] for row in manual}) == len(manual) and len(supplementary) == 90 and len(claims) == 225 and not matrix_missing
+    assert bibliography_entries == len(set(re.findall(r"^@\w+\{([^,]+)", (ROOT / "references.bib").read_text(), re.MULTILINE))) == 419
     result = {
         "validated": True,
         "source_count": len(source_ids),
