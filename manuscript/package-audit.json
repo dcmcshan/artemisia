@@ -3,7 +3,7 @@
   "source_count": 66,
   "evidence_matrix_records": 60,
   "antiparasitic_records": 14,
-  "manual_screening_decisions": 315,
+  "manual_screening_decisions": 325,
   "supplementary_compound_specimen_records": 25,
   "claim_audit_records": 12,
   "bibliography_entries": 66,
@@ -13,7 +13,7 @@
   "manual_screening_complete": false,
   "referential_integrity": "passed",
   "core_file_sha256": {
-    "article.md": "33b75c1b773efde4872cc38bb66994f521da92f42a997b503759a6330dda7f58",
+    "article.md": "94f804e53165237f043b0affde9e39cc70a1ab156f7e0c965a566bc5bcd59f3d",
     "sources.json": "7d87504b9d9dc965bc59574d526353d9d6ede8a9f18a9241c3d78d547c0feb8d",
     "evidence-matrix.csv": "1ebc1877e6aad50af41e8c05b3e779d8c96b0dc20ad4b397a6d96b6844cc236b",
     "references.bib": "6a7548793f3e955eb59aae29401f02ca9fb177560d6f5f0354674b5ada8ed485"
