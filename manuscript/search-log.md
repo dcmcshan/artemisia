@@ -28,6 +28,8 @@ A focused manual-screening follow-up added three already-registered central reco
 
 A subsequent targeted search added one primary poultry helminth study of *A. herba-alba* and *A. judaica* extracts against *Ascaridia galli*, with associated camphor docking hypotheses for ATP synthase and glutathione transferase. It was manually included as comparative helminth evidence, while the crude-extract, species, poultry-model, and computational-target boundaries were retained. The bounded screening tranche now contains 342 decisions; 1,051 records remain pending in the archived queue, because six manually screened current-literature records were outside it. This remains an open living-review queue.
 
+The malaria-focused promotion pass also registered Cai et al. (PMID 38135228), a primary comparison of equivalent-artemisinin ethyl-acetate and petroleum-ether extracts with isolated arteannuin B and artemisinic acid. Its murine efficacy, rat pharmacokinetic, sesquiterpene-composition, and lack-of-in-vitro-enhancement boundaries were added to the evidence and claim audits. The current package contains 156 registered sources, 141 source-linked matrix records, 31 antiparasitic records, and 43 audited claims; exhaustive screening and full-text eligibility remain open.
+
 ## Core query families
 
 1. `Artemisia AND (terpene OR terpenoid OR essential oil OR chemotype)`
