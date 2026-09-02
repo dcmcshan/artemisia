@@ -150,6 +150,12 @@ We propose four hypotheses: (1) WGD- and lineage-specific TPS retention predicts
 
 Each observation should be stored as a specimen-level record with a stable taxon identifier, voucher or accession, tissue, developmental stage, locality and collection date, preparation, extraction yield, analytical platform, retention-index or spectral confirmation, compound identity confidence, abundance units, and assay metadata. A quantitative synthesis should not pool normalized peak percentages with absolute concentrations, purified compounds with oils, or promastigote-only endpoints with intracellular or in-vivo endpoints. This design makes heterogeneity a modeled variable rather than an unexplained nuisance.
 
+### 8.2 Evidence-audit status of this review
+
+The article’s auditable evidence is distributed across four linked layers. `sources.json` is the source registry; `evidence-matrix.csv` contains 44 source-linked records spanning chemistry, pathway biology, genomes, chemotypes, and parasite assays; `antiparasitic-evidence.csv` retains preparation, parasite-stage, dose, endpoint, and host-control fields; and `claim-audit.csv` maps 12 central article claims to source identifiers and permitted inference boundaries. The package also archives 151 bounded title/abstract screening decisions from a 1,387-record priority queue. These counts describe the current versioned evidence state, not a completed systematic-review denominator.
+
+The audit therefore supports a source-traceable synthesis framework but does not justify calling the review exhaustive. Manual screening, full-text eligibility assessment, quantitative harmonization, and species-tree-aware orthology remain open. Claims based on the 44-record matrix are source-linked and scope-qualified; claims based only on the unscreened queue are not used as findings. The exact package version, validation output, and SHA-256 manifest are stored in the Terpedia KB snapshot.
+
 ## 9. Conclusions
 
 *Artemisia* terpene biology is best understood as a structured interaction between evolutionary history, gene-family innovation, tissue compartmentalization, ecological context, and analytical method. A publishable comparative review must therefore preserve specimen-level provenance and separate observed chemistry, direct enzyme evidence, annotation-supported hypotheses, mixture-level phenotypes, and unestablished claims. The Terpedia-linked dataset and protocol provide the basis for expanding this draft into a fully screened, quantitatively harmonized review.
