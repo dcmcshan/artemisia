@@ -65,5 +65,9 @@
     ,{"id":"absinthium-lithuania-delt",
       "title":"Analysis of essential oils of Artemisia absinthium L. from Lithuania by CC, GC(RI), GC-MS and 13C NMR",
       "url":"https://pubmed.ncbi.nlm.nih.gov/19768995/","pmid":"19768995","evidence_class":"primary_multi_platform_chemistry"}
+    ,{"id":"cina-bioassay-sesquiterpene","title":"Bio-guided isolation of a new sesquiterpene from Artemisia cina with anthelmintic activity against Haemonchus contortus L3 infective larvae","url":"https://pubmed.ncbi.nlm.nih.gov/38865346/","doi":"10.1371/journal.pone.0305155","pmid":"38865346","evidence_class":"primary_isolation_and_helminth_assay"}
+    ,{"id":"brevifolia-helminth-assay","title":"Phytochemical characterization and insight into the in vitro anthelmintic activity of Artemisia brevifolia Wall ex Dc. against the different life stages of the gastrointestinal nematode of sheep","url":"https://pubmed.ncbi.nlm.nih.gov/41016651/","doi":"10.1016/j.exppara.2025.109030","pmid":"41016651","evidence_class":"primary_chemistry_and_helminth_assay"}
+    ,{"id":"arborescens-antileishmanial-dereplication","title":"HetCA/STOCSY-Guided Dereplication of Artemisia arborescens Reveals Furofuran Lignans with Antileishmanial Effects","url":"https://pubmed.ncbi.nlm.nih.gov/42557236/","doi":"10.1002/cmdc.70421","pmid":"42557236","evidence_class":"primary_dereplication_and_parasite_assay"}
+    ,{"id":"argyi-seven-oil-vector","title":"Repellency and insecticidal activity of seven Mugwort (Artemisia argyi) essential oils against the malaria vector Anopheles sinensis","url":"https://pubmed.ncbi.nlm.nih.gov/35351963/","doi":"10.1038/s41598-022-09190-0","pmid":"35351963","evidence_class":"primary_multi_population_vector_assay"}
   ]
 }
