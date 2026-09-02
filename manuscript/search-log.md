@@ -20,6 +20,10 @@ A targeted follow-on expansion added four primary records: a matched *A. annua* 
 A current-literature update added four high-value records: a 2025 *A. afra/A. annua* malaria metabolomics comparison, the AaDHAADH alternative artemisinin-biosynthesis route, a 2026 *A. tournefortiana* artemisinin survey, and a 2026 low-phosphorus/*AaTPS3* regulation study in *A. argyi*. The current package therefore contains 144 registered sources and 129 source-linked matrix records; these additions are source-linked but do not close the still-open manual screening queue.
 The four current-literature records were also added to the bounded screening log where not already represented, increasing the manual decision tranche to 328 records; 1,059 priority records remain pending.
 
+## Comparative-genomics and chemistry expansion pass (2026-09-02)
+
+Six additional high-value records were added after targeted PubMed/PMC verification: a second *A. argyi* reference genome with MeJA-responsive terpenoid transcriptomics; a controlled five-species *Artemisia* chemistry and artemisinin-expression comparison; *A. annua* nootkatone engineering; functional *A. argyi* beta-caryophyllene-synthase engineering in yeast; a review of artemisinin biotechnology; and isolation of ten germacrane-type sesquiterpene lactones from *A. myriantha*. The package now contains 150 registered sources, 135 source-linked evidence records, and 334 bounded manual screening decisions, with the priority queue still open. Engineered production, expression association, and anticancer cytotoxicity are retained as distinct evidence classes and are not recoded as native flux or antiparasitic efficacy.
+
 ## Core query families
 
 1. `Artemisia AND (terpene OR terpenoid OR essential oil OR chemotype)`
