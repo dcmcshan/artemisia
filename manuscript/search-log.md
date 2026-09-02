@@ -12,6 +12,10 @@ This is the pre-registration-style search record for the review. The sources cur
 - Abstract retrieval: `fetch_screening_abstracts.py` fetches PubMed XML for the 1,387 title-priority candidates into `screening-abstracts.csv`; missing abstracts are retained explicitly and all records remain pending manual screening.
 - Abstract triage: `triage_screening_abstracts.py` applies fixed keyword rules to title plus abstract and emits domain labels and a priority score; every record remains `pending_manual_review`.
 
+## Class-balanced expansion pass (2026-09-01)
+
+Forty-seven additional primary studies already carrying manual inclusion decisions were promoted into the source registry and bibliography. Selection was balanced across enzyme characterization, artemisinin-pathway intermediates, transcriptional and tissue regulation, population/seasonal chemotypes, post-harvest effects, *A. argyi* tissue/temporal/single-cell multi-omics, defined-compound parasite assays, oils, extracts, whole-leaf preparations, and safety chemistry. PMID, DOI, title, author, journal, year, volume, issue, page, and PMC metadata were verified against Europe PMC core records; current primary-study discovery was cross-checked against PubMed. This pass increased the registered bibliography from 76 to 123 sources and the source-linked evidence matrix from 60 to 107 records. It is a documented prioritization pass, not completion of the 1,387-record screening queue.
+
 ## Core query families
 
 1. `Artemisia AND (terpene OR terpenoid OR essential oil OR chemotype)`
