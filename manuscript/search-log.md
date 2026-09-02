@@ -34,6 +34,8 @@ A further full-text eligibility and extraction pass promoted three pending prima
 
 The completed two-proteome OrthoFinder run was added as a computational method/result record, with the OrthoFinder 2019 method citation registered separately from the 144 biological evidence-matrix records. The run assigned 111,235 of 129,761 proteins to 28,696 orthogroups and produced gene trees, duplication calls, and a two-tip species tree; the annotation-anchored pathway mapping is retained as a candidate-family result with explicit function-transfer and two-species boundaries. The package now contains 160 registered sources; broad multi-species orthology and exhaustive screening remain open.
 
+A focused manual-screening tranche then promoted twelve high-priority records: foundational artemisinin regulation and mechanism reviews, microbial terpenoid transformation, *A. vulgaris* chemotype/toxicity variation, sesquiterpene-enzyme promiscuity, *A. herba-alba*/*H. contortus* assays, abiotic-stress regulation, wormwood STL biotransformation, and *A. argyi* volatile pharmacokinetics. The package now contains 172 registered sources, 156 source-linked matrix records, 34 antiparasitic records, and 357 bounded manual decisions; 1,032 of the 1,387-record priority queue remain pending. These additions expand coverage without changing the review’s non-exhaustive status or mixture-to-constituent inference boundaries.
+
 ## Core query families
 
 1. `Artemisia AND (terpene OR terpenoid OR essential oil OR chemotype)`
