@@ -70,6 +70,8 @@ A comparative-evolution expansion added three *A. tridentata* genome studies: a 
 
 ## Screening rules
 
+The latest wormwood-focused tranche promoted three records already present in the discovery queue: a caprine *Eimeria* comparison, a four-stage quantitative alpha/beta-thujone and bitter-compound method, and a mixture-aware toxicology study of thujone-containing oils. The first is a negative/limited veterinary translation control; the second supplies the harvest-stage chemical standardization needed to interpret vermifuge assays; and the third prevents thujone-only safety attribution. The package now contains 260 registered sources, 246 source-linked matrix records, 62 antiparasitic records, 13 safety/translation records, 16 parasite-protein interaction records, 435 bounded manual decisions, and 39 compound/specimen records; 952 of the 1,387-record priority queue remain pending. These additions strengthen the wormwood section without converting crude extract or oil phenotypes into constituent-specific or human therapeutic claims.
+
 Include primary analytical, biochemical, genomic, transcriptomic, metabolomic, parasite-assay, toxicology, taxonomic, and authoritative regulatory sources. Include reviews for discovery, historical framing, and synthesis, while retaining the primary source for quantitative or causal claims whenever available. Exclude records that cannot be assigned a taxon or preparation context, but retain them in a rejected-record log with the reason.
 
 ## Extraction fields
