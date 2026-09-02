@@ -8,9 +8,9 @@ The retrieval and screening counts are represented in `review-flow.md`. The 1,38
 
 Abstract-level keyword triage is archived in `screening-abstract-triage.csv`. It is a workload-ordering aid only: domain matches and priority scores cannot independently establish eligibility, study quality, or inclusion.
 
-The archived manual title/abstract decisions are stored in `manual-screening-decisions.csv`. They contain 613 high-priority decisions with bounded evidence scopes and rationale; 599 of those decisions correspond to records in the 1,387-record priority triage queue. The remaining 788 queue records are still pending manual review; 14 manually screened records are outside that archived queue. This log is not an exhaustive inclusion set.
+The archived manual title/abstract decisions are stored in `manual-screening-decisions.csv`. They contain 618 high-priority decisions with bounded evidence scopes and rationale; 604 of those decisions correspond to records in the 1,387-record priority triage queue. The remaining 783 queue records are still pending manual review; 14 manually screened records are outside that archived queue. This log is not an exhaustive inclusion set.
 
-The initial supplementary compound-by-specimen table is archived in `supplementary-compound-specimen.csv`. It is a source-backed extraction of 105 representative records, not a complete genus-wide compound inventory; non-terpene co-occurring volatiles are labeled separately.
+The initial supplementary compound-by-specimen table is archived in `supplementary-compound-specimen.csv`. It is a source-backed extraction of 110 representative records, not a complete genus-wide compound inventory; non-terpene co-occurring volatiles are labeled separately.
 
 ## Review questions
 
