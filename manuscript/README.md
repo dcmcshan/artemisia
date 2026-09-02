@@ -18,6 +18,8 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `chemotype-table.csv` — representative chemistry records with specimen/context qualifiers.
 - `supplementary-compound-specimen.csv` — 25 specimen-/tissue-/preparation-level compound records, including explicit non-terpene comparators.
 - `antiparasitic-evidence.csv` — quantitative, stage-aware parasite/vector assay records with host-control and translation boundaries.
+- `parasite-protein-interactions.csv` — evidence-tiered terpene/terpenoid–parasite-protein interaction map, including direct target evidence, enzyme assays, docking hypotheses, and explicit target gaps.
+- `protein-interaction-protocol.md` — extraction rules, evidence ladder, provenance boundaries, and next-experiment requirements for the interaction map.
 - `safety-translation.csv` — preparation-specific safety and clinical-translation boundaries.
 - `references.bib` — citation-ready bibliography for manuscript tooling.
 - `search-log.md` — reproducible literature-search and screening plan.

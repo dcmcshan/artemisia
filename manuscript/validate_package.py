@@ -28,18 +28,19 @@ def main():
     source_ids = {item["id"] for item in registry["sources"]}
     matrix = read_csv("evidence-matrix.csv")
     antiparasitic = read_csv("antiparasitic-evidence.csv")
+    interactions = read_csv("parasite-protein-interactions.csv")
     chemotypes = read_csv("chemotype-table.csv")
     safety = read_csv("safety-translation.csv")
     supplementary = read_csv("supplementary-compound-specimen.csv")
     manual = read_csv("manual-screening-decisions.csv")
     claims = read_csv("claim-audit.csv")
-    assert all(None not in row for row in matrix + antiparasitic + chemotypes + safety + manual + supplementary + claims)
+    assert all(None not in row for row in matrix + antiparasitic + interactions + chemotypes + safety + manual + supplementary + claims)
     matrix_missing = []
     for row in matrix:
         for source_id in row["source_id"].split("; "):
             if source_id not in source_ids:
                 matrix_missing.append([row["record_id"], source_id])
-    for table in (antiparasitic, chemotypes, supplementary):
+    for table in (antiparasitic, interactions, chemotypes, supplementary):
         for row in table:
             for source_id in row["source_id"].split("; "):
                 if source_id not in source_ids:
@@ -54,13 +55,14 @@ def main():
     assert screening["abstracts_retrieved"] + screening["no_abstract"] == screening["records"]
     assert triage["manual_status_for_all_records"] == "pending_manual_review"
     bibliography_entries = len(re.findall(r"^@", (ROOT / "references.bib").read_text(), re.MULTILINE))
-    assert len(matrix) == 60 and len(antiparasitic) == 14 and len(chemotypes) == 10 and len(safety) == 4 and len(manual) == 325 and len({row['pmid'] for row in manual}) == len(manual) and len(supplementary) == 25 and len(claims) == 12 and not matrix_missing
-    assert bibliography_entries == 66
+    assert len(matrix) == 60 and len(antiparasitic) == 14 and len(interactions) == 10 and len(chemotypes) == 10 and len(safety) == 4 and len(manual) == 325 and len({row['pmid'] for row in manual}) == len(manual) and len(supplementary) == 25 and len(claims) == 12 and not matrix_missing
+    assert bibliography_entries == 73
     result = {
         "validated": True,
         "source_count": len(source_ids),
         "evidence_matrix_records": len(matrix),
         "antiparasitic_records": len(antiparasitic),
+        "parasite_protein_interaction_records": len(interactions),
         "manual_screening_decisions": len(manual),
         "supplementary_compound_specimen_records": len(supplementary),
         "claim_audit_records": len(claims),
