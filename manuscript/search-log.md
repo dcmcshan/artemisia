@@ -16,6 +16,8 @@ This is the pre-registration-style search record for the review. The sources cur
 
 Fifty-three additional primary studies already carrying manual inclusion decisions were promoted into the source registry and bibliography. Selection was balanced across enzyme characterization, artemisinin-pathway intermediates, transcriptional and tissue regulation, population/seasonal chemotypes, post-harvest effects, *A. argyi* tissue/temporal/single-cell multi-omics, defined-compound parasite assays, oils, extracts, whole-leaf preparations, wormwood anthelmintic studies, malaria resistance, and safety chemistry. PMID, DOI, title, author, journal, year, volume, issue, page, and PMC metadata were verified against Europe PMC core records; current primary-study discovery was cross-checked against PubMed. This pass increased the registered bibliography from 76 to 129 sources and the source-linked evidence matrix from 60 to 113 records. It is a documented prioritization pass, not completion of the 1,387-record screening queue.
 
+A targeted follow-on expansion added four primary records: a matched *A. annua* mutant whole-leaf malaria experiment, a controlled LED-spectrum chemotype/antiplasmodial experiment, an *A. absinthium*/*Schistosoma mansoni* fractionation study, and a formulated wormwood-oil/*Leishmania amazonensis* study. The current package therefore contains 133 registered sources and 117 source-linked matrix records.
+
 ## Core query families
 
 1. `Artemisia AND (terpene OR terpenoid OR essential oil OR chemotype)`

@@ -11,9 +11,9 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 ## Package
 
 - `article.md` — current journal-style manuscript draft.
-- `artemisia-terpene-review-draft.pdf` — visually verified 10-page rendering of the pre-expansion manuscript; regeneration from the expanded 129-source article is pending because the PDF runtime's required artifact marker was unavailable.
+- `artemisia-terpene-review-draft.pdf` — visually verified 10-page rendering of the pre-expansion manuscript; regeneration from the expanded 133-source article is pending because the PDF runtime's required artifact marker was unavailable.
 - `review-protocol.md` — inclusion, extraction, quality-assessment, and synthesis protocol.
-- `evidence-matrix.csv` — 113-record specimen-, compound-, pathway-, genome-, and assay-level evidence table.
+- `evidence-matrix.csv` — 117-record specimen-, compound-, pathway-, genome-, and assay-level evidence table.
 - `claim-audit.csv` — claim-level traceability table linking central manuscript statements to source IDs and permitted inference boundaries.
 - `sources.json` — stable source registry with identifiers, URLs, evidence class, and retrieval date.
 - `chemotype-table.csv` — representative chemistry records with specimen/context qualifiers.
