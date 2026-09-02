@@ -6,7 +6,7 @@
   "parasite_protein_interaction_records": 11,
   "manual_screening_decisions": 325,
   "supplementary_compound_specimen_records": 39,
-  "claim_audit_records": 22,
+  "claim_audit_records": 23,
   "bibliography_entries": 133,
   "screening_records": 1387,
   "abstracts_retrieved": 1323,
@@ -14,7 +14,7 @@
   "manual_screening_complete": false,
   "referential_integrity": "passed",
   "core_file_sha256": {
-    "article.md": "31f8a4dc9af523a315a30872433a7bbc61819eae4cec09bc056c5f3554e83722",
+    "article.md": "16503f5bbb16f65660c1361d473ef512bdf171263453a91209a8a8502c7df820",
     "sources.json": "ebe14e5601391dc1573aac6fe38fc325531583f0eb52e3cf80366cb7593c3c24",
     "evidence-matrix.csv": "65fe6a15b97d452ef7902978f42e0fb41c69cfc89561bc2be378d713f3d7801f",
     "references.bib": "1975b732c4cd8b359bfae6717bb162b64365fbbd40e5ac2b20581e19d3788b80"
