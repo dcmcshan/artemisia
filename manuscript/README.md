@@ -1,6 +1,6 @@
 # Journal article package
 
-This directory is the publication workspace for the *Artemisia* terpene review. It is stored in the `artemesia` repository and uses the Terpedia KB study as its evidence and provenance source.
+This directory is the publication workspace for the *Artemisia* terpene review. It is stored in the `artemisia` repository and uses the Terpedia KB study as its evidence and provenance source.
 
 ## Planned article
 

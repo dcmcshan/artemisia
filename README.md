@@ -1,8 +1,8 @@
-# Artemesia
+# Artemisia
 
 An open research project for documenting *Artemisia* species, their taxonomy, distribution, ecology, and traditional or contemporary uses.
 
-> Note: the repository name follows the requested spelling, `artemesia`; the plant genus is conventionally spelled *Artemisia*.
+The repository uses the conventional spelling `artemisia`, matching the plant genus *Artemisia*.
 
 ## Project scope
 

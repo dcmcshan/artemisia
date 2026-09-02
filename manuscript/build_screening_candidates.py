@@ -20,7 +20,7 @@ ESUMMARY = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi"
 ROOT = Path(__file__).resolve().parent
 
 def get_json(url, params):
-    request = urllib.request.Request(url + "?" + urllib.parse.urlencode(params), headers={"User-Agent": "artemesia-review/0.1"})
+    request = urllib.request.Request(url + "?" + urllib.parse.urlencode(params), headers={"User-Agent": "artemisia-review/0.1"})
     with urllib.request.urlopen(request, timeout=60) as response:
         return json.load(response)
 

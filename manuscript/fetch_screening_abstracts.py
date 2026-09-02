@@ -22,7 +22,7 @@ def fetch_xml(pmids):
     params = {"db": "pubmed", "id": ",".join(pmids), "retmode": "xml"}
     request = urllib.request.Request(
         EFETCH + "?" + urllib.parse.urlencode(params),
-        headers={"User-Agent": "artemesia-review/0.1"},
+        headers={"User-Agent": "artemisia-review/0.1"},
     )
     with urllib.request.urlopen(request, timeout=90) as response:
         return ET.fromstring(response.read())
