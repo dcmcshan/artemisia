@@ -10,6 +10,8 @@ Abstract-level keyword triage is archived in `screening-abstract-triage.csv`. It
 
 The first manual title/abstract tranche is archived in `manual-screening-decisions.csv`. It contains 72 high-priority decisions with bounded evidence scopes and rationale. The remaining queue is still pending manual review; this tranche is not an exhaustive inclusion set.
 
+The initial supplementary compound-by-specimen table is archived in `supplementary-compound-specimen.csv`. It is a source-backed extraction of 25 representative records, not a complete genus-wide compound inventory; non-terpene co-occurring volatiles are labeled separately.
+
 ## Review questions
 
 1. Which mono-, sesqui-, diterpene, triterpene, and sesquiterpene-lactone classes are reported across *Artemisia*?

@@ -30,27 +30,34 @@ def main():
     antiparasitic = read_csv("antiparasitic-evidence.csv")
     chemotypes = read_csv("chemotype-table.csv")
     safety = read_csv("safety-translation.csv")
+    supplementary = read_csv("supplementary-compound-specimen.csv")
     manual = read_csv("manual-screening-decisions.csv")
-    assert all(None not in row for row in matrix + antiparasitic + chemotypes + safety + manual)
+    assert all(None not in row for row in matrix + antiparasitic + chemotypes + safety + manual + supplementary)
     matrix_missing = []
     for row in matrix:
         for source_id in row["source_id"].split("; "):
             if source_id not in source_ids:
                 matrix_missing.append([row["record_id"], source_id])
+    for table in (antiparasitic, chemotypes, supplementary):
+        for row in table:
+            for source_id in row["source_id"].split("; "):
+                if source_id not in source_ids:
+                    matrix_missing.append([row["record_id"], source_id])
     screening = json.loads((ROOT / "screening-abstract-summary.json").read_text())
     triage = json.loads((ROOT / "screening-abstract-triage-summary.json").read_text())
     assert screening["records"] == len(read_csv("screening-abstracts.csv")) == 1387
     assert screening["abstracts_retrieved"] + screening["no_abstract"] == screening["records"]
     assert triage["manual_status_for_all_records"] == "pending_manual_review"
     bibliography_entries = len(re.findall(r"^@", (ROOT / "references.bib").read_text(), re.MULTILINE))
-    assert len(matrix) == 38 and len(antiparasitic) == 14 and len(chemotypes) == 10 and len(safety) == 4 and len(manual) == 72 and not matrix_missing
-    assert bibliography_entries == 47
+    assert len(matrix) == 38 and len(antiparasitic) == 14 and len(chemotypes) == 10 and len(safety) == 4 and len(manual) == 72 and len(supplementary) == 25 and not matrix_missing
+    assert bibliography_entries == 50
     result = {
         "validated": True,
         "source_count": len(source_ids),
         "evidence_matrix_records": len(matrix),
         "antiparasitic_records": len(antiparasitic),
         "manual_screening_decisions": len(manual),
+        "supplementary_compound_specimen_records": len(supplementary),
         "bibliography_entries": bibliography_entries,
         "screening_records": screening["records"],
         "abstracts_retrieved": screening["abstracts_retrieved"],
