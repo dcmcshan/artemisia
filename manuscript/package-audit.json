@@ -14,7 +14,7 @@
   "manual_screening_complete": false,
   "referential_integrity": "passed",
   "core_file_sha256": {
-    "article.md": "c7e3b5866dc9fe99edec1d99aec0a288e4c59d5ad1dc6958430e98909bd1e725",
+    "article.md": "2e576982e02464796b5056de6afc586cd82ca84ed6b1dbf460cd8071031b8a05",
     "sources.json": "e6e80db609809e7a796a298e5c9764d75e30c9889ebe19ba3d99ed293421a4ce",
     "evidence-matrix.csv": "e57b9989cc77b836b088e6deac0965e36b21a7720e119899515c0739f8f62700",
     "references.bib": "3cc7d5876813bbb496ffd84bc428de22738e2a065555ea2574bb458b6a391ab5"
