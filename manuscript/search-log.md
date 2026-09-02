@@ -30,6 +30,8 @@ A subsequent targeted search added one primary poultry helminth study of *A. her
 
 The malaria-focused promotion pass also registered Cai et al. (PMID 38135228), a primary comparison of equivalent-artemisinin ethyl-acetate and petroleum-ether extracts with isolated arteannuin B and artemisinic acid. Its murine efficacy, rat pharmacokinetic, sesquiterpene-composition, and lack-of-in-vitro-enhancement boundaries were added to the evidence and claim audits. The current package contains 156 registered sources, 141 source-linked matrix records, 31 antiparasitic records, and 43 audited claims; exhaustive screening and full-text eligibility remain open.
 
+A further full-text eligibility and extraction pass promoted three pending primary records: a validated *A. absinthium* STL analytical method (PMID 20886883), the *A. annua*/*H. contortus* sheep trial (PMID 24802864), and the *A. brevifolia* ovine anthelmintic dose-response study (PMID 15234763). The first strengthens preparation-aware wormwood lactone measurement; the second is retained as a negative/limited translation control; the third adds a comparative veterinary dose-response anchor. The package now contains 159 registered sources, 144 source-linked matrix records, 33 antiparasitic records, and 46 audited claims; 345 high-priority decisions are archived and 1,048 of the 1,387-record queue remain pending.
+
 ## Core query families
 
 1. `Artemisia AND (terpene OR terpenoid OR essential oil OR chemotype)`
