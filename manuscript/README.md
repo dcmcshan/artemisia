@@ -12,9 +12,9 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 
 - `article.md` — current journal-style manuscript draft.
 - `figures/figure-1-pathway.mmd`, `figures/figure-2-evidence-ladder.mmd`, and the paired SVGs — versioned figure sources and generated vector outputs corresponding to the two Mermaid figures in the manuscript.
-- `artemisia-terpene-review-draft.pdf` — visually verified rendering of the current 153-source manuscript, including the focused malaria/wormwood evidence table and both regenerated figures.
+- `artemisia-terpene-review-draft.pdf` — visually verified rendering of the current 154-source manuscript, including the focused malaria/wormwood evidence table and both regenerated figures.
 - `review-protocol.md` — inclusion, extraction, quality-assessment, and synthesis protocol.
-- `evidence-matrix.csv` — 138-record specimen-, compound-, pathway-, genome-, and assay-level evidence table.
+- `evidence-matrix.csv` — 139-record specimen-, compound-, pathway-, genome-, and assay-level evidence table.
 - `claim-audit.csv` — claim-level traceability table linking central manuscript statements to source IDs and permitted inference boundaries.
 - `sources.json` — stable source registry with identifiers, URLs, evidence class, and retrieval date.
 - `chemotype-table.csv` — representative chemistry records with specimen/context qualifiers.
@@ -33,7 +33,7 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `screening-abstract-summary.json` and `screening-abstracts.csv` — abstract retrieval outputs; records remain pending manual screening.
 - `triage_screening_abstracts.py` — transparent keyword-domain triage over the abstract queue.
 - `screening-abstract-triage-summary.json` and `screening-abstract-triage.csv` — abstract-level ranking outputs; all records remain pending manual review.
-- `manual-screening-decisions.csv` — 340-record manual title/abstract screening log with bounded decisions and rationale; the full queue remains open.
+- `manual-screening-decisions.csv` — 341-record manual title/abstract screening log with bounded decisions and rationale; the full queue remains open.
 - `package-audit.json` and `validate_package.py` — machine-readable package integrity audit and its reproducible validator.
 - `review-flow.md` — frozen retrieval counts and living-review flow diagram.
 - `screened-seed-set.csv` — auditable screening decisions for the current seed sources.
