@@ -58,5 +58,12 @@
     ,{"id":"terpene-synthase-epistasis","title":"Sparse Epistatic Patterns in the Evolution of Terpene Synthases","url":"https://pubmed.ncbi.nlm.nih.gov/32119077/","doi":"10.1093/molbev/msaa052","pmid":"32119077","evidence_class":"primary_sequence_function_evolution"}
     ,{"id":"absinthium-mosquito-larvicide","title":"Artemisia absinthium-borne compounds as novel larvicides: effectiveness against six mosquito vectors and acute toxicity on non-target aquatic organisms","url":"https://pubmed.ncbi.nlm.nih.gov/27630101/","pmid":"27630101","evidence_class":"primary_vector_assay_and_safety"}
     ,{"id":"absinthium-trypanocidal-oil","title":"Trypanocidal, trichomonacidal and cytotoxic components of cultivated Artemisia absinthium Linnaeus (Asteraceae) essential oil","url":"https://pubmed.ncbi.nlm.nih.gov/26107187/","doi":"10.1590/0074-02760140129","pmid":"26107187","evidence_class":"primary_chemistry_and_parasite_assay"}
+    ,{"id":"annua-ads-first-step","title":"Amorpha-4,11-diene synthase catalyses the first probable step in artemisinin biosynthesis","url":"https://pubmed.ncbi.nlm.nih.gov/10626375/","pmid":"10626375","evidence_class":"primary_enzyme_biosynthesis"}
+    ,{"id":"annua-trichome-dynamics","title":"Trichome dynamics and artemisinin accumulation during development and senescence of Artemisia annua leaves","url":"https://pubmed.ncbi.nlm.nih.gov/16557475/","pmid":"16557475","evidence_class":"primary_developmental_chemistry"}
+    ,{"id":"annua-dead-green-leaves","title":"Artemisinin and sesquiterpene precursors in dead and green leaves of Artemisia annua L. crops","url":"https://pubmed.ncbi.nlm.nih.gov/17628838/","pmid":"17628838","evidence_class":"primary_field_phenology"}
+    ,{"id":"artemisia-canadian-oils","title":"Screening of chemical composition, antimicrobial and antioxidant activities of Artemisia essential oils","url":"https://pubmed.ncbi.nlm.nih.gov/18417176/","doi":"10.1016/j.phytochem.2008.02.014","pmid":"18417176","evidence_class":"primary_multi_species_chemotype"}
+    ,{"id":"absinthium-lithuania-delt",
+      "title":"Analysis of essential oils of Artemisia absinthium L. from Lithuania by CC, GC(RI), GC-MS and 13C NMR",
+      "url":"https://pubmed.ncbi.nlm.nih.gov/19768995/","pmid":"19768995","evidence_class":"primary_multi_platform_chemistry"}
   ]
 }
