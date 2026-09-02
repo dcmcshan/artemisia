@@ -52,6 +52,8 @@ A class-balance chemistry pass added four primary structure-confirmed sesquiterp
 
 A comparative-genomics/class-balance pass added the integrated 14-tissue *A. annua* terpene landscape and an earlier chromosome-scale *A. argyi* genome with reported TPS expansion and tandem clusters. The package now contains 242 registered sources, 226 source-linked matrix records, 58 antiparasitic records, 11 safety/translation records, and 424 bounded manual decisions; 963 of the 1,387-record priority queue remain pending. Assembly, ploidy, annotation, and function-transfer boundaries are retained explicitly.
 
+A C20/C30 and santonin expansion pass promoted five new manual decisions and incorporated eight new source records, alongside one already-registered triterpene study: a sequence-function study of terpene-cyclization epistasis; validated santonin quantitation across eight Artemisia taxa; santonin removal from an *A. cina* extract; an *A. annua* oxidosqualene-cyclase survey; and structure-confirmed diterpene/triterpene isolations from *A. sacrorum*, *A. caruifolia*, *A. sphaerocephala*, *A. argyi*, and *A. vulgaris*. The package now contains 250 registered sources, 235 source-linked matrix records, 58 antiparasitic records, 11 safety/translation records, 15 parasite–protein interaction records, 429 bounded manual decisions, and 49 audited claims; 958 of the 1,387-record priority queue remain pending. These additions improve class balance and the historical santonin safety/vermifuge context without converting non-parasitic endpoints or preparation-level pharmacology into terpene-specific efficacy.
+
 ## Core query families
 
 1. `Artemisia AND (terpene OR terpenoid OR essential oil OR chemotype)`
