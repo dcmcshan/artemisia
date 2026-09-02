@@ -50,6 +50,8 @@ A further wormwood-focused screen added two primary extract studies: a 13-plant 
 
 A class-balance chemistry pass added four primary structure-confirmed sesquiterpene-lactone studies: *A. nitrosa*, *A. tridentata* subsp. *tridentata*, *A. vulgaris*, and *A. verlotorum*. These records broaden germacrane, guaianolide, and eudesmanolide coverage and retain associated macrophage/cytotoxicity results as non-parasitic context. The package now contains 240 registered sources, 224 source-linked matrix records, 58 antiparasitic records, 11 safety/translation records, 15 parasite–protein interaction records, and 423 bounded manual decisions; 964 of the 1,387-record priority queue remain pending.
 
+A comparative-genomics/class-balance pass added the integrated 14-tissue *A. annua* terpene landscape and an earlier chromosome-scale *A. argyi* genome with reported TPS expansion and tandem clusters. The package now contains 242 registered sources, 226 source-linked matrix records, 58 antiparasitic records, 11 safety/translation records, and 424 bounded manual decisions; 963 of the 1,387-record priority queue remain pending. Assembly, ploidy, annotation, and function-transfer boundaries are retained explicitly.
+
 ## Core query families
 
 1. `Artemisia AND (terpene OR terpenoid OR essential oil OR chemotype)`
