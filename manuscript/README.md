@@ -12,7 +12,7 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 
 - `article.md` — current journal-style manuscript draft.
 - `review-protocol.md` — inclusion, extraction, quality-assessment, and synthesis protocol.
-- `evidence-matrix.csv` — specimen-, compound-, pathway-, genome-, and assay-level evidence table.
+- `evidence-matrix.csv` — 51-record specimen-, compound-, pathway-, genome-, and assay-level evidence table.
 - `claim-audit.csv` — claim-level traceability table linking central manuscript statements to source IDs and permitted inference boundaries.
 - `sources.json` — stable source registry with identifiers, URLs, evidence class, and retrieval date.
 - `chemotype-table.csv` — representative chemistry records with specimen/context qualifiers.
