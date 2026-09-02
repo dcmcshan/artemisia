@@ -18,6 +18,7 @@ Fifty-three additional primary studies already carrying manual inclusion decisio
 
 A targeted follow-on expansion added four primary records: a matched *A. annua* mutant whole-leaf malaria experiment, a controlled LED-spectrum chemotype/antiplasmodial experiment, an *A. absinthium*/*Schistosoma mansoni* fractionation study, and a formulated wormwood-oil/*Leishmania amazonensis* study. A subsequent update added two malaria matrix/resistance studies and one comparative wormwood-tincture nematode screen. Review-context updates added current STL biosynthesis/regulation/genomics, species-focused phytochemistry/omics, Artemisia antimalarial medicinal chemistry, and a current whole-plant malaria-tea systematic review. The current package therefore contains 140 registered sources and 125 source-linked matrix records.
 A current-literature update added four high-value records: a 2025 *A. afra/A. annua* malaria metabolomics comparison, the AaDHAADH alternative artemisinin-biosynthesis route, a 2026 *A. tournefortiana* artemisinin survey, and a 2026 low-phosphorus/*AaTPS3* regulation study in *A. argyi*. The current package therefore contains 144 registered sources and 129 source-linked matrix records; these additions are source-linked but do not close the still-open manual screening queue.
+The four current-literature records were also added to the bounded screening log where not already represented, increasing the manual decision tranche to 328 records; 1,059 priority records remain pending.
 
 ## Core query families
 
