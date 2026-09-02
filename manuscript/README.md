@@ -13,11 +13,11 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `article.md` — current journal-style manuscript draft.
 - `artemisia-terpene-review-draft.pdf` — visually verified 10-page rendering of the pre-expansion manuscript; regeneration from the expanded 123-source article is pending because the PDF runtime's required artifact marker was unavailable.
 - `review-protocol.md` — inclusion, extraction, quality-assessment, and synthesis protocol.
-- `evidence-matrix.csv` — 107-record specimen-, compound-, pathway-, genome-, and assay-level evidence table.
+- `evidence-matrix.csv` — 113-record specimen-, compound-, pathway-, genome-, and assay-level evidence table.
 - `claim-audit.csv` — claim-level traceability table linking central manuscript statements to source IDs and permitted inference boundaries.
 - `sources.json` — stable source registry with identifiers, URLs, evidence class, and retrieval date.
 - `chemotype-table.csv` — representative chemistry records with specimen/context qualifiers.
-- `supplementary-compound-specimen.csv` — 35 specimen-/tissue-/preparation-level compound records, including explicit non-terpene comparators.
+- `supplementary-compound-specimen.csv` — 39 specimen-/tissue-/preparation-level compound records, including explicit non-terpene comparators.
 - `antiparasitic-evidence.csv` — quantitative, stage-aware parasite/vector assay records with host-control and translation boundaries.
 - `parasite-protein-interactions.csv` — evidence-tiered terpene/terpenoid–parasite-protein interaction map, including direct target evidence, enzyme assays, docking hypotheses, and explicit target gaps.
 - `protein-interaction-protocol.md` — extraction rules, evidence ladder, provenance boundaries, and next-experiment requirements for the interaction map.
