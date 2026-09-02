@@ -26,6 +26,8 @@ Six additional high-value records were added after targeted PubMed/PMC verificat
 
 A focused manual-screening follow-up added three already-registered central records: the comparative *A. argyi* TPS/ADS genomics study, the resistant-*P. falciparum* *A. afra/A. annua* aqueous-extract study, and the *A. annua* diterpene-synthase/trichome perturbation study. The subsequent targeted review added the germacrene-A oxidase evolution, cross-species phenology, murine natural-combination malaria, and malaria-focused metabolite-review records. The bounded screening tranche now contains 341 decisions; 1,051 records remain pending in the archived 1,387-record triage queue, because five manually screened current-literature records were outside that queue. This remains an open living-review queue.
 
+A subsequent targeted search added one primary poultry helminth study of *A. herba-alba* and *A. judaica* extracts against *Ascaridia galli*, with associated camphor docking hypotheses for ATP synthase and glutathione transferase. It was manually included as comparative helminth evidence, while the crude-extract, species, poultry-model, and computational-target boundaries were retained. The bounded screening tranche now contains 342 decisions; 1,051 records remain pending in the archived queue, because six manually screened current-literature records were outside it. This remains an open living-review queue.
+
 ## Core query families
 
 1. `Artemisia AND (terpene OR terpenoid OR essential oil OR chemotype)`
