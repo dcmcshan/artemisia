@@ -34,5 +34,6 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `review-flow.md` — frozen retrieval counts and living-review flow diagram.
 - `screened-seed-set.csv` — auditable screening decisions for the current seed sources.
 - `submission-checklist.md` — journal-readiness and evidence-audit checklist.
+- `journal-targeting.md` — scope-based target-journal recommendation and submission positioning.
 
 Claims are kept at the smallest source-supported unit. Essential-oil mixture activity is not treated as evidence for a single active molecule, and gene presence or expression is not treated as proof of in-vivo flux.

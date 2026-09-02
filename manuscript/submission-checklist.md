@@ -13,6 +13,10 @@
 
 ## Evidence and reporting still required before journal submission
 
+## Target journal
+
+- [ ] Send a presubmission query to *Phytochemistry Reviews* after full-text verification and the comparative-genomics analysis are strengthened; see `journal-targeting.md`.
+
 - [x] Run and archive the initial PubMed database searches and result counts.
 - [x] Archive a high-cap retrieval and cross-query deduplication summary.
 - [x] Generate a reproducible title-priority queue for the 4,765-record deduplicated union (1,387 candidates).
