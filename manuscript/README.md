@@ -12,7 +12,7 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 
 - `article.md` — current journal-style manuscript draft.
 - `figures/figure-1-pathway.mmd`, `figures/figure-2-evidence-ladder.mmd`, and the paired SVGs — versioned figure sources and generated vector outputs corresponding to the two Mermaid figures in the manuscript.
-- `artemisia-terpene-review-draft.pdf` — visually verified 10-page rendering of the pre-expansion manuscript; regeneration from the expanded 133-source article is pending because the PDF runtime's required artifact marker was unavailable.
+- `artemisia-terpene-review-draft.pdf` — visually verified 15-page rendering of the current 133-source manuscript, including the focused malaria/wormwood evidence table and both regenerated figures.
 - `review-protocol.md` — inclusion, extraction, quality-assessment, and synthesis protocol.
 - `evidence-matrix.csv` — 117-record specimen-, compound-, pathway-, genome-, and assay-level evidence table.
 - `claim-audit.csv` — claim-level traceability table linking central manuscript statements to source IDs and permitted inference boundaries.
