@@ -25,7 +25,7 @@
 - [ ] Verify every quantitative claim against the primary source and specimen context.
 - [x] Complete author/year/journal/volume/pages/DOI metadata for the PubMed-linked entries in `references.bib` (non-PubMed and DOI gaps remain explicitly represented).
 - [x] Add a living-review flow diagram with frozen retrieval counts; convert to a final PRISMA-style diagram only after manual screening is complete.
-- [x] Add a supplementary compound-by-specimen table; the current 76-record extraction remains bounded and non-exhaustive.
+- [x] Add a supplementary compound-by-specimen table; the current 81-record extraction remains bounded and non-exhaustive.
 - [ ] Resolve *A. argyi* ADS/TPS annotation differences across assembly releases.
 - [x] Pin software versions, scripts, manifests, and checksums for the completed seed/reciprocal/tree diagnostics and the completed two-proteome OrthoFinder result; broad multi-species orthology and common reannotation remain open.
 - [ ] Obtain journal-specific formatting, data-availability, conflict-of-interest, and ethics statements.
