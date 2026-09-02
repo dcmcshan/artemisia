@@ -39,6 +39,6 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `screened-seed-set.csv` — auditable screening decisions for the current seed sources.
 - `submission-checklist.md` — journal-readiness and evidence-audit checklist.
 - `journal-targeting.md` — scope-based target-journal recommendation and submission positioning.
-- The completed two-proteome OrthoFinder result and annotation-anchored pathway-family mapping are archived in the Google Terpedia KB under [`comparative-genomics/results/`](https://github.com/Terpedia/kb/tree/docs-clean/research/artemisia_antiparasitic/comparative-genomics/results); the KB archive is the authoritative location for the large computational outputs.
+- The completed two-proteome OrthoFinder result, annotation-anchored pathway-family mapping, and bounded three-species (*A. annua*, *A. argyi*, *A. tridentata*) diagnostic are archived in the Google Terpedia KB under [`comparative-genomics/results/`](https://github.com/Terpedia/kb/tree/docs-clean/research/artemisia_antiparasitic/comparative-genomics/results); the KB archive is the authoritative location for the large computational outputs.
 
 Claims are kept at the smallest source-supported unit. Essential-oil mixture activity is not treated as evidence for a single active molecule, and gene presence or expression is not treated as proof of in-vivo flux.
