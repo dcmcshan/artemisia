@@ -48,6 +48,8 @@ The next plant-regulation tranche promoted fifteen pending records covering ABA/
 
 A further wormwood-focused screen added two primary extract studies: a 13-plant *H. contortus* egg/larval comparison in which methanolic *A. absinthium* ranked among the strongest preparations, and a concentration-series *A. suum* embryogenesis study that reported strong wormwood activity but mixed metabolite classes and unresolved active chemistry. The package now contains 236 registered sources, 220 source-linked matrix records, 58 antiparasitic records, 11 safety/translation records, 15 parasite–protein interaction records, and 419 bounded manual decisions; 968 of the 1,387-record priority queue remain pending. These records strengthen the wormwood vermifuge review without converting extract-level nematode phenotypes into terpene-specific or human-treatment claims.
 
+A class-balance chemistry pass added four primary structure-confirmed sesquiterpene-lactone studies: *A. nitrosa*, *A. tridentata* subsp. *tridentata*, *A. vulgaris*, and *A. verlotorum*. These records broaden germacrane, guaianolide, and eudesmanolide coverage and retain associated macrophage/cytotoxicity results as non-parasitic context. The package now contains 240 registered sources, 224 source-linked matrix records, 58 antiparasitic records, 11 safety/translation records, 15 parasite–protein interaction records, and 423 bounded manual decisions; 964 of the 1,387-record priority queue remain pending.
+
 ## Core query families
 
 1. `Artemisia AND (terpene OR terpenoid OR essential oil OR chemotype)`
