@@ -5,6 +5,7 @@
 # Local tooling
 .venv/
 __pycache__/
+tmp/pdfs/
 .env
 .env.*
 !.env.example
