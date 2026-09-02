@@ -40,6 +40,10 @@ The next focal tranche promoted fifteen high-value records: human and rodent art
 
 A subsequent focal tranche promoted fifteen additional records: an allele-aware *A. annua* genome linking ADS copy number to artemisinin yield; methodological commentary; historical *A. herba-alba* goat evidence; *A. absinthium* historical malaria and repeated-dose toxicology records; an in-vivo *A. afra* negative control; *A. ludoviciana*, *A. vulgaris*, and *A. cina* fluke/helminth assays; recent *A. absinthium* goat translation; bioguided *A. kermanensis* antileishmanial fractionation; hydrotrope-assisted *A. annua* extraction; and light-response chemistry. Two no-abstract historical records are retained as metadata-only leads. The package now contains 202 registered sources, 186 source-linked matrix records, 54 antiparasitic records, 7 safety/translation records, and 387 bounded manual decisions; 1,002 of the 1,387-record priority queue remain pending. The new evidence strengthens the within-species ADS dosage hypothesis and exposes both positive and negative veterinary translation, but does not close the full-text or constituent-attribution gaps.
 
+## Chemotype, quality-control, and parasite-translation expansion pass (2026-09-02)
+
+A further fifteen-record tranche added authenticated and low-thujone *A. absinthium* chemistry, phenology-linked oil variation, validated artemisinin LC-MS quality control, standardized *A. annua* antileishmanial testing, a formulated *A. cina* nanoparticle helminth assay, newer *A. annua* trichome and lncRNA regulation, marker-assisted bioecotype selection, extraction/culture-process reviews, and animal-health context. The package now contains 217 registered sources, 201 source-linked matrix records, 56 antiparasitic records, 11 safety/translation records, and 402 bounded manual decisions; 987 of the 1,387-record priority queue remain pending. Nanoparticle and standardized-extract findings are retained as formulation- or mixture-level evidence, and low-thujone results are not generalized to all wormwood products.
+
 ## Core query families
 
 1. `Artemisia AND (terpene OR terpenoid OR essential oil OR chemotype)`
