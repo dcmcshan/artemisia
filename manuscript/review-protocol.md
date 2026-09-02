@@ -8,6 +8,8 @@ The retrieval and screening counts are represented in `review-flow.md`. The 1,38
 
 Abstract-level keyword triage is archived in `screening-abstract-triage.csv`. It is a workload-ordering aid only: domain matches and priority scores cannot independently establish eligibility, study quality, or inclusion.
 
+The first manual title/abstract tranche is archived in `manual-screening-decisions.csv`. It contains 16 high-priority decisions with bounded evidence scopes and rationale. The remaining queue is still pending manual review; this tranche is not an exhaustive inclusion set.
+
 ## Review questions
 
 1. Which mono-, sesqui-, diterpene, triterpene, and sesquiterpene-lactone classes are reported across *Artemisia*?

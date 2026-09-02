@@ -30,7 +30,8 @@ def main():
     antiparasitic = read_csv("antiparasitic-evidence.csv")
     chemotypes = read_csv("chemotype-table.csv")
     safety = read_csv("safety-translation.csv")
-    assert all(None not in row for row in matrix + antiparasitic + chemotypes + safety)
+    manual = read_csv("manual-screening-decisions.csv")
+    assert all(None not in row for row in matrix + antiparasitic + chemotypes + safety + manual)
     matrix_missing = []
     for row in matrix:
         for source_id in row["source_id"].split("; "):
@@ -42,13 +43,14 @@ def main():
     assert screening["abstracts_retrieved"] + screening["no_abstract"] == screening["records"]
     assert triage["manual_status_for_all_records"] == "pending_manual_review"
     bibliography_entries = len(re.findall(r"^@", (ROOT / "references.bib").read_text(), re.MULTILINE))
-    assert len(matrix) == 38 and len(antiparasitic) == 14 and len(chemotypes) == 10 and len(safety) == 4 and not matrix_missing
+    assert len(matrix) == 38 and len(antiparasitic) == 14 and len(chemotypes) == 10 and len(safety) == 4 and len(manual) == 16 and not matrix_missing
     assert bibliography_entries == 47
     result = {
         "validated": True,
         "source_count": len(source_ids),
         "evidence_matrix_records": len(matrix),
         "antiparasitic_records": len(antiparasitic),
+        "manual_screening_decisions": len(manual),
         "bibliography_entries": bibliography_entries,
         "screening_records": screening["records"],
         "abstracts_retrieved": screening["abstracts_retrieved"],
