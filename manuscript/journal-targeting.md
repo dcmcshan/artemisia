@@ -19,7 +19,7 @@ The cover letter should emphasize four contributions:
 3. a comparative evolutionary-genomics framework that identifies testable gene–metabolite hypotheses; and
 4. a reusable Terpedia evidence package with source identifiers, extraction tables, screening provenance, and checksums.
 
-Before submission, the living scoping review must either be completed as a systematic review or be transparently reframed as a narrative/scoping review. The current package still records pending full-text verification and an unfinished genome-wide species-tree-aware orthology analysis.
+Before submission, the living scoping review must either be completed as a systematic review or be transparently reframed as a narrative/scoping review. The current package still records pending full-text verification and an unfinished broad multi-species/common-reannotation orthology analysis, although the frozen two-proteome OrthoFinder result is now complete and archived.
 
 ## Ambitious alternative: *Journal of Experimental Botany*
 

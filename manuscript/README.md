@@ -12,7 +12,7 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 
 - `article.md` — current journal-style manuscript draft.
 - `figures/figure-1-pathway.mmd`, `figures/figure-2-evidence-ladder.mmd`, and the paired SVGs — versioned figure sources and generated vector outputs corresponding to the two Mermaid figures in the manuscript.
-- `artemisia-terpene-review-draft.pdf` — visually verified rendering of the current 159-source manuscript, including the focused malaria/wormwood evidence table and both regenerated figures.
+- `artemisia-terpene-review-draft.pdf` — visually verified rendering of the current 160-source manuscript, including the focused malaria/wormwood evidence table, comparative-genomics table, and both regenerated figures.
 - `review-protocol.md` — inclusion, extraction, quality-assessment, and synthesis protocol.
 - `evidence-matrix.csv` — 144-record specimen-, compound-, pathway-, genome-, and assay-level evidence table.
 - `claim-audit.csv` — claim-level traceability table linking central manuscript statements to source IDs and permitted inference boundaries.
@@ -39,5 +39,6 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `screened-seed-set.csv` — auditable screening decisions for the current seed sources.
 - `submission-checklist.md` — journal-readiness and evidence-audit checklist.
 - `journal-targeting.md` — scope-based target-journal recommendation and submission positioning.
+- The completed two-proteome OrthoFinder result and annotation-anchored pathway-family mapping are archived in the Google Terpedia KB under [`comparative-genomics/results/`](https://github.com/Terpedia/kb/tree/docs-clean/research/artemisia_antiparasitic/comparative-genomics/results); the KB archive is the authoritative location for the large computational outputs.
 
 Claims are kept at the smallest source-supported unit. Essential-oil mixture activity is not treated as evidence for a single active molecule, and gene presence or expression is not treated as proof of in-vivo flux.

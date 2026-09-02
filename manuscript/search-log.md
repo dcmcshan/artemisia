@@ -32,6 +32,8 @@ The malaria-focused promotion pass also registered Cai et al. (PMID 38135228), a
 
 A further full-text eligibility and extraction pass promoted three pending primary records: a validated *A. absinthium* STL analytical method (PMID 20886883), the *A. annua*/*H. contortus* sheep trial (PMID 24802864), and the *A. brevifolia* ovine anthelmintic dose-response study (PMID 15234763). The first strengthens preparation-aware wormwood lactone measurement; the second is retained as a negative/limited translation control; the third adds a comparative veterinary dose-response anchor. The package now contains 159 registered sources, 144 source-linked matrix records, 33 antiparasitic records, and 46 audited claims; 345 high-priority decisions are archived and 1,048 of the 1,387-record queue remain pending.
 
+The completed two-proteome OrthoFinder run was added as a computational method/result record, with the OrthoFinder 2019 method citation registered separately from the 144 biological evidence-matrix records. The run assigned 111,235 of 129,761 proteins to 28,696 orthogroups and produced gene trees, duplication calls, and a two-tip species tree; the annotation-anchored pathway mapping is retained as a candidate-family result with explicit function-transfer and two-species boundaries. The package now contains 160 registered sources; broad multi-species orthology and exhaustive screening remain open.
+
 ## Core query families
 
 1. `Artemisia AND (terpene OR terpenoid OR essential oil OR chemotype)`
