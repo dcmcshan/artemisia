@@ -1,22 +1,22 @@
 {
   "validated": true,
-  "source_count": 297,
-  "evidence_matrix_records": 298,
+  "source_count": 298,
+  "evidence_matrix_records": 299,
   "antiparasitic_records": 74,
   "parasite_protein_interaction_records": 16,
   "manual_screening_decisions": 478,
-  "supplementary_compound_specimen_records": 61,
-  "claim_audit_records": 104,
-  "bibliography_entries": 297,
+  "supplementary_compound_specimen_records": 62,
+  "claim_audit_records": 105,
+  "bibliography_entries": 298,
   "screening_records": 1387,
   "abstracts_retrieved": 1323,
   "records_without_abstract": 64,
   "manual_screening_complete": false,
   "referential_integrity": "passed",
   "core_file_sha256": {
-    "article.md": "054a3ecde7aab192ef91601896069f088246c5026d7deab8faf2b0270b2b0104",
-    "sources.json": "d7b6a34b2d1635e766eb108cdf0049ac5f01451c1bbdbecf20909cd6c57f74db",
-    "evidence-matrix.csv": "63b9deae8608efa261dd2042e583f57ed948ed9e8927a29a0fd1a79fcbb06bb6",
-    "references.bib": "bd172caae3d51dea8228568a93a4ac6c1f25cc8ad7630f1c44befc9b15a67636"
+    "article.md": "cc16ebe5e12f9163ebcb9f5c532f3278fbb0429a7ff679c2d1a4a744e4b1b62f",
+    "sources.json": "20e3b5eacf77375034b172d005e988423ed9226f4201692c0587b8df994e72c3",
+    "evidence-matrix.csv": "60eaa62e4f708273fa1f96c13e61edb8ea684e1df42d58ac7a7f2522865db2d1",
+    "references.bib": "84c8aba865d41b5725366e7eacef930d3d6301f8d8beffd397151741f34e800e"
   }
 }

@@ -12,13 +12,13 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 
 - `article.md` — current journal-style manuscript draft.
 - `figures/figure-1-pathway.mmd`, `figures/figure-2-evidence-ladder.mmd`, and the paired SVGs — versioned figure sources and generated vector outputs corresponding to the two Mermaid figures in the manuscript.
-- `artemisia-terpene-review-draft.pdf` — visually verified rendering of the current 297-source manuscript, including the focused malaria/wormwood evidence table, comparative-genomics table, and both regenerated figures.
+- `artemisia-terpene-review-draft.pdf` — visually verified rendering of the current 298-source manuscript, including the focused malaria/wormwood evidence table, comparative-genomics table, and both regenerated figures.
 - `review-protocol.md` — inclusion, extraction, quality-assessment, and synthesis protocol.
-- `evidence-matrix.csv` — 298-record specimen-, compound-, pathway-, genome-, and assay-level evidence table.
+- `evidence-matrix.csv` — 299-record specimen-, compound-, pathway-, genome-, and assay-level evidence table.
 - `claim-audit.csv` — claim-level traceability table linking central manuscript statements to source IDs and permitted inference boundaries.
 - `sources.json` — stable source registry with identifiers, URLs, evidence class, and retrieval date.
 - `chemotype-table.csv` — representative chemistry records with specimen/context qualifiers.
-- `supplementary-compound-specimen.csv` — 61 specimen-/tissue-/preparation-level compound records, including explicit non-terpene comparators.
+- `supplementary-compound-specimen.csv` — 62 specimen-/tissue-/preparation-level compound records, including explicit non-terpene comparators.
 - `antiparasitic-evidence.csv` — 74 quantitative, stage-aware parasite/vector assay records with host-control and translation boundaries.
 - `parasite-protein-interactions.csv` — evidence-tiered terpene/terpenoid–parasite-protein interaction map, including direct target evidence, enzyme assays, docking hypotheses, and explicit target gaps.
 - `protein-interaction-protocol.md` — extraction rules, evidence ladder, provenance boundaries, and next-experiment requirements for the interaction map.
