@@ -19,11 +19,11 @@
 - [ ] Deduplicate records and archive excluded records with reasons.
 - [ ] Replace seed-set-only language with a completed screening statement.
 - [ ] Verify every quantitative claim against the primary source and specimen context.
-- [ ] Complete author/year/journal/volume/pages/DOI metadata in `references.bib`.
+- [x] Complete author/year/journal/volume/pages/DOI metadata for the PubMed-linked entries in `references.bib` (non-PubMed and DOI gaps remain explicitly represented).
 - [x] Add a living-review flow diagram with frozen retrieval counts; convert to a final PRISMA-style diagram only after manual screening is complete.
-- [ ] Add a supplementary compound-by-specimen table once extraction is complete.
+- [x] Add a supplementary compound-by-specimen table; the current 25-record extraction remains bounded and non-exhaustive.
 - [ ] Resolve *A. argyi* ADS/TPS annotation differences across assembly releases.
-- [ ] Pin software versions, scripts, manifests, and checksums for comparative-genomics analyses.
+- [x] Pin software versions, scripts, manifests, and checksums for the completed seed/reciprocal/tree diagnostics; a full orthology run remains open.
 - [ ] Obtain journal-specific formatting, data-availability, conflict-of-interest, and ethics statements.
 
 The checked items describe the current draft; unchecked items are not silently treated as complete.
