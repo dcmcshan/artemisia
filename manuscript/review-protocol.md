@@ -2,13 +2,13 @@
 
 ## Status
 
-The current article is a **living scoping review in progress**. A screened seed set is archived in `screened-seed-set.csv`; the PubMed search snapshot is archived in `search-results.json`; and a title-priority queue with retrieved abstracts is archived in `screening-candidates.csv` and `screening-abstracts.csv`. This is not yet a completed systematic review because manual title/abstract screening, full-text screening, and exhaustive extraction remain open.
+The current article is a **living scoping review in progress**. A screened seed set is archived in `screened-seed-set.csv`; the PubMed search snapshot is archived in `search-results.json`; and a title-priority queue with retrieved abstracts is archived in `screening-candidates.csv` and `screening-abstracts.csv`. Bounded title/abstract screening is complete for the priority queue, but full-text screening and exhaustive extraction remain open.
 
-The retrieval and screening counts are represented in `review-flow.md`. The 1,387-record queue is a transparent prioritization layer, not an eligibility decision; the final synthesis denominator remains intentionally unset until manual screening is complete.
+The retrieval and screening counts are represented in `review-flow.md`. The 1,387-record queue is a transparent prioritization layer, not an eligibility decision; the final synthesis denominator remains intentionally unset until full-text screening and extraction are complete.
 
 Abstract-level keyword triage is archived in `screening-abstract-triage.csv`. It is a workload-ordering aid only: domain matches and priority scores cannot independently establish eligibility, study quality, or inclusion.
 
-The archived manual title/abstract decisions are stored in `manual-screening-decisions.csv`. They contain 760 high-priority decisions with bounded evidence scopes and rationale; 739 of those decisions correspond to records in the 1,387-record priority triage queue. The remaining 648 queue records are still pending manual review; 21 manually screened records are outside that archived queue. This log is not an exhaustive inclusion set.
+The archived manual title/abstract decisions are stored in `manual-screening-decisions.csv`. They contain 1,408 bounded decisions with explicit evidence scopes and rationale; 1,387 correspond to records in the priority triage queue and 21 historical or out-of-queue records are retained separately. This log is not an exhaustive inclusion set: full-text eligibility and quantitative extraction remain open.
 
 The initial supplementary compound-by-specimen table is archived in `supplementary-compound-specimen.csv`. It is a source-backed extraction of 177 representative records, not a complete genus-wide compound inventory; non-terpene co-occurring volatiles are labeled separately.
 

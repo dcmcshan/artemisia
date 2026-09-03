@@ -35,7 +35,7 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `build_screening_candidates.py` — reproducible ESearch/ESummary candidate-queue builder.
 - `screening-summary.json` and `screening-candidates.csv` — title-level prioritization outputs.
 - `fetch_screening_abstracts.py` — reproducible PubMed abstract retrieval for the priority queue.
-- `screening-abstract-summary.json` and `screening-abstracts.csv` — abstract retrieval outputs; records remain pending manual screening.
+- `screening-abstract-summary.json` and `screening-abstracts.csv` — abstract retrieval outputs for the 1,387-record queue; the separate bounded title/abstract ledger is complete, while full-text eligibility remains open.
 - `triage_screening_abstracts.py` — transparent keyword-domain triage over the abstract queue.
 - `screening-abstract-triage-summary.json` and `screening-abstract-triage.csv` — abstract-level ranking outputs whose internal status field remains `pending_manual_review`; the separate manual ledger now covers all priority-queue records with bounded title/abstract decisions.
 - `manual-screening-decisions.csv` — 1,408-record title/abstract screening log with bounded decisions and rationale; all 1,387 priority-queue records are covered, plus 21 historical or out-of-queue records. Full-text eligibility remains open.
