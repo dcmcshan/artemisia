@@ -8,7 +8,7 @@ flowchart TB
   U --> T[Title-keyword prioritization<br/>1,387 candidate records]
   T --> A[PubMed XML abstract retrieval<br/>1,323 abstracts retrieved]
   T --> N[64 records without abstract<br/>retained for manual lookup]
-  A --> M[Title/abstract screening<br/>831 queue decisions; 556 pending]
+  A --> M[Title/abstract screening<br/>1,387 queue decisions; complete]
   N --> M
   M --> F[Full-text verification and extraction<br/>pending]
   F --> S[Final synthesis set<br/>pending]
@@ -23,7 +23,7 @@ flowchart TB
 | Title-priority candidates | 1,387 | `screening-summary.json` | machine-assisted triage only |
 | Abstracts retrieved | 1,323 | `screening-abstract-summary.json` | retrieval complete |
 | Records without abstract | 64 | `screening-abstract-summary.json` | manual full-record lookup required |
-| Queue records with title/abstract decision | 831 of 1,387 | `manual-screening-decisions.csv` | partial; 556 pending |
+| Queue records with title/abstract decision | 1,387 of 1,387 | `manual-screening-decisions.csv` | complete at title/abstract level |
 | Included after title/abstract screening | — | not yet available | open; full-text eligibility is required |
 
 The title-priority threshold is a reproducibility aid and must not be reported as an eligibility criterion. No record is included in the final review solely because it appears in `screening-candidates.csv` or `screening-abstracts.csv`.

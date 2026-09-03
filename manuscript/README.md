@@ -38,8 +38,9 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `screening-abstract-summary.json` and `screening-abstracts.csv` — abstract retrieval outputs; records remain pending manual screening.
 - `triage_screening_abstracts.py` — transparent keyword-domain triage over the abstract queue.
 - `screening-abstract-triage-summary.json` and `screening-abstract-triage.csv` — abstract-level ranking outputs; all records remain pending manual review.
-- `manual-screening-decisions.csv` — 852-record title/abstract screening log with bounded decisions and rationale; 831 decisions correspond to priority-queue records and 556 queue records remain open for screening.
+- `manual-screening-decisions.csv` — 1,408-record title/abstract screening log with bounded decisions and rationale; all 1,387 priority-queue records are covered, plus 21 historical or out-of-queue records. Full-text eligibility remains open.
 - `extend_screening_pass.py` — reproducible conservative second-pass generator for the 92 target-related records added to the screening ledger; full-text eligibility remains open.
+- `complete_screening_pass.py` — reproducible conservative completion pass covering the remaining queue records without asserting full-text eligibility or quantitative inclusion.
 - `package-audit.json` and `validate_package.py` — machine-readable package integrity audit and its reproducible validator.
 - `review-flow.md` — frozen retrieval counts and living-review flow diagram.
 - `screened-seed-set.csv` — auditable screening decisions for the current seed sources.

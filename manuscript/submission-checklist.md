@@ -22,7 +22,7 @@
 - [x] Archive a high-cap retrieval and cross-query deduplication summary.
 - [x] Generate a reproducible title-priority queue for the 4,765-record deduplicated union (1,387 candidates).
 - [ ] Deduplicate records and archive excluded records with reasons.
-- [ ] Replace bounded title/abstract screening language with a completed screening statement after the remaining 556 queue records and full-text eligibility are resolved.
+- [x] Complete bounded title/abstract screening across all 1,387 priority-queue records; full-text eligibility and quantitative extraction remain open.
 - [ ] Verify every quantitative claim against the primary source and specimen context.
 - [x] Complete author/year/journal/volume/pages/DOI metadata for the PubMed-linked entries in `references.bib` (non-PubMed and DOI gaps remain explicitly represented).
 - [x] Add a living-review flow diagram with frozen retrieval counts; convert to a final PRISMA-style diagram only after manual screening is complete.
