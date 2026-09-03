@@ -11,14 +11,14 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 ## Package
 
 - `article.md` — extended evidence-rich manuscript and full narrative archive.
-- `article-submission.md` — consolidated submission manuscript with integrated author–year citations, a rendered reference list, and the complete Terpedia package retained as supplementary evidence.
+- `article-submission.md` — consolidated submission manuscript with integrated author–year citations, a rendered reference list, a bounded malaria/wormwood evidence-anchor table, and the complete Terpedia package retained as supplementary evidence.
 - `submission-front-matter.md` — target-journal title-page, declarations, and submission-interface completion sheet; scientific package fields are complete, while author-specific fields remain explicitly gated for confirmation.
 - `cover-letter.md` — draft cover letter aligned to the target journal, with only author-specific and invitation-status fields left for completion.
 - `figures/figure-1-pathway.mmd`, `figures/figure-2-evidence-ladder.mmd`, `figures/figure-3-review-flow.mmd`, and the paired SVG/PNG outputs — versioned figure sources and generated outputs corresponding to the three Mermaid figures in the manuscript.
 - `latex-header.tex` — PDF-build header for embedded figures.
 - `artemisia-terpene-review-draft.pdf` — visually verified rendering of the current 538-source manuscript with 553 evidence records, including the focused malaria/wormwood evidence table, comparative-genomics table, vector-control evidence, structure-confirmed STL tranche, and regenerated figures. Rebuild with `pandoc article.md --from markdown --pdf-engine=xelatex --include-in-header=latex-header.tex --resource-path=. -V geometry:margin=0.5in -V mainfont='STIX Two Text' -o artemisia-terpene-review-draft.pdf`.
-- `artemisia-terpene-review-submission.pdf` — visually verified consolidated submission rendering with integrated author–year citations, a conventional reference list, three figures, and focused malaria/wormwood/genomics tables. Rebuild after citation conversion with `python build_submission_citations.py --in-place`, then `pandoc article-submission.md --from markdown --citeproc --bibliography=references.bib --pdf-engine=xelatex --include-in-header=latex-header.tex --resource-path=. -V geometry:margin=0.5in -V mainfont='STIX Two Text' -o artemisia-terpene-review-submission.pdf`.
-- `artemisia-terpene-review-submission.docx` — visually verified Word submission artifact with the same cited manuscript, tables, figures, declarations, and reference list; use this source file for journal submission where Word is preferred.
+- `artemisia-terpene-review-submission.pdf` — visually verified 25-page consolidated submission rendering with integrated author–year citations, a conventional reference list, three figures, and focused chemistry, malaria/wormwood, and comparative-genomics tables. Rebuild after citation conversion with `python build_submission_citations.py --in-place`, then `pandoc article-submission.md --from markdown --citeproc --bibliography=references.bib --pdf-engine=xelatex --include-in-header=latex-header.tex --resource-path=. -V geometry:margin=0.5in -V mainfont='STIX Two Text' -o artemisia-terpene-review-submission.pdf`.
+- `artemisia-terpene-review-submission.docx` — visually verified 39-page Word submission artifact with the same cited manuscript, tables, figures, declarations, and reference list; table rows are configured not to split across pages. Use this source file for journal submission where Word is preferred.
 - `review-protocol.md` — inclusion, extraction, quality-assessment, and synthesis protocol.
 - `prisma-scr-checklist.md` — PRISMA-ScR item-to-file mapping, current completion status, and submission gates.
 - `evidence-matrix.csv` — 553-record specimen-, compound-, pathway-, genome-, review-, and assay-level evidence table.
@@ -33,7 +33,7 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `safety-translation.csv` — preparation-specific safety and clinical-translation boundaries.
 - `references.bib` — citation-ready bibliography for manuscript tooling; the submission uses the cited subset through Pandoc citeproc.
 - `build_submission_citations.py` — deterministic source-link-to-BibTeX crosswalk used to convert the journal-facing manuscript to conventional citations while preserving URL provenance in `sources.json`.
-- `build_submission_docx.py` — deterministic Pandoc/python-docx builder for the journal-facing Word artifact, including explicit page geometry, heading/list/table styles, figure sizing, header/footer, and accessibility-oriented structure. Rebuild with `python build_submission_docx.py`.
+- `build_submission_docx.py` — deterministic Pandoc/python-docx builder for the journal-facing Word artifact, including explicit page geometry, heading/list/table styles, intact table rows across page breaks, figure sizing, header/footer, and accessibility-oriented structure. Rebuild with `python build_submission_docx.py`.
 - `search-log.md` — reproducible literature-search and screening plan.
 - `search-results.json` — executed PubMed search snapshot with counts and top identifiers.
 - `search-union-summary.json` — high-cap retrieval, overlap, and checksum summary.

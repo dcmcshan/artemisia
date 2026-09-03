@@ -107,6 +107,10 @@ def set_table_geometry(table, widths):
         grid.append(col)
 
     for row_index, row in enumerate(table.rows):
+        tr_pr = row._tr.get_or_add_trPr()
+        cant_split = OxmlElement("w:cantSplit")
+        cant_split.set(qn("w:val"), "true")
+        tr_pr.append(cant_split)
         for index, cell in enumerate(row.cells):
             width = widths[min(index, len(widths) - 1)]
             set_cell_width(cell, width)
@@ -126,7 +130,6 @@ def set_table_geometry(table, widths):
                     for run in paragraph.runs:
                         run.bold = True
         if row_index == 0:
-            tr_pr = row._tr.get_or_add_trPr()
             repeat = OxmlElement("w:tblHeader")
             repeat.set(qn("w:val"), "true")
             tr_pr.append(repeat)
