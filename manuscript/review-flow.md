@@ -10,7 +10,7 @@ flowchart TB
   T --> N[64 records without abstract<br/>retained for manual lookup]
   A --> M[Title/abstract screening<br/>1,387 queue decisions; complete]
   N --> M
-  M --> F[Full-text verification and extraction<br/>69 sources verified; 40 open]
+  M --> F[Full-text verification and extraction<br/>74 sources verified; 35 open]
   F --> S[Final synthesis set<br/>pending]
 ```
 
@@ -24,7 +24,7 @@ flowchart TB
 | Abstracts retrieved | 1,323 | `screening-abstract-summary.json` | retrieval complete |
 | Records without abstract | 64 | `screening-abstract-summary.json` | manual full-record lookup required |
 | Queue records with title/abstract decision | 1,387 of 1,387 | `manual-screening-decisions.csv` | complete at title/abstract level |
-| Full-text verification tranches | 69 of 109 sources; 79 of 128 evidence rows | `full-text-verification.csv` | thirty-fourth tranche complete; 40 sources open |
+| Full-text verification tranches | 74 of 109 sources; 87 of 128 evidence rows | `full-text-verification.csv` | thirty-fifth tranche complete; 35 sources open |
 | Included after title/abstract screening | — | not yet available | open; final full-text eligibility is required |
 
 The title-priority threshold is a reproducibility aid and must not be reported as an eligibility criterion. No record is included in the final review solely because it appears in `screening-candidates.csv` or `screening-abstracts.csv`.
