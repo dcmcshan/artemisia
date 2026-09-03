@@ -10,6 +10,7 @@
 - [x] Antiparasitic assay evidence includes parasite stage and mixture-level limitations.
 - [x] Safety and translation boundaries included.
 - [x] Testable hypotheses and discriminating experiments included.
+- [x] Add a reproducible provisional appraisal of all 123 antiparasitic records with explicit chemistry, phenotype, host-control, mechanism, and translation dimensions.
 
 ## Evidence and reporting still required before journal submission
 
