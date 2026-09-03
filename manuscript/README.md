@@ -20,7 +20,7 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `sources.json` — stable source registry with identifiers, URLs, evidence class, and retrieval date.
 - `chemotype-table.csv` — representative chemistry records with specimen/context qualifiers.
 - `supplementary-compound-specimen.csv` — 177 specimen-/tissue-/preparation-level compound records, including explicit non-terpene comparators.
-- `antiparasitic-evidence.csv` — 117 quantitative and stage-aware parasite/vector assay records with host-control and translation boundaries.
+- `antiparasitic-evidence.csv` — 123 quantitative and stage-aware parasite/vector assay records with host-control and translation boundaries.
 - `parasite-protein-interactions.csv` — evidence-tiered terpene/terpenoid–parasite-protein interaction map, including direct target evidence, enzyme assays, docking hypotheses, and explicit target gaps.
 - `protein-interaction-protocol.md` — extraction rules, evidence ladder, provenance boundaries, and next-experiment requirements for the interaction map.
 - `safety-translation.csv` — preparation-specific safety and clinical-translation boundaries.
@@ -34,7 +34,7 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `screening-abstract-summary.json` and `screening-abstracts.csv` — abstract retrieval outputs; records remain pending manual screening.
 - `triage_screening_abstracts.py` — transparent keyword-domain triage over the abstract queue.
 - `screening-abstract-triage-summary.json` and `screening-abstract-triage.csv` — abstract-level ranking outputs; all records remain pending manual review.
-- `manual-screening-decisions.csv` — 759-record manual title/abstract screening log with bounded decisions and rationale; the full queue remains open.
+- `manual-screening-decisions.csv` — 760-record manual title/abstract screening log with bounded decisions and rationale; the full queue remains open.
 - `package-audit.json` and `validate_package.py` — machine-readable package integrity audit and its reproducible validator.
 - `review-flow.md` — frozen retrieval counts and living-review flow diagram.
 - `screened-seed-set.csv` — auditable screening decisions for the current seed sources.
