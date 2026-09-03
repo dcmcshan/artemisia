@@ -1,6 +1,6 @@
 # Review-flow record
 
-This is a living scoping-review flow record, not a completed PRISMA diagram. The initial search counts are frozen from the 2026-09-01 PubMed retrieval; a 2026-09-03 extension added one DOI-indexed primary *A. maritima* sheep record outside that PubMed snapshot, so registry and evidence totals can change between snapshots.
+This is a frozen scoping-review flow record, not a completed PRISMA diagram. The initial search counts are frozen from the 2026-09-01 PubMed retrieval; a 2026-09-03 extension added one DOI-indexed primary *A. maritima* sheep record outside that PubMed snapshot. Terpedia may continue to receive versioned records, but later additions are outside this frozen analysis unless the manuscript is formally updated.
 
 ```mermaid
 flowchart TB

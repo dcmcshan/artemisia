@@ -2,7 +2,7 @@
 
 ## Status
 
-The current article is a **living scoping review in progress**. A screened seed set is archived in `screened-seed-set.csv`; the PubMed search snapshot is archived in `search-results.json`; and a title-priority queue with retrieved abstracts is archived in `screening-candidates.csv` and `screening-abstracts.csv`. Bounded title/abstract screening is complete for the priority queue, but full-text screening and exhaustive extraction remain open.
+The current submission is a **frozen, source-auditable scoping review**. A screened seed set is archived in `screened-seed-set.csv`; the PubMed search snapshot is archived in `search-results.json`; and a title-priority queue with retrieved abstracts is archived in `screening-candidates.csv` and `screening-abstracts.csv`. Bounded title/abstract screening is complete for the priority queue, but full-text screening and exhaustive extraction remain open. Terpedia is an updateable archive; records added after the frozen snapshot are not silently included in the submission analysis.
 
 The retrieval and screening counts are represented in `review-flow.md`. The 1,387-record queue is a transparent prioritization layer, not an eligibility decision; the final synthesis denominator remains intentionally unset until full-text screening and extraction are complete.
 

@@ -23,7 +23,7 @@ The cover letter should emphasize four contributions:
 3. a comparative evolutionary-genomics framework that identifies testable gene–metabolite hypotheses; and
 4. a reusable Terpedia evidence package with source identifiers, extraction tables, screening provenance, and checksums.
 
-Before submission, the living scoping review must either be completed as a systematic review or be transparently reframed as a narrative/scoping review. The current package still records pending full-text verification and an unfinished broad multi-species/common-reannotation orthology analysis, although the frozen two-proteome OrthoFinder result is now complete and archived.
+The submission is now framed as a frozen, source-auditable scoping review rather than a living or completed systematic review. The current package still records pending full-text verification and an unfinished broad multi-species/common-reannotation orthology analysis, although the frozen two-proteome OrthoFinder result is complete and archived. Terpedia may be updated, but later records must be versioned as outside this frozen analysis unless the manuscript is formally updated.
 
 ## Ambitious alternative: *Journal of Experimental Botany*
 

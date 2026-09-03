@@ -1,17 +1,17 @@
 # PRISMA-ScR reporting checklist
 
-This checklist maps the current *Artemisia* living scoping-review package to the 20 essential and 2 optional PRISMA-ScR reporting items. PRISMA-ScR is used as a reporting framework, not as evidence that the review is complete. The official checklist and explanatory material are available from the [PRISMA-ScR resource page](https://www.prisma-statement.org/scoping).
+This checklist maps the current *Artemisia* frozen scoping-review package to the 20 essential and 2 optional PRISMA-ScR reporting items. PRISMA-ScR is used as a reporting framework, not as evidence that the review is complete. The official checklist and explanatory material are available from the [PRISMA-ScR resource page](https://www.prisma-statement.org/scoping).
 
 The review remains in progress: the retrieval snapshot contains 4,765 unique PubMed records, the priority queue contains 1,387 records, and all queue-level title/abstract decisions plus 21 historical or out-of-queue decisions are archived. Full-text eligibility, extraction, and synthesis gates remain open; items marked **partial** or **open** must be resolved before submission as a completed scoping review.
 
 | PRISMA-ScR item | Requirement | Current location | Status |
 |---:|---|---|---|
-| 1 | Identify the report as a scoping review | `article.md`, title | Reported; use “living scoping review” in the submission title |
+| 1 | Identify the report as a scoping review | `article-submission.md`, title | Reported; submission is identified as a frozen, source-auditable scoping review |
 | 2 | Structured summary | `article.md`, Abstract | Partial; abstract is present but should be converted to the target journal’s structured format if required |
 | 3 | Rationale | `article.md`, §1 and §1.1 | Reported |
 | 4 | Objectives | `article.md`, §1; `review-protocol.md` | Reported |
 | 5 | Protocol and registration | `review-protocol.md`, `search-log.md` | Partial; protocol is archived, but no external registration number is currently claimed |
-| 6 | Eligibility criteria | `review-protocol.md`, Eligibility and extraction | Reported for the living package; final eligibility denominator remains open |
+| 6 | Eligibility criteria | `review-protocol.md`, Eligibility and extraction | Reported for the frozen package; final eligibility denominator remains open |
 | 7 | Information sources | `search-log.md`, `search-results.json` | Reported for the frozen PubMed retrieval; additional sources should be listed if searched |
 | 8 | Search | `search-log.md`, `search-results.json` | Reported for the frozen search snapshot; rerun date and final strategy must be frozen before submission |
 | 9 | Selection of sources of evidence | `review-flow.md`, `manual-screening-decisions.csv` | Partial; title-priority and abstract retrieval are complete, manual and full-text selection are open |
@@ -31,4 +31,4 @@ The review remains in progress: the retrieval snapshot contains 4,765 unique Pub
 
 ## Submission gate
 
-Before the manuscript is described as a completed scoping review, update this file and `review-flow.md` with the final number screened, full texts assessed, exclusions and reasons, included sources, charting completion, and critical-appraisal judgments. Until then, the accurate article label is **living scoping review and evidence map**. The complete source registry, evidence tables, screening log, and audit outputs remain the Terpedia supplementary record.
+Before the manuscript is described as a completed scoping review, update this file and `review-flow.md` with the final number screened, full texts assessed, exclusions and reasons, included sources, charting completion, and critical-appraisal judgments. Until then, the accurate submission label is **frozen scoping review and evidence map**. The complete source registry, evidence tables, screening log, and audit outputs remain the Terpedia supplementary record.

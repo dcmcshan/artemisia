@@ -18,7 +18,7 @@
   "abstracts_retrieved": 1323,
   "records_without_abstract": 64,
   "manual_screening_complete": false,
-  "submission_abstract_words": 248,
+  "submission_abstract_words": 250,
   "submission_keyword_count": 6,
   "referential_integrity": "passed",
   "core_file_sha256": {

@@ -4,9 +4,9 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 
 ## Planned article
 
-**Working title:** *Artemisia* terpene diversity across scales: biosynthetic evolution and bounded antiparasitic evidence from a living scoping review
+**Working title:** *Artemisia* terpene diversity across scales: biosynthetic evolution and bounded antiparasitic evidence
 
-**Article type:** narrative systematic-scoping review with a comparative evolutionary-genomics framework.
+**Article type:** source-auditable frozen scoping review with a comparative evolutionary-genomics framework.
 
 ## Package
 
@@ -18,7 +18,7 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `latex-header.tex` — PDF-build header for embedded figures.
 - `artemisia-terpene-review-draft.pdf` — visually verified rendering of the current 538-source manuscript with 553 evidence records, including the focused malaria/wormwood evidence table, comparative-genomics table, vector-control evidence, structure-confirmed STL tranche, and regenerated figures. Rebuild with `pandoc article.md --from markdown --pdf-engine=xelatex --include-in-header=latex-header.tex --resource-path=. -V geometry:margin=0.5in -V mainfont='STIX Two Text' -o artemisia-terpene-review-draft.pdf`.
 - `artemisia-terpene-review-submission.pdf` — visually verified 26-page consolidated submission rendering with integrated author–year citations, a conventional reference list, three figures, and focused chemistry, malaria/wormwood, and comparative-genomics tables. Rebuild after citation conversion with `python build_submission_citations.py --in-place`, then `pandoc article-submission.md --from markdown --citeproc --bibliography=references.bib --pdf-engine=xelatex --include-in-header=latex-header.tex --resource-path=. -V geometry:margin=0.5in -V mainfont='STIX Two Text' -o artemisia-terpene-review-submission.pdf`.
-- `artemisia-terpene-review-submission.docx` — visually verified 39-page Word submission artifact with the same cited manuscript, tables, figures, declarations, and reference list; table rows are configured not to split across pages. Use this source file for journal submission where Word is preferred.
+- `artemisia-terpene-review-submission.docx` — visually verified 41-page Word submission artifact with the same cited manuscript, tables, figures, declarations, and reference list; table rows are configured not to split across pages. Use this source file for journal submission where Word is preferred.
 - `review-protocol.md` — inclusion, extraction, quality-assessment, and synthesis protocol.
 - `prisma-scr-checklist.md` — PRISMA-ScR item-to-file mapping, current completion status, and submission gates.
 - `evidence-matrix.csv` — 553-record specimen-, compound-, pathway-, genome-, review-, and assay-level evidence table.
@@ -49,7 +49,7 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `full-text-eligibility-queue.csv` — source-linked full-text gate for all 110 unique antiparasitic source records (129 evidence rows), ranked for malaria, wormwood vermifuge, other parasite, and vector-control verification.
 - `full-text-verification.csv` — forty-two full-text extraction tranches: 82 sources covering 97 evidence rows, with preparation-specific findings and explicit unresolved quantitative-eligibility gates; the latest publisher-indexed *A. campestris* record retains an inaccessible-tables caveat.
 - `package-audit.json` and `validate_package.py` — machine-readable package integrity audit and its reproducible validator.
-- `review-flow.md` — frozen retrieval counts and living-review flow diagram.
+- `review-flow.md` — frozen retrieval counts and scoping-review flow diagram.
 - `screened-seed-set.csv` — auditable screening decisions for the current seed sources.
 - `submission-checklist.md` — journal-readiness and evidence-audit checklist.
 - `journal-targeting.md` — scope-based target-journal recommendation and submission positioning.
