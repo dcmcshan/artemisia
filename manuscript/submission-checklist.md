@@ -14,6 +14,7 @@
 - [x] Convert the submission manuscript to conventional author–year citations with an integrated reference list generated from `references.bib`.
 - [x] Add target-journal title-page, declaration, and cover-letter structures with explicit author-input gates.
 - [x] Build and visually verify a Word submission artifact with embedded figures, tables, citations, references, header/footer, and no high- or medium-severity accessibility findings.
+- [x] Enforce the target journal's 150–250-word abstract and 4–6-keyword limits in the package validator.
 
 ## Evidence and reporting still required before journal submission
 

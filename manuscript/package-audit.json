@@ -18,6 +18,8 @@
   "abstracts_retrieved": 1323,
   "records_without_abstract": 64,
   "manual_screening_complete": false,
+  "submission_abstract_words": 248,
+  "submission_keyword_count": 6,
   "referential_integrity": "passed",
   "core_file_sha256": {
     "article.md": "648c1a03e3453ae65caae4d7df4c508b9f664ff14487fb9fcecb706fd87e4b77",

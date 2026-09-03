@@ -69,6 +69,16 @@ def main():
     assert all(row["overall_tier"] in {"A_defined_and_mechanistically_supported", "B_characterized_phenotype", "C_phenotype_with_unresolved_attribution"} for row in appraisal)
     screening = json.loads((ROOT / "screening-abstract-summary.json").read_text())
     triage = json.loads((ROOT / "screening-abstract-triage-summary.json").read_text())
+    submission = (ROOT / "article-submission.md").read_text()
+    abstract_match = re.search(r"^## Abstract\n\n(.*?)\n\n## 1\.", submission, re.MULTILINE | re.DOTALL)
+    assert abstract_match
+    abstract_words = abstract_match.group(1).split()
+    keyword_match = re.search(r"^\\*\\*Keywords:\*\\* (.+)$", submission, re.MULTILINE)
+    assert keyword_match is not None or "**Keywords:** " in submission
+    keyword_text = next(line.split("**Keywords:** ", 1)[1] for line in submission.splitlines() if line.startswith("**Keywords:** "))
+    keyword_count = len([item for item in keyword_text.split(";") if item.strip()])
+    assert 150 <= len(abstract_words) <= 250
+    assert 4 <= keyword_count <= 6
     queue_pmids = {row["pmid"] for row in read_csv("screening-abstracts.csv")}
     manual_pmids = {row["pmid"] for row in manual}
     assert screening["records"] == len(read_csv("screening-abstracts.csv")) == 1387
@@ -99,6 +109,8 @@ def main():
         "abstracts_retrieved": screening["abstracts_retrieved"],
         "records_without_abstract": screening["no_abstract"],
         "manual_screening_complete": False,
+        "submission_abstract_words": len(abstract_words),
+        "submission_keyword_count": keyword_count,
         "referential_integrity": "passed",
         "core_file_sha256": {
             name: sha256(ROOT / name)
