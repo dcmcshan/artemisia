@@ -22,7 +22,7 @@
   "submission_keyword_count": 6,
   "referential_integrity": "passed",
   "core_file_sha256": {
-    "article.md": "74e6363c404d89298d00259446100848a4c9bd0e1a250d63410edc917494d5ee",
+    "article.md": "683740cab49bf9185a10b91076c02c0cee1c63eb9a312a726120e49765e723fa",
     "sources.json": "12f82ecc2e7e6370a362c037c683bf1e3c5f7b545c485c24db9f3c724ba7bbd0",
     "evidence-matrix.csv": "b7ca942bb37ba7b3c5546e149dfa0fc88ab18fb032c798c5dfc8759bd470b4d4",
     "references.bib": "80654be1410960955722797a9b6ad13ed2bfc6f038e836649d0650a400da8556",

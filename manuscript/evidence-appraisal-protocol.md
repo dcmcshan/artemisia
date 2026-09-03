@@ -1,6 +1,6 @@
 # Provisional evidence-appraisal protocol
 
-This protocol provides a transparent, conservative appraisal of the 124 records in
+This protocol provides a transparent, conservative appraisal of the 129 records in
 `antiparasitic-evidence.csv`. It is a structured evidence map, not a validated
 risk-of-bias instrument and not a meta-analytic quality score. The appraisal is
 performed by `build_evidence_appraisal.py` so that the same inputs produce the same

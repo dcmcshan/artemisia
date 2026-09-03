@@ -14,7 +14,7 @@ This file is the completion sheet for the *Phytochemistry Reviews* submission pa
 
 ## Abstract and indexing
 
-- Abstract: 242 words; within the journal’s 150–250-word guidance
+- Abstract: 248 words; within the journal’s 150–250-word guidance
 - Keywords: six; *Artemisia*, artemisinin, wormwood, sesquiterpene lactones, malaria, comparative genomics
 
 ## Statements and declarations
