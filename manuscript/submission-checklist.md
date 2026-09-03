@@ -10,7 +10,7 @@
 - [x] Antiparasitic assay evidence includes parasite stage and mixture-level limitations.
 - [x] Safety and translation boundaries included.
 - [x] Testable hypotheses and discriminating experiments included.
-- [x] Add a reproducible provisional appraisal of all 127 antiparasitic records with explicit chemistry, phenotype, host-control, mechanism, and translation dimensions.
+- [x] Add a reproducible provisional appraisal of all 128 antiparasitic records with explicit chemistry, phenotype, host-control, mechanism, and translation dimensions.
 
 ## Evidence and reporting still required before journal submission
 
@@ -24,7 +24,7 @@
 - [ ] Deduplicate records and archive excluded records with reasons.
 - [x] Complete bounded title/abstract screening across all 1,387 priority-queue records; full-text eligibility and quantitative extraction remain open.
 - [ ] Verify every quantitative claim against the primary source and specimen context.
-- [x] Complete and archive twenty-six full-text verification tranches for 60 sources (52 open-access, 5 publisher-full-text, and 3 public full-article-PDF mirror records; 70 evidence rows), while retaining final eligibility and quantitative pooling as open gates.
+- [x] Complete and archive twenty-seven full-text verification tranches for 61 sources (53 open-access, 5 publisher-full-text, and 3 public full-article-PDF mirror records; 71 evidence rows), while retaining final eligibility and quantitative pooling as open gates.
 - [x] Complete author/year/journal/volume/pages/DOI metadata for the PubMed-linked entries in `references.bib` (non-PubMed and DOI gaps remain explicitly represented).
 - [x] Add a living-review flow diagram with frozen retrieval counts; convert to a final PRISMA-style diagram only after manual screening is complete.
 - [x] Add a PRISMA-ScR reporting checklist mapped to the current package; unresolved items remain explicitly marked open or partial.
