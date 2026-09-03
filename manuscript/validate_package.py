@@ -56,7 +56,7 @@ def main():
     assert len(full_text_queue) == len({row["source_id"] for row in antiparasitic}) == 109
     assert {row["source_id"] for row in full_text_queue} == {row["source_id"] for row in antiparasitic}
     verification_ids = [row["source_id"] for row in full_text_verification]
-    assert len(verification_ids) == len(set(verification_ids)) == 66
+    assert len(verification_ids) == len(set(verification_ids)) == 67
     assert set(verification_ids) <= {row["source_id"] for row in full_text_queue}
     assert all(
         row["full_text_status"] == "full text verified; quantitative eligibility unresolved"
@@ -75,7 +75,7 @@ def main():
     assert screening["abstracts_retrieved"] + screening["no_abstract"] == screening["records"]
     assert triage["manual_status_for_all_records"] == "pending_manual_review"
     bibliography_entries = len(re.findall(r"^@", (ROOT / "references.bib").read_text(), re.MULTILINE))
-    assert len(matrix) == 541 and len(antiparasitic) == 128 and len(interactions) == 19 and len(chemotypes) == 10 and len(safety) == 21 and len(full_text_queue) == 109 and len(manual) == 1408 and len(manual_pmids) == len(manual) and len(manual_pmids & queue_pmids) == 1387 and len(supplementary) == 179 and len(claims) == 379 and not matrix_missing
+    assert len(matrix) == 541 and len(antiparasitic) == 128 and len(interactions) == 19 and len(chemotypes) == 10 and len(safety) == 21 and len(full_text_queue) == 109 and len(manual) == 1408 and len(manual_pmids) == len(manual) and len(manual_pmids & queue_pmids) == 1387 and len(supplementary) == 179 and len(claims) == 380 and not matrix_missing
     assert bibliography_entries == len(set(re.findall(r"^@\w+\{([^,]+)", (ROOT / "references.bib").read_text(), re.MULTILINE))) == 536
     result = {
         "validated": True,
