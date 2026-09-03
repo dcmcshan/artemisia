@@ -56,7 +56,7 @@ def main():
     assert len(full_text_queue) == len({row["source_id"] for row in antiparasitic}) == 108
     assert {row["source_id"] for row in full_text_queue} == {row["source_id"] for row in antiparasitic}
     verification_ids = [row["source_id"] for row in full_text_verification]
-    assert len(verification_ids) == len(set(verification_ids)) == 56
+    assert len(verification_ids) == len(set(verification_ids)) == 57
     assert set(verification_ids) <= {row["source_id"] for row in full_text_queue}
     assert all(
         row["full_text_status"] == "full text verified; quantitative eligibility unresolved"
