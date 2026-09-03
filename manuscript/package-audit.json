@@ -1,7 +1,7 @@
 {
   "validated": true,
   "source_count": 537,
-  "evidence_matrix_records": 546,
+  "evidence_matrix_records": 550,
   "antiparasitic_records": 128,
   "evidence_appraisal_records": 128,
   "full_text_queue_source_records": 109,
@@ -12,7 +12,7 @@
   "manual_screening_queue_decided": 1387,
   "pending_queue_records": 0,
   "supplementary_compound_specimen_records": 179,
-  "claim_audit_records": 393,
+  "claim_audit_records": 397,
   "bibliography_entries": 536,
   "screening_records": 1387,
   "abstracts_retrieved": 1323,
@@ -20,9 +20,9 @@
   "manual_screening_complete": false,
   "referential_integrity": "passed",
   "core_file_sha256": {
-    "article.md": "5738b7fdc0c36e858dccaa32f46c2c396567974f6617562070541f776365442a",
+    "article.md": "9c8bc414591992ec5503bb99b68fbdcc9b87bea1a17abb9a4b2f89e4dd333dce",
     "sources.json": "6347477f101141c34bc3f87c4033853f6919f3fe42e560abbba4513995271cec",
-    "evidence-matrix.csv": "c4cc6470f0387d42e687e85ab6d7df0ca0d8a85888a7ab2d90c952149a093ee2",
+    "evidence-matrix.csv": "c5c8d2acd7c6b51221b8e284e76e9153bac7cd45dbd87843b35e79b9a8ddcf58",
     "references.bib": "366193cb58edb360ec3966b3676de87fea669b8c30791d2f9b97a020d52a7151",
     "evidence-appraisal.csv": "9dc86ec81decfa90bf2f96c1e28d18e5a2c1849f1e88ae4b6a9f69a3e7ef8ef4"
   }
