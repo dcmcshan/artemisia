@@ -4,7 +4,11 @@
 
 This is the strongest scope match for the current manuscript because the central contribution is a critical synthesis of *Artemisia* specialized chemistry: mono-, sesqui-, diterpene, triterpene, and sesquiterpene-lactone classes, linked to biosynthesis, analytical context, chemotype variation, and biological evidence. The comparative-genomics and antiparasitic sections should be presented as the manuscript's differentiating framework rather than as claims of a completed pharmacological meta-analysis.
 
-Journal page: https://link.springer.com/journal/11001
+Journal page: https://link.springer.com/journal/11101
+
+Submission guidelines: https://link.springer.com/journal/11101/submission-guidelines
+
+The current Springer guidance identifies this as a review-article venue, asks authors to provide the search strategy and keywords where applicable, requires a title page with authors, affiliations, corresponding-author e-mail, and ORCID iDs where available, limits the abstract to 150–250 words and keywords to 4–6, and requires a Statements and Declarations section. It also requests a cover letter explaining scope fit, listing three to five relevant original research articles by the authors, and stating whether the submission is unsolicited or associated with a special issue. These author-specific fields are isolated in `submission-front-matter.md` and `cover-letter.md` and remain open until the submitting authors confirm them.
 
 ### Positioning for submission
 

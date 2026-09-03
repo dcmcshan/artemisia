@@ -12,6 +12,7 @@
 - [x] Testable hypotheses and discriminating experiments included.
 - [x] Add a reproducible provisional appraisal of all 129 antiparasitic records with explicit chemistry, phenotype, host-control, mechanism, and translation dimensions.
 - [x] Convert the submission manuscript to conventional author–year citations with an integrated reference list generated from `references.bib`.
+- [x] Add target-journal title-page, declaration, and cover-letter structures with explicit author-input gates.
 
 ## Evidence and reporting still required before journal submission
 
@@ -33,5 +34,6 @@
 - [ ] Resolve *A. argyi* ADS/TPS annotation differences across assembly releases.
 - [x] Pin software versions, scripts, manifests, and checksums for the completed seed/reciprocal/tree diagnostics and the completed two-proteome OrthoFinder result; broad multi-species orthology and common reannotation remain open.
 - [ ] Obtain journal-specific formatting, data-availability, conflict-of-interest, and ethics statements.
+- [ ] Supply and approve author names, affiliations, corresponding-author e-mail, ORCID iDs, CRediT roles, funding, competing interests, acknowledgements, and the target journal’s author-specific cover-letter inputs.
 
 The checked items describe the current draft; unchecked items are not silently treated as complete.

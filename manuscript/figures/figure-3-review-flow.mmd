@@ -1,0 +1,12 @@
+flowchart TD
+  A["Seven PubMed query families<br/>9,741 hits"] --> B["Deduplicated PubMed union<br/>4,765 records"]
+  B --> C["Title-priority queue<br/>1,387 records"]
+  C --> D["Abstracts retrieved<br/>1,323"]
+  C --> E["No abstract<br/>64"]
+  D --> F["Bounded title/abstract decisions<br/>1,387 complete"]
+  E --> F
+  F --> G["Full-text gate<br/>110 sources / 129 evidence rows"]
+  G --> H["Full-text verified<br/>78 sources / 91 evidence rows"]
+  G --> I["Open full-text verification<br/>32 sources"]
+  H --> J["Current synthesis status<br/>No pooled estimate; eligibility remains open"]
+  I --> J

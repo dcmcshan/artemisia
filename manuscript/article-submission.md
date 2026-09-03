@@ -1,10 +1,15 @@
 # *Artemisia* terpene diversity across scales: biosynthetic evolution and bounded antiparasitic evidence
 
+**Article type:** Review Article  
+**Authors and affiliations:** To be supplied and approved by the submitting authors  
+**Corresponding author:** To be supplied, including active institutional e-mail address  
+**ORCID iDs:** To be supplied where available
+
 ## Abstract
 
 The genus *Artemisia* contains volatile monoterpenes and sesquiterpenes, less volatile diterpenes and triterpenes, and structurally diverse sesquiterpene lactones (STLs). These metabolites are often discussed as though a species name, a pathway gene, or an oil profile were sufficient to predict pharmacology. Here we present a source-auditable living scoping review that instead treats the specimen, accession, tissue, preparation, analytical method, parasite stage, and evidence level as the units of comparison. The current Terpedia package registers 538 sources, 553 source-linked evidence records, 129 antiparasitic records, 19 parasite–protein interaction records, 179 compound/specimen records, and 400 audited article claims; 78 sources and 91 linked evidence rows have completed full-text verification, while 32 queue sources remain open. We synthesize terpene classes with biosynthetic compartmentalization, regulatory and environmental variation, and a bounded comparative-genomics analysis. Artemisinin biosynthesis in *A. annua* is the best-resolved gene-to-metabolite benchmark, but it should not be used as a proxy for the genus. Malaria provides the strongest validated antiparasitic case: artemisinin has direct parasite-relevant mechanistic support, whereas non-artemisinin matrix and metabolomics studies mainly identify candidate contributors to preparation-level activity. Wormwood (*A. absinthium*) provides a separate vermifuge hypothesis supported by in-vitro nematode and limited animal evidence, but constituent attribution, host selectivity, and modern clinical translation remain unresolved. We propose a phylogeny-aware program linking voucher-authenticated metabolomics, secretory-tissue multi-omics, common reannotation, enzyme assays, and fractionated parasite testing. The result is a concise synthesis for journal submission with the complete evidence and provenance archive retained in Terpedia.
 
-**Keywords:** *Artemisia*; terpene; sesquiterpene lactone; artemisinin; wormwood; malaria; vermifuge; chemotype; comparative genomics; Terpedia
+**Keywords:** *Artemisia*; artemisinin; wormwood; sesquiterpene lactones; malaria; comparative genomics
 
 ## 1. Introduction
 
@@ -28,6 +33,8 @@ Evidence was assigned according to what the source actually established. Structu
 
 ### 2.2 Chemical classes and evidence imbalance
 
+Table 1 summarizes the chemical classes covered and the minimum fields needed for defensible comparison.
+
 **Table 1. Chemical classes and minimum interpretation requirements.**
 
 | Class | Representative *Artemisia* chemistry | Typical evidence | Minimum comparison fields |
@@ -41,6 +48,8 @@ Evidence was assigned according to what the source actually established. Structu
 Volatile mono- and sesquiterpenes dominate the searchable literature because routine GC methods make them accessible. Diterpenes, triterpenes, and STLs are less directly comparable because they require extraction, LC-MS, NMR, or targeted structural workflows. This is a sampling effect, not evidence that C10 and C15 chemistry is biologically more important. Conversely, a long list of isolated C20 or C30 compounds does not imply high abundance or antiparasitic relevance.
 
 The under-sampled C20 and C30 classes nevertheless have a real, experimentally tractable literature. *A. annua* seed isolation recovered fourteen sesquiterpenes, three monoterpenes, and one diterpene, while a separate study identified ten *A. annua* diterpene-synthase genes in glandular-trichome and stress-resilience contexts [@brown2003seedterpenoids; @annua2021diterpenes]. OSC2 and CYP716A14v2 were functionally linked to α-, β-, and δ-amyrin-related triterpenoids in the *A. annua* aerial cuticle [@annua2015triterpenes]. Structure-confirmed isolations extend this space to ent-kauranoids in *A. sacrorum*, a triterpene in *A. caruifolia*, an oleanane-type saponin in *A. sphaerocephala*, nordammarane and cycloartane triterpenoids in *A. argyi*, and new sesqui-/triterpenoids in *A. vulgaris* [@li1990sacrorumditerpene; @ma2001caruifolia; @li2008sphaerocephalasaponin; @zhang2020argyitriterpenoids; @liu2022vulgaristerpenoids]. These records establish chemical space, not species-wide abundance or antiparasitic efficacy.
+
+The less-volatile evidence anchors are summarized in Table 2.
 
 **Table 2. Evidence anchors for less-volatile terpene classes.**
 
@@ -110,6 +119,8 @@ species tree → gene tree/orthology → tissue expression → enzyme product
 
 Each arrow is a potential failure point. A candidate TPS must be tested with a defined substrate and authentic product standards. A P450 candidate needs substrate-matched biochemical assays and tissue context. A metabolite association requires quantitative measurement in the same material used for the parasite assay. A parasite target hypothesis needs orthogonal confirmation rather than docking alone.
 
+Table 3 separates the comparative-genomics claims supported by the current package from the experiments still needed to discriminate them.
+
 **Table 3. Current comparative-genomics claims and the next discriminating experiment.**
 
 | Claim level | Supported now | Not established | Discriminating experiment |
@@ -122,11 +133,13 @@ Each arrow is a potential failure point. A candidate TPS must be tested with a d
 
 The most productive next comparison is not “which species has more TPS genes?” It is whether pathway completion, tissue localization, and product spectra predict a defined antiparasitic phenotype after preparation is standardized. This is especially important for the distinction between *A. annua* artemisinin chemistry and *A. absinthium* thujone, STL, and historical santonin chemistry.
 
-**Figure 1. Conceptual route from precursor supply to phenotype.**
+The linked evidence chain is shown in Fig. 1.
 
-\begin{center}
+\begin{figure}[p]
+\centering
 \includegraphics[height=0.62\textheight,keepaspectratio]{figures/figure-1-pathway.png}
-\end{center}
+\par\textbf{Fig. 1} Conceptual route from precursor supply to phenotype
+\end{figure}
 
 ## 6. Antiparasitic evidence
 
@@ -262,11 +275,21 @@ Host pharmacology is another translation gate. Artemisinin can affect host calci
 
 The translation rule is simple: in-vitro activity is not a therapeutic dose; a mixture phenotype is not a single-constituent mechanism; a computational interaction is not target engagement; and increased plant production is not clinical efficacy. The evidence map retains these distinctions so that uncertainty is preserved rather than hidden in a pooled score.
 
-**Figure 2. Evidence ladder used for terpene–parasite target claims.**
+The target-evidence hierarchy used in this review is shown in Fig. 2.
 
-\begin{center}
+\begin{figure}[p]
+\centering
 \includegraphics[height=0.62\textheight,keepaspectratio]{figures/figure-2-evidence-ladder.png}
-\end{center}
+\par\textbf{Fig. 2} Evidence ladder used for terpene–parasite target claims
+\end{figure}
+
+The living-review study-selection flow is summarized in Fig. 3.
+
+\begin{figure}[p]
+\centering
+\includegraphics[height=0.55\textheight,keepaspectratio]{figures/figure-3-review-flow.png}
+\par\textbf{Fig. 3} Living scoping-review retrieval, screening, and full-text status
+\end{figure}
 
 ## 8. Testable hypotheses and research agenda
 
@@ -297,5 +320,35 @@ The central practical outcome is an evidence architecture. Chemical identity, ti
 ## Data and code availability
 
 The complete auditable package is maintained in the Terpedia KB under the review-package directory and linked to the public `artemisia` source repository. The extended evidence-rich draft is retained as `article.md`; this file is the consolidated submission version. Large comparative-genomics inputs and outputs, search snapshots, structured evidence tables, claim audits, and SHA-256 manifests are versioned in the same package.
+
+## Statements and Declarations
+
+### Funding
+
+Funding information must be confirmed by the submitting authors. The current Terpedia package records no grant attribution.
+
+### Competing interests
+
+The submitting authors must confirm and enter the applicable financial and non-financial competing-interest statement in the journal submission interface.
+
+### Ethics approval and consent to participate
+
+Not applicable. This review uses published literature and versioned public evidence records and reports no new human or animal experimentation.
+
+### Consent for publication
+
+Not applicable.
+
+### Author contributions
+
+Author names and CRediT roles must be supplied and approved by the submitting authors. The package separates literature retrieval, evidence extraction, comparative-genomics analysis, manuscript drafting, and critical revision as assignable roles.
+
+### Acknowledgements
+
+Acknowledgements and institutional support must be confirmed by the submitting authors.
+
+### Use of artificial intelligence
+
+An AI-assisted workflow was used during evidence organization, source-linked drafting, citation conversion, and editorial revision. The Terpedia registry, row-level evidence records, full-text verification fields, and rendered manuscript remain the auditable work products; human authors must independently verify the final text, approve authorship, and accept responsibility for the submission.
 
 # References
