@@ -1,6 +1,6 @@
 # Review-flow record
 
-This is a living scoping-review flow record, not a completed PRISMA diagram. Counts are frozen from the 2026-09-01 PubMed retrieval and can change when the search is rerun.
+This is a living scoping-review flow record, not a completed PRISMA diagram. The initial search counts are frozen from the 2026-09-01 PubMed retrieval; a 2026-09-03 extension added one DOI-indexed primary *A. maritima* sheep record outside that PubMed snapshot, so registry and evidence totals can change between snapshots.
 
 ```mermaid
 flowchart TB
@@ -10,7 +10,7 @@ flowchart TB
   T --> N[64 records without abstract<br/>retained for manual lookup]
   A --> M[Title/abstract screening<br/>1,387 queue decisions; complete]
   N --> M
-  M --> F[Full-text verification and extraction<br/>78 sources verified; 31 open]
+  M --> F[Full-text verification and extraction<br/>78 sources verified; 32 open]
   F --> S[Final synthesis set<br/>pending]
 ```
 
@@ -24,7 +24,7 @@ flowchart TB
 | Abstracts retrieved | 1,323 | `screening-abstract-summary.json` | retrieval complete |
 | Records without abstract | 64 | `screening-abstract-summary.json` | manual full-record lookup required |
 | Queue records with title/abstract decision | 1,387 of 1,387 | `manual-screening-decisions.csv` | complete at title/abstract level |
-| Full-text verification tranches | 78 of 109 sources; 91 of 128 evidence rows | `full-text-verification.csv` | thirty-eighth tranche complete; 31 sources open |
+| Full-text verification tranches | 78 of 110 sources; 91 of 129 evidence rows | `full-text-verification.csv` | thirty-eighth tranche complete; 32 sources open |
 | Included after title/abstract screening | — | not yet available | open; final full-text eligibility is required |
 
 The title-priority threshold is a reproducibility aid and must not be reported as an eligibility criterion. No record is included in the final review solely because it appears in `screening-candidates.csv` or `screening-abstracts.csv`.

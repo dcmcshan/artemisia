@@ -1,5 +1,5 @@
 {
-  "retrieval_date": "2026-09-01",
+  "retrieval_date": "2026-09-03",
   "sources": [
     {"id":"artemisia-essential-oils-review","title":"The Artemisia L. Genus: A Review of Bioactive Essential Oils","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC6268508/","doi":"10.3390/molecules17032542","pmid":"22388966","pmcid":"PMC6268508","evidence_class":"review"},
     {"id":"artemisia-essential-oils-review-2017","title":"The Genus Artemisia: a 2012-2017 Literature Review on Chemical Composition, Antimicrobial, Insecticidal and Antioxidant Activities of Essential Oils","url":"https://pubmed.ncbi.nlm.nih.gov/28930281/","doi":"10.3390/medicines4030068","pmid":"28930281","pmcid":"PMC5622403","evidence_class":"review"},
@@ -540,5 +540,6 @@
     ,{"id":"annua-cadinapyridine-2025","title":"Cadinapyridine sesquiterpene alkaloids from Artemisia annua and in vitro cytotoxicity and antiplasmodial activities","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC12407398/","doi":"10.1371/journal.pone.0331186","pmid":"40901832","pmcid":"PMC12407398","evidence_class":"primary_annua_cadinapyridine_isolation_and_antiplasmodial_assay"}
     ,{"id":"annua-haemonchus-sheep-2017","title":"Anthelmintic activity of Artemisia annua in sheep-model","url":"https://academicjournals.org/journal/JMPR/article-full-text-pdf/639A8F162816.pdf","doi":"10.5897/JMPR2016.6318","evidence_class":"primary_annua_whole_plant_sheep_helminth_trial"}
     ,{"id":"absinthium-artemisinin-hcontortus-2019","title":"PSIV-9 Effects of plant extracts on adult Haemonchus contortus mortality","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC6898093/","doi":"10.1093/jas/skz258.458","pmcid":"PMC6898093","evidence_class":"primary_absinthium_artemisinin_adult_helminth_assay"}
+    ,{"id":"maritima-sheep-2026","title":"In-vivo anthelmintic potential of Artemisia maritima and its effects on haematological parameters in sheep of Kashmir","url":"https://www.sciencedirect.com/science/article/abs/pii/S2405939026001425","doi":"10.1016/j.vprsr.2026.101562","evidence_class":"primary_maritima_ovine_helminth_trial"}
   ]
 }
