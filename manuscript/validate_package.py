@@ -56,11 +56,13 @@ def main():
     assert all(row["overall_tier"] in {"A_defined_and_mechanistically_supported", "B_characterized_phenotype", "C_phenotype_with_unresolved_attribution"} for row in appraisal)
     screening = json.loads((ROOT / "screening-abstract-summary.json").read_text())
     triage = json.loads((ROOT / "screening-abstract-triage-summary.json").read_text())
+    queue_pmids = {row["pmid"] for row in read_csv("screening-abstracts.csv")}
+    manual_pmids = {row["pmid"] for row in manual}
     assert screening["records"] == len(read_csv("screening-abstracts.csv")) == 1387
     assert screening["abstracts_retrieved"] + screening["no_abstract"] == screening["records"]
     assert triage["manual_status_for_all_records"] == "pending_manual_review"
     bibliography_entries = len(re.findall(r"^@", (ROOT / "references.bib").read_text(), re.MULTILINE))
-    assert len(matrix) == 538 and len(antiparasitic) == 123 and len(interactions) == 19 and len(chemotypes) == 10 and len(safety) == 21 and len(manual) == 760 and len({row['pmid'] for row in manual}) == len(manual) and len(supplementary) == 177 and len(claims) == 343 and not matrix_missing
+    assert len(matrix) == 538 and len(antiparasitic) == 123 and len(interactions) == 19 and len(chemotypes) == 10 and len(safety) == 21 and len(manual) == 852 and len(manual_pmids) == len(manual) and len(manual_pmids & queue_pmids) == 831 and len(supplementary) == 177 and len(claims) == 343 and not matrix_missing
     assert bibliography_entries == len(set(re.findall(r"^@\w+\{([^,]+)", (ROOT / "references.bib").read_text(), re.MULTILINE))) == 532
     result = {
         "validated": True,
@@ -70,6 +72,8 @@ def main():
         "evidence_appraisal_records": len(appraisal),
         "parasite_protein_interaction_records": len(interactions),
         "manual_screening_decisions": len(manual),
+        "manual_screening_queue_decided": len(manual_pmids & queue_pmids),
+        "pending_queue_records": len(queue_pmids - manual_pmids),
         "supplementary_compound_specimen_records": len(supplementary),
         "claim_audit_records": len(claims),
         "bibliography_entries": bibliography_entries,

@@ -2,7 +2,7 @@
 
 This checklist maps the current *Artemisia* living scoping-review package to the 20 essential and 2 optional PRISMA-ScR reporting items. PRISMA-ScR is used as a reporting framework, not as evidence that the review is complete. The official checklist and explanatory material are available from the [PRISMA-ScR resource page](https://www.prisma-statement.org/scoping).
 
-The review remains in progress: the retrieval snapshot contains 4,765 unique PubMed records, the priority queue contains 1,387 records, 760 bounded title/abstract decisions are archived, and 648 queue records remain pending. Items marked **partial** or **open** must be resolved before submission as a completed scoping review.
+The review remains in progress: the retrieval snapshot contains 4,765 unique PubMed records, the priority queue contains 1,387 records, 831 queue-level title/abstract decisions plus 21 historical or out-of-queue decisions are archived, and 556 queue records remain pending. Items marked **partial** or **open** must be resolved before submission as a completed scoping review.
 
 | PRISMA-ScR item | Requirement | Current location | Status |
 |---:|---|---|---|
