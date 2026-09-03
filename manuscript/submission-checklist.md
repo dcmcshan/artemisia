@@ -24,7 +24,7 @@
 - [ ] Deduplicate records and archive excluded records with reasons.
 - [x] Complete bounded title/abstract screening across all 1,387 priority-queue records; full-text eligibility and quantitative extraction remain open.
 - [ ] Verify every quantitative claim against the primary source and specimen context.
-- [x] Complete and archive eight full-text verification tranches for 39 open-access sources (47 evidence rows), while retaining final eligibility and quantitative pooling as open gates.
+- [x] Complete and archive nine full-text verification tranches for 41 sources (39 open-access and 2 publisher-full-text records; 49 evidence rows), while retaining final eligibility and quantitative pooling as open gates.
 - [x] Complete author/year/journal/volume/pages/DOI metadata for the PubMed-linked entries in `references.bib` (non-PubMed and DOI gaps remain explicitly represented).
 - [x] Add a living-review flow diagram with frozen retrieval counts; convert to a final PRISMA-style diagram only after manual screening is complete.
 - [x] Add a PRISMA-ScR reporting checklist mapped to the current package; unresolved items remain explicitly marked open or partial.

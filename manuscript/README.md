@@ -15,7 +15,7 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `figures/figure-1-pathway.mmd`, `figures/figure-2-evidence-ladder.mmd`, and the paired SVG/PNG outputs — versioned figure sources and generated outputs corresponding to the two Mermaid figures in the manuscript.
 - `latex-header.tex` — PDF-build header for embedded figures.
 - `artemisia-terpene-review-draft.pdf` — visually verified 44-page rendering of the current 534-source manuscript with 539 evidence records, including the focused malaria/wormwood evidence table, comparative-genomics table, vector-control evidence, structure-confirmed STL tranche, and regenerated figures. Rebuild with `pandoc article.md --from markdown --pdf-engine=xelatex --include-in-header=latex-header.tex --resource-path=. -V geometry:margin=0.5in -V mainfont='STIX Two Text' -o artemisia-terpene-review-draft.pdf`.
-- `artemisia-terpene-review-submission.pdf` — visually verified 10-page consolidated submission rendering with the two conceptual figures and focused malaria/wormwood/genomics tables. Rebuild with `pandoc article-submission.md --from markdown --pdf-engine=xelatex --include-in-header=latex-header.tex --resource-path=. -V geometry:margin=0.5in -V mainfont='STIX Two Text' -o artemisia-terpene-review-submission.pdf`.
+- `artemisia-terpene-review-submission.pdf` — visually verified 11-page consolidated submission rendering with the two conceptual figures and focused malaria/wormwood/genomics tables. Rebuild with `pandoc article-submission.md --from markdown --pdf-engine=xelatex --include-in-header=latex-header.tex --resource-path=. -V geometry:margin=0.5in -V mainfont='STIX Two Text' -o artemisia-terpene-review-submission.pdf`.
 - `review-protocol.md` — inclusion, extraction, quality-assessment, and synthesis protocol.
 - `prisma-scr-checklist.md` — PRISMA-ScR item-to-file mapping, current completion status, and submission gates.
 - `evidence-matrix.csv` — 539-record specimen-, compound-, pathway-, genome-, review-, and assay-level evidence table.
@@ -42,7 +42,7 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `extend_screening_pass.py` — reproducible conservative second-pass generator for the 92 target-related records added to the screening ledger; full-text eligibility remains open.
 - `complete_screening_pass.py` — reproducible conservative completion pass covering the remaining queue records without asserting full-text eligibility or quantitative inclusion.
 - `full-text-eligibility-queue.csv` — source-linked full-text gate for all 105 unique antiparasitic source records (124 evidence rows), ranked for malaria, wormwood vermifuge, other parasite, and vector-control verification.
-- `full-text-verification.csv` — eight full-text extraction tranches: 39 open-access sources covering 47 evidence rows, with preparation-specific findings and explicit unresolved quantitative-eligibility gates.
+- `full-text-verification.csv` — nine full-text extraction tranches: 41 sources (39 open-access and 2 publisher-full-text records) covering 49 evidence rows, with preparation-specific findings and explicit unresolved quantitative-eligibility gates.
 - `package-audit.json` and `validate_package.py` — machine-readable package integrity audit and its reproducible validator.
 - `review-flow.md` — frozen retrieval counts and living-review flow diagram.
 - `screened-seed-set.csv` — auditable screening decisions for the current seed sources.
