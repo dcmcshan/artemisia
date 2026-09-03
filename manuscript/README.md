@@ -13,9 +13,9 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `article.md` — current journal-style manuscript draft.
 - `figures/figure-1-pathway.mmd`, `figures/figure-2-evidence-ladder.mmd`, and the paired SVG/PNG outputs — versioned figure sources and generated outputs corresponding to the two Mermaid figures in the manuscript.
 - `latex-header.tex` — PDF-build header for embedded figures.
-- `artemisia-terpene-review-draft.pdf` — visually verified rendering of the current 522-source manuscript with 525 evidence records, including the focused malaria/wormwood evidence table, comparative-genomics table, vector-control evidence, structure-confirmed STL tranche, and regenerated figures. Rebuild with `pandoc article.md --from markdown --pdf-engine=xelatex --include-in-header=latex-header.tex --resource-path=. -V geometry:margin=0.5in -V mainfont='STIX Two Text' -o artemisia-terpene-review-draft.pdf`.
+- `artemisia-terpene-review-draft.pdf` — visually verified rendering of the current 525-source manuscript with 528 evidence records, including the focused malaria/wormwood evidence table, comparative-genomics table, vector-control evidence, structure-confirmed STL tranche, and regenerated figures. Rebuild with `pandoc article.md --from markdown --pdf-engine=xelatex --include-in-header=latex-header.tex --resource-path=. -V geometry:margin=0.5in -V mainfont='STIX Two Text' -o artemisia-terpene-review-draft.pdf`.
 - `review-protocol.md` — inclusion, extraction, quality-assessment, and synthesis protocol.
-- `evidence-matrix.csv` — 525-record specimen-, compound-, pathway-, genome-, review-, and assay-level evidence table.
+- `evidence-matrix.csv` — 528-record specimen-, compound-, pathway-, genome-, review-, and assay-level evidence table.
 - `claim-audit.csv` — claim-level traceability table linking central manuscript statements to source IDs and permitted inference boundaries.
 - `sources.json` — stable source registry with identifiers, URLs, evidence class, and retrieval date.
 - `chemotype-table.csv` — representative chemistry records with specimen/context qualifiers.
@@ -34,7 +34,7 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `screening-abstract-summary.json` and `screening-abstracts.csv` — abstract retrieval outputs; records remain pending manual screening.
 - `triage_screening_abstracts.py` — transparent keyword-domain triage over the abstract queue.
 - `screening-abstract-triage-summary.json` and `screening-abstract-triage.csv` — abstract-level ranking outputs; all records remain pending manual review.
-- `manual-screening-decisions.csv` — 751-record manual title/abstract screening log with bounded decisions and rationale; the full queue remains open.
+- `manual-screening-decisions.csv` — 754-record manual title/abstract screening log with bounded decisions and rationale; the full queue remains open.
 - `package-audit.json` and `validate_package.py` — machine-readable package integrity audit and its reproducible validator.
 - `review-flow.md` — frozen retrieval counts and living-review flow diagram.
 - `screened-seed-set.csv` — auditable screening decisions for the current seed sources.
