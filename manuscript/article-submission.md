@@ -1,0 +1,193 @@
+# *Artemisia* terpene diversity across scales: biosynthetic evolution and bounded antiparasitic evidence
+
+## Abstract
+
+The genus *Artemisia* contains volatile monoterpenes and sesquiterpenes, less volatile diterpenes and triterpenes, and structurally diverse sesquiterpene lactones (STLs). These metabolites are often discussed as though a species name, a pathway gene, or an oil profile were sufficient to predict pharmacology. Here we present a source-auditable living scoping review that instead treats the specimen, accession, tissue, preparation, analytical method, parasite stage, and evidence level as the units of comparison. The current Terpedia package registers 533 sources, 538 source-linked evidence records, 123 antiparasitic records, 19 parasite–protein interaction records, 177 compound/specimen records, and 343 audited article claims. We synthesize terpene classes with biosynthetic compartmentalization, regulatory and environmental variation, and a bounded comparative-genomics analysis. Artemisinin biosynthesis in *A. annua* is the best-resolved gene-to-metabolite benchmark, but it should not be used as a proxy for the genus. Malaria provides the strongest validated antiparasitic case: artemisinin has direct parasite-relevant mechanistic support, whereas non-artemisinin matrix and metabolomics studies mainly identify candidate contributors to preparation-level activity. Wormwood (*A. absinthium*) provides a separate vermifuge hypothesis supported by in-vitro nematode and limited animal evidence, but constituent attribution, host selectivity, and modern clinical translation remain unresolved. We propose a phylogeny-aware program linking voucher-authenticated metabolomics, secretory-tissue multi-omics, common reannotation, enzyme assays, and fractionated parasite testing. The result is a concise synthesis for journal submission with the complete evidence and provenance archive retained in Terpedia.
+
+**Keywords:** *Artemisia*; terpene; sesquiterpene lactone; artemisinin; wormwood; malaria; vermifuge; chemotype; comparative genomics; Terpedia
+
+## 1. Introduction
+
+*Artemisia* is a chemically and ecologically heterogeneous genus. Volatile profiles can change with genotype, population, tissue, developmental stage, harvest, drying, storage, extraction, and analytical platform. Nonvolatile terpenoids are subject to an additional set of constraints: solvent selectivity, tissue localization, thermal instability, stereochemistry, ionization behavior, and structural dereplication. The appropriate biological unit is therefore not “the *Artemisia* terpene profile,” but a documented specimen or accession measured under a defined preparation and analytical context.
+
+This distinction matters for antiparasitic interpretation. An essential oil is a mixture, an extract is a matrix, a purified compound is a defined exposure, and a transcript or homolog is a molecular hypothesis. These objects cannot be merged without losing the information needed to infer causality. The same problem appears in evolutionary genomics: a terpene-synthase (TPS) copy, an annotated cytochrome P450, or a shared orthogroup does not establish native product formation, pathway flux, or parasite activity.
+
+Several important reviews already establish the breadth of the field. Essential-oil chemistry and anti-infective activity were synthesized at genus level by Abad et al. and updated for 2012–2017 by Pandey and Singh. Ivanescu et al. focused on STL analysis and biological activities; Trendafilova et al. reviewed edible *Artemisia* species and selected STLs; and Hussain et al. provided a broad review of traditional use, phytochemistry, pharmacology, and toxicology. Recent reviews of STL biosynthesis and evolution, *A. annua* production, antimalarial chemistry, and botanical anthelmintics further demonstrate that the literature is substantial rather than absent ([Abad et al. 2012](https://pubmed.ncbi.nlm.nih.gov/22388966/); [Pandey and Singh 2017](https://pubmed.ncbi.nlm.nih.gov/28930281/); [Ivanescu et al. 2015](https://pubmed.ncbi.nlm.nih.gov/26495156/); [Trendafilova et al. 2021](https://pubmed.ncbi.nlm.nih.gov/33396790/); [Hussain et al. 2024](https://pubmed.ncbi.nlm.nih.gov/37711006/)).
+
+The gap addressed here is not another catalogue of compounds. It is an evidence model connecting four scales: (i) compound identity and abundance; (ii) biosynthetic enzymes, regulation, and compartment; (iii) phylogeny, genome organization, and chemotype variation; and (iv) parasite phenotype, target evidence, host controls, and translation. Malaria and artemisinin are used as the high-confidence anchor. Wormwood is treated as a distinct vermifuge case because historical santonin chemistry, *A. absinthium* preparations, and modern veterinary nematode assays are related but not interchangeable.
+
+## 2. Review scope and evidence framework
+
+### 2.1 Living scoping-review design
+
+The review was organized around five domains: compound occurrence and analytical identity; pathway, enzyme, and compartment evidence; genotype, population, tissue, developmental, and environmental variation; comparative genomics and gene-family evolution; and antiparasitic phenotype, target, and safety evidence. Searches combined *Artemisia* terms with terpene classes, analytical methods, biosynthesis, genomics, malaria, helminths, vectors, and safety terms. The frozen retrieval snapshot contains 4,765 unique PubMed records from seven query families, of which 1,387 were prioritized for title-level review and 1,323 had abstracts retrieved.
+
+The package is deliberately a living scoping review rather than a completed systematic review. It contains 760 bounded title/abstract decisions, but 648 records in the priority queue remain pending and full-text eligibility is not complete. The PRISMA-ScR mapping is archived in `prisma-scr-checklist.md`; the search strings and retrieval counts are in `search-log.md` and `review-flow.md`. Reviews are used for discovery and context, while quantitative and mechanistic statements are preferentially anchored to primary studies.
+
+Evidence was assigned according to what the source actually established. Structure-confirmed isolation or an authentic analytical standard supports compound identity in the tested material. A library-only GC-MS assignment is lower confidence. Heterologous enzyme activity supports catalytic capacity under assay conditions, not native flux. Transcript abundance, co-expression, and homology prioritize candidates but do not prove product identity. Parasite growth inhibition establishes a preparation-specific phenotype; causal target claims require biochemical, structural, genetic, or activity-based target engagement.
+
+### 2.2 Chemical classes and evidence imbalance
+
+**Table 1. Chemical classes and minimum interpretation requirements.**
+
+| Class | Representative *Artemisia* chemistry | Typical evidence | Minimum comparison fields |
+|---|---|---|---|
+| Monoterpenes (C10) | α-/β-pinene, limonene, camphor, 1,8-cineole, borneol, thujones, artemisia ketone | GC-MS/GC-FID of oils or headspace; occasional isolation | Voucher, tissue, chemotype, stereochemistry, drying, retention index, standard |
+| Sesquiterpenes (C15) | germacrene D, β-caryophyllene, α-humulene, davanone, spathulenol, caryophyllene oxide | Volatile profiling, isolation, enzyme assays | Preparation, abundance units, analytical confidence, tissue, stage |
+| Diterpenes (C20) | species-specific diterpenoids and phytol-associated products | Solvent extraction, LC-MS, NMR, diTPS assays | Extraction polarity, structural confirmation, co-occurring matrix, native abundance |
+| Triterpenes (C30) | amyrins, friedelin-, cycloartane- and sterol-associated chemistry | Solvent extraction, LC-MS, derivatized GC-MS, NMR, OSC assays | Surface/storage compartment, derivatization, standard, tissue and developmental context |
+| Sesquiterpene lactones | artemisinin, arteannuin B, artemisinic acids, santonin, guaianolides, germacranolides | LC-MS/HPLC, NMR, isolation, enzyme and pathway studies | Stereochemistry, lactone structure, analytical standard, tissue, preparation, dose |
+
+Volatile mono- and sesquiterpenes dominate the searchable literature because routine GC methods make them accessible. Diterpenes, triterpenes, and STLs are less directly comparable because they require extraction, LC-MS, NMR, or targeted structural workflows. This is a sampling effect, not evidence that C10 and C15 chemistry is biologically more important. Conversely, a long list of isolated C20 or C30 compounds does not imply high abundance or antiparasitic relevance.
+
+## 3. From precursor supply to chemical phenotype
+
+### 3.1 Pathway architecture and compartment
+
+The plastidial MEP and cytosolic mevalonate pathways supply IPP and DMAPP, which are condensed into prenyl diphosphates. GPPS-related activity supplies C10 substrates for monoterpene synthases, while FPPS supplies FPP for C15 sesquiterpene synthases. C20 and C30 chemistry depends on additional prenyltransferase and cyclase branches. TPS enzymes create hydrocarbon skeletons; P450s, reductases, dehydrogenases, oxidases, acyltransferases, glycosyltransferases, and spontaneous reactions generate the oxygenated and rearranged products detected in plants.
+
+The pathway is spatially organized. Glandular secretory trichomes can combine precursor supply, TPS activity, oxidation, storage, and chemical defense in a restricted tissue. In *A. annua*, immunolocalization and trichome transcriptomics placed key artemisinin-pathway activities in secretory trichomes, while tissue-expression studies showed that terpene-associated transcripts vary among roots, stems, leaves, and reproductive tissues ([Olsson et al. 2009](https://pubmed.ncbi.nlm.nih.gov/19664791/); [Wang et al. 2009](https://pmc.ncbi.nlm.nih.gov/articles/PMC2763888/); [Olofsson et al. 2011](https://pmc.ncbi.nlm.nih.gov/articles/PMC3063820/)). A metabolite detected in bulk leaf is therefore not necessarily produced uniformly across the leaf, and bulk expression can obscure the cells that control accumulation.
+
+Secretory capacity is itself regulated. AaMIXTA1 perturbation altered glandular-trichome initiation, cuticle-related transcription, and artemisinin content; AaPDR3 affected β-caryophyllene accumulation in T-shaped trichomes; and promoter-reporter work showed age- and tissue-dependent *CYP71AV1* expression ([Shi et al. 2018](https://pubmed.ncbi.nlm.nih.gov/28940606/); [Fu et al. 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5420590/); [Wang et al. 2013](https://pubmed.ncbi.nlm.nih.gov/23161198/)). These results support a model in which chemical evolution can act through cell type, transport, storage, and cuticle architecture in addition to enzyme sequence.
+
+### 3.2 Artemisinin as a benchmark, not a genus-wide proxy
+
+Artemisinin biosynthesis in *A. annua* provides the strongest gene-to-metabolite reference in the genus. ADS converts FPP to amorpha-4,11-diene; CYP71AV1 oxidizes pathway intermediates; DBR2 and ALDH1 support the route toward dihydroartemisinic acid; and terminal chemistry includes nonenzymatic steps. Early cloning, recombinant assays, trichome-enriched expression, and isotope-feeding experiments established multiple pathway steps independently ([Bouwmeester et al. 1999](https://pubmed.ncbi.nlm.nih.gov/10626375/); [Chang et al. 2000](https://pubmed.ncbi.nlm.nih.gov/11185551/); [Teoh et al. 2006](https://pubmed.ncbi.nlm.nih.gov/16458889/); [Zhang et al. 2008](https://pubmed.ncbi.nlm.nih.gov/18495659/); [Schramek et al. 2010](https://pubmed.ncbi.nlm.nih.gov/19932496/)).
+
+The regulatory evidence is similarly layered. AaWRKY1, AaNAC1, AaORA, AaMYB108, jasmonate-linked ERF factors, cold-responsive AabHLH112, miR160–ARF1, and post-translational AaPP2C1–AaAPK1 regulation have each been connected to pathway expression or metabolite accumulation through perturbation, promoter, interaction, or expression experiments ([Jiang et al. 2016](https://pubmed.ncbi.nlm.nih.gov/27064403/); [Lv et al. 2016](https://pubmed.ncbi.nlm.nih.gov/27388340/); [Lu et al. 2013](https://pubmed.ncbi.nlm.nih.gov/23448426/); [Xiang et al. 2019](https://pubmed.ncbi.nlm.nih.gov/31087059/); [Guo et al. 2023](https://pubmed.ncbi.nlm.nih.gov/36478140/); [Zhang et al. 2019](https://pubmed.ncbi.nlm.nih.gov/30821346/)). These studies establish causal regulation within tested *A. annua* backgrounds. They do not demonstrate conserved function in *A. absinthium*, *A. argyi*, *A. herba-alba*, or any other congener.
+
+The same caution applies to production engineering. Recurrent selection increased artemisinin in *A. annua*, CYP71AV1/CPR co-expression increased production in transgenic lines, and a 2025 AaDHAADH variant improved dihydroartemisinic-acid production in engineered yeast ([Paul et al. 2010](https://pubmed.ncbi.nlm.nih.gov/20301056/); [Shen et al. 2012](https://pubmed.ncbi.nlm.nih.gov/23079824/); [Guo et al. 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12022088/)). These are strong interventions for production, but increased plant titer is not equivalent to increased parasite selectivity, bioavailability, or clinical efficacy.
+
+### 3.3 Evidence for other terpene classes
+
+Monoterpene synthase assays show that closely related enzymes can generate distinct product spectra. In *A. annua*, AaTPS2, AaTPS5, and AaTPS6 differed in recombinant products and responded to wounding and hormone treatments ([Ruan et al. 2016](https://pubmed.ncbi.nlm.nih.gov/27242840/)). *A. annua* seed isolation recovered sesquiterpenes, monoterpenes, and a diterpene, while trichome work functionally characterized OSC2 and CYP716A14v2 in aerial-cuticle triterpenoid production ([Brown et al. 2003](https://pubmed.ncbi.nlm.nih.gov/12946429/); [Moses et al. 2015](https://pubmed.ncbi.nlm.nih.gov/25576188/)). These records anchor C10, C15, C20, and C30 chemical space but do not define a genus-wide repertoire.
+
+STLs are particularly important because the α-methylene-γ-lactone or related electrophilic functionality can react with nucleophilic protein residues. Yet structural class does not predict a single biological outcome. Guaianolides, germacranolides, eudesmanolides, artemisinin-type endoperoxides, and santonin-like compounds differ in stereochemistry, oxidation, ring fusion, reactivity, stability, and exposure. A structure-confirmed STL should therefore enter the evidence map first as a chemical occurrence; antiparasitic function requires a defined assay and, ideally, a matched host counter-screen.
+
+## 4. Chemotype, tissue, environment, and analytical context
+
+Across *Artemisia*, chemotype is an emergent phenotype rather than a fixed species label. Population, geography, phenology, plant age, light, temperature, drought, nutrient status, wounding, hormone treatment, and microbial association can alter both total production and the relative balance among branches. In *A. frigida* and *A. absinthium*, population and geography alter volatile composition; in *A. annua*, LED spectrum, plant density, soil copper, hydrogen sulfide, nitric oxide, and developmental stage alter artemisinin or volatile outputs ([Judzentiene et al. 2018](https://pubmed.ncbi.nlm.nih.gov/30125663/); [Ram et al. 1997](https://pubmed.ncbi.nlm.nih.gov/17252398/); [Zehra et al. 2020](https://pubmed.ncbi.nlm.nih.gov/32128603/); [Nomani et al. 2022](https://pubmed.ncbi.nlm.nih.gov/33533541/); [Wani et al. 2023](https://pubmed.ncbi.nlm.nih.gov/37321306/)). These effects are biologically informative but are not automatically transferable as cultivation recommendations or parasite interventions.
+
+Postharvest chemistry is a major confounder in antiparasitic comparisons. Extended shade drying changed *A. monosperma* oil yield and composition, while hot-air drying/fixation in *A. argyi* reduced selected oxygenated monoterpenes and increased selected sesquiterpenes ([Mohammed and Alfazi 2026](https://pubmed.ncbi.nlm.nih.gov/41575886/); [Ming et al. 2025](https://pubmed.ncbi.nlm.nih.gov/41438541/)). Wormwood profiles also change through evaporation and parent-to-daughter transformations during drying and storage ([Blagojević et al. 2015](https://pubmed.ncbi.nlm.nih.gov/26265576/)). An assay using “dried wormwood” without temperature, duration, storage, oil yield, and chromatographic composition is therefore difficult to compare with an assay using fresh plant, tincture, or distilled oil.
+
+Analytical identity is equally important. Four *A. herba-alba* oils showed variable enantiomeric proportions of α-thujone, β-thujone, and camphor when chiral methods were applied ([Said Mel et al. 2016](https://pubmed.ncbi.nlm.nih.gov/26709305/)). In *A. persica*, structure-confirmed monoterpenoids and bisabolane sesquiterpenoids expanded known chemical space, but limited activity in the reported tests did not establish antiparasitic function ([Umaraliev et al. 2025](https://pubmed.ncbi.nlm.nih.gov/40581035/); [Umaraliev et al. 2026](https://pubmed.ncbi.nlm.nih.gov/41935795/)). The comparative dataset therefore retains presence/absence, relative abundance, and analytical detectability as separate variables.
+
+## 5. Comparative evolutionary genomics: what is supported
+
+### 5.1 A bounded comparative analysis
+
+The Terpedia package includes a completed full two-proteome OrthoFinder run for *A. annua* and *A. argyi*, restricted pathway-family mapping, and a bounded three-species diagnostic adding *A. tridentata*. The two-proteome run assigned 111,235 of 129,761 proteins to 28,696 orthogroups, including 25,039 groups containing both species and 7,086 single-copy groups. These results demonstrate computational feasibility and identify candidate shared and lineage-restricted families.
+
+They do not constitute a genus-wide evolutionary analysis. A two-tip species tree is necessarily trivial. The three-species pathway diagnostic is candidate-focused and depends on heterogeneous assemblies and annotations. Copy-number comparisons are sensitive to ploidy, homeolog retention, assembly collapse, gene prediction, and annotation release. Absence from an annotation is therefore not biological absence. The strongest current conclusion is that *Artemisia* terpene evolution can be investigated with an orthology-aware workflow, not that comparative genomics has already explained antiparasitic diversity.
+
+### 5.2 From orthogroups to testable gene–metabolite hypotheses
+
+The useful evolutionary unit is a linked chain rather than a gene list:
+
+```text
+species tree → gene tree/orthology → tissue expression → enzyme product
+      → native metabolite → preparation exposure → parasite phenotype
+      → host selectivity and target engagement
+```
+
+Each arrow is a potential failure point. A candidate TPS must be tested with a defined substrate and authentic product standards. A P450 candidate needs substrate-matched biochemical assays and tissue context. A metabolite association requires quantitative measurement in the same material used for the parasite assay. A parasite target hypothesis needs orthogonal confirmation rather than docking alone.
+
+**Table 2. Current comparative-genomics claims and the next discriminating experiment.**
+
+| Claim level | Supported now | Not established | Discriminating experiment |
+|---|---|---|---|
+| Shared pathway ancestry | Candidate orthogroups and conserved pathway-associated sequences | Orthology across the genus and ancestral state | Common reannotation, species tree, gene-tree reconciliation |
+| Gene-family expansion | Candidate TPS/P450/OSC differences in sampled genomes | Causal expansion or lineage-specific innovation | Chromosome-scale assemblies, synteny, homeolog-aware copy number |
+| Catalytic divergence | Recombinant *Artemisia* enzyme and TPS evidence in selected cases | Native product and ecological function across species | Purified orthologs, isotope-labeled substrates, authentic standards |
+| Chemotype evolution | Population, tissue, stage, and environmental associations | Heritable basis independent of environment | Common-garden multi-omics and QTL/allele-aware analysis |
+| Antiparasitic evolution | Artemisinin pathway and defined assay anchors | Genus-wide gene-to-parasite causality | Matched chemotype, fractionation, target engagement, host counterscreens |
+
+The most productive next comparison is not “which species has more TPS genes?” It is whether pathway completion, tissue localization, and product spectra predict a defined antiparasitic phenotype after preparation is standardized. This is especially important for the distinction between *A. annua* artemisinin chemistry and *A. absinthium* thujone, STL, and historical santonin chemistry.
+
+**Figure 1. Conceptual route from precursor supply to phenotype.**
+
+\begin{center}
+\includegraphics[height=0.62\textheight,keepaspectratio]{figures/figure-1-pathway.png}
+\end{center}
+
+## 6. Antiparasitic evidence
+
+### 6.1 Evidence ladder and protein interactions
+
+The interaction map separates direct target evidence, functional target-class evidence, enzyme or activity-based evidence, computational hypotheses, and unresolved targets. Artemisinin has the strongest direct malaria anchor, with heme activation, redox chemistry, proteome-wide or chemoproteomic signals, and parasite-state resistance studies contributing complementary rather than identical evidence. Calcium-homeostasis evidence extends to *Toxoplasma gondii* and related systems; recombinant enzyme assays for non-*Artemisia* STLs provide biochemical plausibility; docking against *Leishmania*, *Haemonchus*, or insect proteins remains hypothesis-generating unless paired with biochemical or genetic validation.
+
+This separation prevents a common category error: treating a docking score as equivalent to target engagement, or treating an oil phenotype as evidence that one named constituent binds the proposed target. The 19-record interaction table is consequently a map of evidence gaps as much as a list of targets. For most non-artemisinin terpenes, the correct statement is that a preparation or purified compound has a phenotype and that target identity remains open.
+
+### 6.2 Malaria: artemisinin as the validated anchor
+
+Artemisinin is a sesquiterpene lactone with an endoperoxide bridge whose activation is central to its antimalarial pharmacology. The pathway and the parasite mechanism should be kept conceptually separate: a plant enzyme establishes production, while parasite experiments establish exposure, activation, damage, resistance, and selectivity. Artemisinin-related chemistry has been studied across asexual blood stages, gametocytes, resistant strains, rodent malaria, and whole-plant or tea preparations. These layers are not equivalent, but together they provide a much stronger evidence base than is available for most *Artemisia* terpenes.
+
+Whole-leaf and tea studies are especially informative about matrix effects and especially limited for constituent attribution. Mutant or chemically contrasted *A. annua* materials, tea infusions, and extract/isolated-artemisinin comparisons have reported activity that cannot always be predicted by artemisinin concentration alone. A gametocyte study compared *Artemisia* infusions with artemisinin, and a multistage study reported inhibition across parasite stages including relapse-relevant hypnozoite models ([Balaich et al. 2016](https://pmc.ncbi.nlm.nih.gov/articles/PMC4808191/); [Bourdy et al. 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC7855472/); [Cai et al. 2022](https://pubmed.ncbi.nlm.nih.gov/34857648/)). These results support matrix-aware pharmacology, not a general claim that crude tea is equivalent to an approved artemisinin combination treatment.
+
+Recent metabolomics sharpens the matrix question. Shi et al. used UPLC-Q-TOF-MS/MS to compare wild and cultivated *A. annua*, reporting 24 flavonoids, 68 sesquiterpenoids, and 21 other compounds and nominating candidate non-artemisinin and arteannuin-B-related chemistry in a discovery and fractionation framework ([Shi et al. 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC9740527/)). The study identifies plausible contributors and prioritizes fractionation; it does not establish that a nominated sesquiterpene is the causal antimalarial molecule.
+
+Aubouy et al. compared teas from ten Benin plantations with French material using LC-HRMS and *P. falciparum* 3D7 assays. Artemisinin ranged from 0.3 to 15.7 mg/L, storage produced substantial losses in several Benin locations, and activity correlated positively with artemisinin while comparison with pure artemisinin suggested enhancing or limiting co-metabolites ([Aubouy et al. 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12373170/)). This is strong origin-, storage-, and matrix-level evidence. It is not terpene-specific mechanism, standardized product performance, or clinical efficacy.
+
+Malaria resistance makes the evidence hierarchy more important. Artemisinin resistance is a parasite-state and genetic problem involving stress handling, proteostasis, heme detoxification, and redox homeostasis. A whole-plant or co-metabolite intervention could alter exposure or activity, but the responsible molecule and host selectivity must be established experimentally. The appropriate next study is a matched panel in which the same voucher-linked material is analyzed by targeted LC/GC methods, fractionated, tested against synchronized parasite stages and resistant lines, and paired with host-cell and heme/redox controls.
+
+### 6.3 Wormwood: vermifuge evidence without over-attribution
+
+Wormwood’s vermifuge history has multiple chemical and taxonomic layers. Santonin is a historically important anthelmintic STL associated with *Artemisia* taxa used for that purpose, but historical santonin exposure should not be treated as evidence that modern *A. absinthium* tea, oil, or powder has the same pharmacology. *A. absinthium* contains volatile thujones, camphor, 1,8-cineole, borneol, sesquiterpenes, STLs, phenolics, sterols, and other matrix constituents. A preparation-level helminth phenotype therefore cannot be assigned to “wormwood terpenes” without chemical matching and fractionation.
+
+The modern evidence is real but heterogeneous. Methanolic *A. absinthium* was among the more active preparations in a multi-plant *Haemonchus contortus* egg and larval comparison, while UPLC-MS/MS documented selected secondary metabolites; the result supports preparation-level activity rather than a terpene-specific mechanism ([Váradyová et al. 2018](https://pubmed.ncbi.nlm.nih.gov/30389531/)). An *Ascaris suum* study found concentration-dependent effects of alcoholic *A. absinthium* extract on embryogenesis and larvae, but the authors called for deeper phytochemical attribution ([Băieș et al. 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC9501052/)).
+
+In experimentally infected lambs, wormwood extract showed strong in-vitro egg-hatch effects, yet group-level fecal egg counts did not differ significantly in the reported feeding trial ([Mravčáková et al. 2020](https://pmc.ncbi.nlm.nih.gov/articles/PMC7070545/)). A recent small Awassi-sheep study reported a 76.77% fecal egg-count reduction on day 15 for crude ethanolic extract compared with 100% for albendazole, but the 18-animal regional study requires independent chemical, dose, residue, and safety confirmation ([Irehan et al. 2026](https://pubmed.ncbi.nlm.nih.gov/42572844/)). A low-input swine-farm study likewise reported antiparasitic effects after *A. absinthium* powder, but co-occurring interventions and complex powder chemistry prevent terpene attribution ([Băieş et al. 2024](https://pmc.ncbi.nlm.nih.gov/articles/PMC10983701/)).
+
+Oil and volatile evidence broadens the hypothesis but does not resolve it. *A. absinthium* oil has shown trypanocidal or trichomonacidal activity in defined in-vitro systems, and thujone-rich *A. sieberi* oil has shown contact activity against poultry red mites; these are relevant antiparasitic phenotypes but are not equivalent to gastrointestinal nematode efficacy or human vermifuge use ([Rivero-Cruz et al. 2015](https://pubmed.ncbi.nlm.nih.gov/26107187/); [Tabari et al. 2017](https://pubmed.ncbi.nlm.nih.gov/28378196/)). In *A. absinthium*, extraction-method comparisons against *Tetranychus urticae* showed different oil potencies and a candidate sesquiterpene association, but no single active molecule was established ([Chiasson et al. 2001](https://pubmed.ncbi.nlm.nih.gov/11233109/)).
+
+The best wormwood experiment is therefore not another crude-extract screen. It is a chemically fingerprinted, fractionated, dose-resolved assay against defined nematode life stages, with thujone and STL quantification, matched vehicle controls, mammalian cell or organoid counterscreens, and in-vivo pharmacokinetic and residue measurements. Only after that sequence could an evolutionary comparison test whether a *A. absinthium* chemotype or STL pathway predicts a reproducible vermifuge phenotype.
+
+### 6.4 Other parasite systems as comparative controls
+
+Other *Artemisia* evidence includes *Leishmania*, *Trypanosoma*, *Schistosoma*, *Eimeria*, *Toxoplasma*, ticks, mites, mosquitoes, and gastrointestinal helminths. These records are useful as comparative controls because they expose stage, route, host, and formulation effects. Purified STLs can show defined protozoan phenotypes; oils can show vector or ectoparasite effects; extracts can show rodent or ruminant activity. None should be pooled into one “antiparasitic potency” estimate without common units, matched exposure, parasite-stage annotation, and host controls.
+
+Negative or boundary records are particularly valuable. Some *Artemisia* preparations fail against a tested parasite, or show activity only in a formulation or one life stage. These observations help distinguish broad cytotoxicity from parasite selectivity and prevent publication bias from turning every reported plant effect into a positive mechanism.
+
+## 7. Safety and translation boundaries
+
+Preparation identity is a safety variable. Artemisinin, an *A. annua* tea, a distilled essential oil, a hydroalcoholic extract, and *A. absinthium* powder are not interchangeable exposures. Thujone requires explicit quantification because neurotoxicity risk varies with chemotype, dose, route, and product. Regional *A. annua* and *A. afra* oils differ in camphor-, cineole-, and thujone-associated composition, while volatile pharmacokinetic studies show tissue distribution followed by elimination for defined oils rather than a universal safety profile ([Radulović et al. 2013](https://pubmed.ncbi.nlm.nih.gov/23607933/); [Oyedeji et al. 2009](https://pubmed.ncbi.nlm.nih.gov/19634335/); [Hou et al. 2021](https://pubmed.ncbi.nlm.nih.gov/34479182/)).
+
+Host pharmacology is another translation gate. Artemisinin can affect host calcium-channel systems in experimental models, *Artemisia* teas can inhibit or induce drug-metabolizing enzymes depending on preparation, and reproductive studies in rodents raise preparation- and dose-specific concerns ([Urban and Schaefer 2020](https://pmc.ncbi.nlm.nih.gov/articles/PMC7016953/); [Kane et al. 2022](https://pubmed.ncbi.nlm.nih.gov/35934190/); [Abolaji et al. 2013](https://pubmed.ncbi.nlm.nih.gov/22736625/)). These findings do not define a human dose, but they show why parasite activity must be paired with host counterscreens, CYP/transporter testing, reproductive toxicology, and residue analysis.
+
+The translation rule is simple: in-vitro activity is not a therapeutic dose; a mixture phenotype is not a single-constituent mechanism; a computational interaction is not target engagement; and increased plant production is not clinical efficacy. The evidence map retains these distinctions so that uncertainty is preserved rather than hidden in a pooled score.
+
+**Figure 2. Evidence ladder used for terpene–parasite target claims.**
+
+\begin{center}
+\includegraphics[height=0.62\textheight,keepaspectratio]{figures/figure-2-evidence-ladder.png}
+\end{center}
+
+## 8. Testable hypotheses and research agenda
+
+The integrated evidence supports six experimentally discriminating hypotheses.
+
+1. **Pathway completion will predict antiparasitic chemistry better than total TPS count.** Across a phylogenetically sampled panel, complete precursor-to-oxidized-product modules should explain defined metabolite abundance better than raw TPS copy number. Test with common reannotation, gene-tree reconciliation, trichome expression, targeted metabolomics, and enzyme assays.
+
+2. **Secretory-tissue expression will outperform bulk-leaf expression.** Cell-resolved or trichome-enriched transcriptomics should predict accumulated volatiles and STLs more accurately than bulk RNA-seq. Test with matched tissue sampling, spatial metabolomics, and isotope tracing.
+
+3. **Essential-oil antiparasitic activity will often be a chemotype-specific mixture property.** Activity should be reproducible only when the full profile, stereochemistry, and exposure are matched. Test by reconstituting major and minor constituents at measured ratios and comparing whole oil, depleted oil, fractions, and purified compounds.
+
+4. **Artemisinin-like malaria phenotypes will depend on matrix and parasite state.** Co-metabolites may alter uptake, metabolism, redox stress, or parasite-stage sensitivity without acting as standalone antimalarials. Test origin- and storage-matched teas against synchronized sensitive and resistant parasites, with LC-HRMS feature tracking and fractionation.
+
+5. **Wormwood vermifuge activity will require preparation-specific STL/volatile signatures.** A reproducible nematode phenotype should track a chemical fingerprint and exposure window rather than the plant name alone. Test *A. absinthium* chemotypes against eggs, larvae, and adults, with thujone/STL quantification, host-cell counterscreens, and in-vivo residue studies.
+
+6. **Apparent gene-family expansion will be partly explained by cytotype and annotation.** Homeolog retention, assembly collapse, and annotation choice should account for a measurable fraction of apparent TPS/P450/OSC expansion. Test chromosome-scale assemblies, allele-aware annotation, synteny, and reconciliation across a broad *Artemisia* species tree.
+
+### 8.1 Minimum reporting standard
+
+Future studies should report accepted taxon and voucher, accession or genotype, ploidy where known, tissue, developmental stage, locality, cultivation conditions, harvest and storage, preparation and extraction yield, analytical platform, authentic-standard or library status, stereochemistry, abundance units, parasite species and stage, inoculum, dose, endpoint, vehicle, positive control, host counter-screen, and raw-data availability. These fields are already represented across the Terpedia CSV schemas and should become the minimum unit for comparative synthesis.
+
+## 9. Conclusions
+
+There is sufficient primary research to support a strong *Artemisia* terpene review, but not to justify a single genus-wide potency score or a definitive evolutionary explanation of antiparasitic activity. The most secure conclusions are that *Artemisia* terpene chemistry is structurally broad and context-dependent; artemisinin biosynthesis and malaria pharmacology provide the best-resolved reference system; wormwood has a credible but preparation-specific vermifuge evidence stream; and comparative genomics currently provides testable prioritization rather than final causal explanation.
+
+The central practical outcome is an evidence architecture. Chemical identity, tissue localization, pathway function, evolutionary history, parasite phenotype, target engagement, host selectivity, and translation must be linked without collapsing their uncertainty. Terpedia stores the full source registry, evidence matrix, screening records, interaction map, compound/specimen extraction, figures, code, checksums, and review-status record needed to extend this concise submission manuscript into a completed review.
+
+## Data and code availability
+
+The complete auditable package is maintained in the Terpedia KB under the review-package directory and linked to the public `artemisia` source repository. The extended evidence-rich draft is retained as `article.md`; this file is the consolidated submission version. Large comparative-genomics inputs and outputs, search snapshots, structured evidence tables, claim audits, and SHA-256 manifests are versioned in the same package.
