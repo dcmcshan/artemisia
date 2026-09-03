@@ -1,8 +1,8 @@
 # *Artemisia* terpene diversity across scales: biosynthetic evolution and bounded antiparasitic evidence
 
-**Article type:** Review Article  
-**Authors and affiliations:** To be supplied and approved by the submitting authors  
-**Corresponding author:** To be supplied, including active institutional e-mail address  
+**Article type:** Review Article
+**Authors and affiliations:** To be supplied and approved by the submitting authors
+**Corresponding author:** To be supplied, including active institutional e-mail address
 **ORCID iDs:** To be supplied where available
 
 ## Abstract
