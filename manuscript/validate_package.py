@@ -33,9 +33,10 @@ def main():
     safety = read_csv("safety-translation.csv")
     supplementary = read_csv("supplementary-compound-specimen.csv")
     appraisal = read_csv("evidence-appraisal.csv")
+    full_text_queue = read_csv("full-text-eligibility-queue.csv")
     manual = read_csv("manual-screening-decisions.csv")
     claims = read_csv("claim-audit.csv")
-    assert all(None not in row for row in matrix + antiparasitic + interactions + chemotypes + safety + manual + supplementary + claims + appraisal)
+    assert all(None not in row for row in matrix + antiparasitic + interactions + chemotypes + safety + full_text_queue + manual + supplementary + claims + appraisal)
     matrix_missing = []
     for row in matrix:
         for source_id in row["source_id"].split("; "):
@@ -51,6 +52,8 @@ def main():
             if source_id not in source_ids:
                 matrix_missing.append([row["claim_id"], source_id])
     assert len(appraisal) == len(antiparasitic) == 123
+    assert len(full_text_queue) == len({row["source_id"] for row in antiparasitic}) == 104
+    assert {row["source_id"] for row in full_text_queue} == {row["source_id"] for row in antiparasitic}
     assert {row["record_id"] for row in appraisal} == {row["record_id"] for row in antiparasitic}
     assert {row["source_id"] for row in appraisal} <= source_ids
     assert all(row["overall_tier"] in {"A_defined_and_mechanistically_supported", "B_characterized_phenotype", "C_phenotype_with_unresolved_attribution"} for row in appraisal)
@@ -62,7 +65,7 @@ def main():
     assert screening["abstracts_retrieved"] + screening["no_abstract"] == screening["records"]
     assert triage["manual_status_for_all_records"] == "pending_manual_review"
     bibliography_entries = len(re.findall(r"^@", (ROOT / "references.bib").read_text(), re.MULTILINE))
-    assert len(matrix) == 538 and len(antiparasitic) == 123 and len(interactions) == 19 and len(chemotypes) == 10 and len(safety) == 21 and len(manual) == 1408 and len(manual_pmids) == len(manual) and len(manual_pmids & queue_pmids) == 1387 and len(supplementary) == 177 and len(claims) == 343 and not matrix_missing
+    assert len(matrix) == 538 and len(antiparasitic) == 123 and len(interactions) == 19 and len(chemotypes) == 10 and len(safety) == 21 and len(full_text_queue) == 104 and len(manual) == 1408 and len(manual_pmids) == len(manual) and len(manual_pmids & queue_pmids) == 1387 and len(supplementary) == 177 and len(claims) == 343 and not matrix_missing
     assert bibliography_entries == len(set(re.findall(r"^@\w+\{([^,]+)", (ROOT / "references.bib").read_text(), re.MULTILINE))) == 532
     result = {
         "validated": True,
@@ -70,6 +73,7 @@ def main():
         "evidence_matrix_records": len(matrix),
         "antiparasitic_records": len(antiparasitic),
         "evidence_appraisal_records": len(appraisal),
+        "full_text_queue_source_records": len(full_text_queue),
         "parasite_protein_interaction_records": len(interactions),
         "manual_screening_decisions": len(manual),
         "manual_screening_queue_decided": len(manual_pmids & queue_pmids),

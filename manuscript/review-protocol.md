@@ -10,6 +10,8 @@ Abstract-level keyword triage is archived in `screening-abstract-triage.csv`. It
 
 The archived manual title/abstract decisions are stored in `manual-screening-decisions.csv`. They contain 1,408 bounded decisions with explicit evidence scopes and rationale; 1,387 correspond to records in the priority triage queue and 21 historical or out-of-queue records are retained separately. This log is not an exhaustive inclusion set: full-text eligibility and quantitative extraction remain open.
 
+The full-text gate is archived in `full-text-eligibility-queue.csv`. It covers 104 unique source records underlying the 123-row antiparasitic evidence table and ranks malaria and *A. absinthium* vermifuge sources first. Each row specifies the available full-text route and the chemistry, preparation, parasite-stage, dose, host-control, constituent-attribution, mechanism, and translation checks required before quantitative inclusion.
+
 The initial supplementary compound-by-specimen table is archived in `supplementary-compound-specimen.csv`. It is a source-backed extraction of 177 representative records, not a complete genus-wide compound inventory; non-terpene co-occurring volatiles are labeled separately.
 
 ## Review questions
