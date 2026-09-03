@@ -14,16 +14,16 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `article-submission.md` — consolidated submission manuscript with the central argument and the complete Terpedia package retained as supplementary evidence.
 - `figures/figure-1-pathway.mmd`, `figures/figure-2-evidence-ladder.mmd`, and the paired SVG/PNG outputs — versioned figure sources and generated outputs corresponding to the two Mermaid figures in the manuscript.
 - `latex-header.tex` — PDF-build header for embedded figures.
-- `artemisia-terpene-review-draft.pdf` — visually verified 45-page rendering of the current 534-source manuscript with 539 evidence records, including the focused malaria/wormwood evidence table, comparative-genomics table, vector-control evidence, structure-confirmed STL tranche, and regenerated figures. Rebuild with `pandoc article.md --from markdown --pdf-engine=xelatex --include-in-header=latex-header.tex --resource-path=. -V geometry:margin=0.5in -V mainfont='STIX Two Text' -o artemisia-terpene-review-draft.pdf`.
+- `artemisia-terpene-review-draft.pdf` — visually verified 46-page rendering of the current 535-source manuscript with 540 evidence records, including the focused malaria/wormwood evidence table, comparative-genomics table, vector-control evidence, structure-confirmed STL tranche, and regenerated figures. Rebuild with `pandoc article.md --from markdown --pdf-engine=xelatex --include-in-header=latex-header.tex --resource-path=. -V geometry:margin=0.5in -V mainfont='STIX Two Text' -o artemisia-terpene-review-draft.pdf`.
 - `artemisia-terpene-review-submission.pdf` — visually verified 11-page consolidated submission rendering with the two conceptual figures and focused malaria/wormwood/genomics tables. Rebuild with `pandoc article-submission.md --from markdown --pdf-engine=xelatex --include-in-header=latex-header.tex --resource-path=. -V geometry:margin=0.5in -V mainfont='STIX Two Text' -o artemisia-terpene-review-submission.pdf`.
 - `review-protocol.md` — inclusion, extraction, quality-assessment, and synthesis protocol.
 - `prisma-scr-checklist.md` — PRISMA-ScR item-to-file mapping, current completion status, and submission gates.
-- `evidence-matrix.csv` — 539-record specimen-, compound-, pathway-, genome-, review-, and assay-level evidence table.
+- `evidence-matrix.csv` — 540-record specimen-, compound-, pathway-, genome-, review-, and assay-level evidence table.
 - `claim-audit.csv` — claim-level traceability table linking central manuscript statements to source IDs and permitted inference boundaries.
 - `sources.json` — stable source registry with identifiers, URLs, evidence class, and retrieval date.
 - `chemotype-table.csv` — representative chemistry records with specimen/context qualifiers.
-- `supplementary-compound-specimen.csv` — 177 specimen-/tissue-/preparation-level compound records, including explicit non-terpene comparators.
-- `antiparasitic-evidence.csv` — 124 quantitative and stage-aware parasite/vector assay records with host-control and translation boundaries.
+- `supplementary-compound-specimen.csv` — 179 specimen-/tissue-/preparation-level compound records, including explicit non-terpene comparators.
+- `antiparasitic-evidence.csv` — 125 quantitative and stage-aware parasite/vector assay records with host-control and translation boundaries.
 - `parasite-protein-interactions.csv` — evidence-tiered terpene/terpenoid–parasite-protein interaction map, including direct target evidence, enzyme assays, docking hypotheses, and explicit target gaps.
 - `protein-interaction-protocol.md` — extraction rules, evidence ladder, provenance boundaries, and next-experiment requirements for the interaction map.
 - `evidence-appraisal.csv` and `evidence-appraisal-protocol.md` — deterministic, provisional appraisal of all 125 antiparasitic records across chemistry resolution, phenotype context, host control, mechanism, and translation; not a meta-analytic quality score.
