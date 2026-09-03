@@ -3,6 +3,7 @@
   "source_count": 533,
   "evidence_matrix_records": 538,
   "antiparasitic_records": 123,
+  "evidence_appraisal_records": 123,
   "parasite_protein_interaction_records": 19,
   "manual_screening_decisions": 760,
   "supplementary_compound_specimen_records": 177,
@@ -17,6 +18,7 @@
     "article.md": "506e3f8520042bdc9d0e9dba7f4d45f6e5df02ac40b13ee792fe5af8a9522582",
     "sources.json": "4da98ab4c942f5dca9f8db06349d80c00c10b04d08d8352c18042fec35760787",
     "evidence-matrix.csv": "6c67c8263ce76e1dd6e560456841f17edb549feaf36faf4ce1a6fd26c7134de9",
-    "references.bib": "fd27e50d70cfb1c558eafd9d1d61577374a274a1f2f566371997319df1770d1d"
+    "references.bib": "fd27e50d70cfb1c558eafd9d1d61577374a274a1f2f566371997319df1770d1d",
+    "evidence-appraisal.csv": "18daf5088c3a0cd58b33f51824be3cab422d4dbb4463788d2f8ac05b6e2a8130"
   }
 }

@@ -32,9 +32,10 @@ def main():
     chemotypes = read_csv("chemotype-table.csv")
     safety = read_csv("safety-translation.csv")
     supplementary = read_csv("supplementary-compound-specimen.csv")
+    appraisal = read_csv("evidence-appraisal.csv")
     manual = read_csv("manual-screening-decisions.csv")
     claims = read_csv("claim-audit.csv")
-    assert all(None not in row for row in matrix + antiparasitic + interactions + chemotypes + safety + manual + supplementary + claims)
+    assert all(None not in row for row in matrix + antiparasitic + interactions + chemotypes + safety + manual + supplementary + claims + appraisal)
     matrix_missing = []
     for row in matrix:
         for source_id in row["source_id"].split("; "):
@@ -49,6 +50,10 @@ def main():
         for source_id in row["source_ids"].split("; "):
             if source_id not in source_ids:
                 matrix_missing.append([row["claim_id"], source_id])
+    assert len(appraisal) == len(antiparasitic) == 123
+    assert {row["record_id"] for row in appraisal} == {row["record_id"] for row in antiparasitic}
+    assert {row["source_id"] for row in appraisal} <= source_ids
+    assert all(row["overall_tier"] in {"A_defined_and_mechanistically_supported", "B_characterized_phenotype", "C_phenotype_with_unresolved_attribution"} for row in appraisal)
     screening = json.loads((ROOT / "screening-abstract-summary.json").read_text())
     triage = json.loads((ROOT / "screening-abstract-triage-summary.json").read_text())
     assert screening["records"] == len(read_csv("screening-abstracts.csv")) == 1387
@@ -62,6 +67,7 @@ def main():
         "source_count": len(source_ids),
         "evidence_matrix_records": len(matrix),
         "antiparasitic_records": len(antiparasitic),
+        "evidence_appraisal_records": len(appraisal),
         "parasite_protein_interaction_records": len(interactions),
         "manual_screening_decisions": len(manual),
         "supplementary_compound_specimen_records": len(supplementary),
@@ -74,7 +80,7 @@ def main():
         "referential_integrity": "passed",
         "core_file_sha256": {
             name: sha256(ROOT / name)
-            for name in ["article.md", "sources.json", "evidence-matrix.csv", "references.bib"]
+            for name in ["article.md", "sources.json", "evidence-matrix.csv", "references.bib", "evidence-appraisal.csv"]
         },
     }
     (ROOT / "package-audit.json").write_text(json.dumps(result, indent=2) + "\n")
