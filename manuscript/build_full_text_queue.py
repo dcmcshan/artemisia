@@ -62,6 +62,12 @@ def focus(priority, taxa, parasites):
 def main():
     evidence = read_csv(ROOT / "antiparasitic-evidence.csv")
     sources = {row["id"]: row for row in json.loads((ROOT / "sources.json").read_text())["sources"]}
+    verification = {
+        row["source_id"]: row
+        for row in read_csv(ROOT / "full-text-verification.csv")
+    }
+    if len(verification) != len(read_csv(ROOT / "full-text-verification.csv")):
+        raise SystemExit("duplicate source_id in full-text-verification.csv")
     grouped = defaultdict(list)
     for row in evidence:
         grouped[row["source_id"]].append(row)
@@ -89,7 +95,9 @@ def main():
                 "parasites": parasites,
                 "priority": priority,
                 "full_text_route": "PMC full text/XML candidate" if pmcid else "PubMed abstract plus publisher/full-text lookup",
-                "full_text_status": "not yet screened at full text",
+                "full_text_status": verification.get(source_id, {}).get(
+                    "full_text_status", "not yet screened at full text"
+                ),
                 "eligibility_focus": focus(priority, taxa, parasites),
                 "required_checks": "identity; preparation; analytical method; parasite stage; dose/exposure; comparator; host selectivity; constituent attribution; mechanism; translational boundary",
             }

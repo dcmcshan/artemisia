@@ -34,9 +34,10 @@ def main():
     supplementary = read_csv("supplementary-compound-specimen.csv")
     appraisal = read_csv("evidence-appraisal.csv")
     full_text_queue = read_csv("full-text-eligibility-queue.csv")
+    full_text_verification = read_csv("full-text-verification.csv")
     manual = read_csv("manual-screening-decisions.csv")
     claims = read_csv("claim-audit.csv")
-    assert all(None not in row for row in matrix + antiparasitic + interactions + chemotypes + safety + full_text_queue + manual + supplementary + claims + appraisal)
+    assert all(None not in row for row in matrix + antiparasitic + interactions + chemotypes + safety + full_text_queue + full_text_verification + manual + supplementary + claims + appraisal)
     matrix_missing = []
     for row in matrix:
         for source_id in row["source_id"].split("; "):
@@ -54,6 +55,15 @@ def main():
     assert len(appraisal) == len(antiparasitic) == 123
     assert len(full_text_queue) == len({row["source_id"] for row in antiparasitic}) == 104
     assert {row["source_id"] for row in full_text_queue} == {row["source_id"] for row in antiparasitic}
+    verification_ids = [row["source_id"] for row in full_text_verification]
+    assert len(verification_ids) == len(set(verification_ids)) == 9
+    assert set(verification_ids) <= {row["source_id"] for row in full_text_queue}
+    assert all(
+        row["full_text_status"] == "full text verified; quantitative eligibility unresolved"
+        for row in full_text_verification
+    )
+    queue_by_source = {row["source_id"]: row for row in full_text_queue}
+    assert all(queue_by_source[source_id]["full_text_status"] == full_text_verification[index]["full_text_status"] for index, source_id in enumerate(verification_ids))
     assert {row["record_id"] for row in appraisal} == {row["record_id"] for row in antiparasitic}
     assert {row["source_id"] for row in appraisal} <= source_ids
     assert all(row["overall_tier"] in {"A_defined_and_mechanistically_supported", "B_characterized_phenotype", "C_phenotype_with_unresolved_attribution"} for row in appraisal)
@@ -74,6 +84,10 @@ def main():
         "antiparasitic_records": len(antiparasitic),
         "evidence_appraisal_records": len(appraisal),
         "full_text_queue_source_records": len(full_text_queue),
+        "full_text_verified_source_records": len(full_text_verification),
+        "full_text_verified_evidence_records": sum(
+            len(row["record_ids"].split(";")) for row in full_text_verification
+        ),
         "parasite_protein_interaction_records": len(interactions),
         "manual_screening_decisions": len(manual),
         "manual_screening_queue_decided": len(manual_pmids & queue_pmids),
