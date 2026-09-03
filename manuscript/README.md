@@ -4,7 +4,7 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 
 ## Planned article
 
-**Working title:** Terpene diversity, biosynthetic evolution, and antiparasitic evidence across *Artemisia* species: a living comparative scoping review
+**Working title:** *Artemisia* terpene diversity across scales: biosynthetic evolution and bounded antiparasitic evidence from a living scoping review
 
 **Article type:** narrative systematic-scoping review with a comparative evolutionary-genomics framework.
 
@@ -13,9 +13,10 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `article.md` — current journal-style manuscript draft.
 - `figures/figure-1-pathway.mmd`, `figures/figure-2-evidence-ladder.mmd`, and the paired SVG/PNG outputs — versioned figure sources and generated outputs corresponding to the two Mermaid figures in the manuscript.
 - `latex-header.tex` — PDF-build header for embedded figures.
-- `artemisia-terpene-review-draft.pdf` — visually verified rendering of the current 531-source manuscript with 536 evidence records, including the focused malaria/wormwood evidence table, comparative-genomics table, vector-control evidence, structure-confirmed STL tranche, and regenerated figures. Rebuild with `pandoc article.md --from markdown --pdf-engine=xelatex --include-in-header=latex-header.tex --resource-path=. -V geometry:margin=0.5in -V mainfont='STIX Two Text' -o artemisia-terpene-review-draft.pdf`.
+- `artemisia-terpene-review-draft.pdf` — visually verified 43-page rendering of the current 533-source manuscript with 538 evidence records, including the focused malaria/wormwood evidence table, comparative-genomics table, vector-control evidence, structure-confirmed STL tranche, and regenerated figures. Rebuild with `pandoc article.md --from markdown --pdf-engine=xelatex --include-in-header=latex-header.tex --resource-path=. -V geometry:margin=0.5in -V mainfont='STIX Two Text' -o artemisia-terpene-review-draft.pdf`.
 - `review-protocol.md` — inclusion, extraction, quality-assessment, and synthesis protocol.
-- `evidence-matrix.csv` — 536-record specimen-, compound-, pathway-, genome-, review-, and assay-level evidence table.
+- `prisma-scr-checklist.md` — PRISMA-ScR item-to-file mapping, current completion status, and submission gates.
+- `evidence-matrix.csv` — 538-record specimen-, compound-, pathway-, genome-, review-, and assay-level evidence table.
 - `claim-audit.csv` — claim-level traceability table linking central manuscript statements to source IDs and permitted inference boundaries.
 - `sources.json` — stable source registry with identifiers, URLs, evidence class, and retrieval date.
 - `chemotype-table.csv` — representative chemistry records with specimen/context qualifiers.
