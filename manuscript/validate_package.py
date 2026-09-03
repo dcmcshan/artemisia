@@ -52,8 +52,8 @@ def main():
         for source_id in row["source_ids"].split("; "):
             if source_id not in source_ids:
                 matrix_missing.append([row["claim_id"], source_id])
-    assert len(appraisal) == len(antiparasitic) == 130
-    assert len(full_text_queue) == len({row["source_id"] for row in antiparasitic}) == 111
+    assert len(appraisal) == len(antiparasitic) == 131
+    assert len(full_text_queue) == len({row["source_id"] for row in antiparasitic}) == 112
     assert {row["source_id"] for row in full_text_queue} == {row["source_id"] for row in antiparasitic}
     verification_ids = [row["source_id"] for row in full_text_verification]
     assert len(verification_ids) == len(set(verification_ids))
@@ -85,8 +85,8 @@ def main():
     assert screening["abstracts_retrieved"] + screening["no_abstract"] == screening["records"]
     assert triage["manual_status_for_all_records"] == "pending_manual_review"
     bibliography_entries = len(re.findall(r"^@", (ROOT / "references.bib").read_text(), re.MULTILINE))
-    assert len(matrix) == 554 and len(antiparasitic) == 130 and len(interactions) == 19 and len(chemotypes) == 10 and len(safety) == 21 and len(full_text_queue) == 111 and len(manual) == 1408 and len(manual_pmids) == len(manual) and len(manual_pmids & queue_pmids) == 1387 and len(supplementary) == 179 and len(claims) == 406 and not matrix_missing
-    assert bibliography_entries == len(set(re.findall(r"^@\w+\{([^,]+)", (ROOT / "references.bib").read_text(), re.MULTILINE))) == 538
+    assert len(matrix) == 555 and len(antiparasitic) == 131 and len(interactions) == 19 and len(chemotypes) == 10 and len(safety) == 21 and len(full_text_queue) == 112 and len(manual) == 1408 and len(manual_pmids) == len(manual) and len(manual_pmids & queue_pmids) == 1387 and len(supplementary) == 179 and len(claims) == 407 and not matrix_missing
+    assert bibliography_entries == len(set(re.findall(r"^@\w+\{([^,]+)", (ROOT / "references.bib").read_text(), re.MULTILINE))) == 539
     result = {
         "validated": True,
         "source_count": len(source_ids),
