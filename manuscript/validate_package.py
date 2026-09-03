@@ -52,11 +52,11 @@ def main():
         for source_id in row["source_ids"].split("; "):
             if source_id not in source_ids:
                 matrix_missing.append([row["claim_id"], source_id])
-    assert len(appraisal) == len(antiparasitic) == 126
-    assert len(full_text_queue) == len({row["source_id"] for row in antiparasitic}) == 107
+    assert len(appraisal) == len(antiparasitic) == 127
+    assert len(full_text_queue) == len({row["source_id"] for row in antiparasitic}) == 108
     assert {row["source_id"] for row in full_text_queue} == {row["source_id"] for row in antiparasitic}
     verification_ids = [row["source_id"] for row in full_text_verification]
-    assert len(verification_ids) == len(set(verification_ids)) == 54
+    assert len(verification_ids) == len(set(verification_ids)) == 56
     assert set(verification_ids) <= {row["source_id"] for row in full_text_queue}
     assert all(
         row["full_text_status"] == "full text verified; quantitative eligibility unresolved"
@@ -75,8 +75,8 @@ def main():
     assert screening["abstracts_retrieved"] + screening["no_abstract"] == screening["records"]
     assert triage["manual_status_for_all_records"] == "pending_manual_review"
     bibliography_entries = len(re.findall(r"^@", (ROOT / "references.bib").read_text(), re.MULTILINE))
-    assert len(matrix) == 540 and len(antiparasitic) == 126 and len(interactions) == 19 and len(chemotypes) == 10 and len(safety) == 21 and len(full_text_queue) == 107 and len(manual) == 1408 and len(manual_pmids) == len(manual) and len(manual_pmids & queue_pmids) == 1387 and len(supplementary) == 179 and len(claims) == 369 and not matrix_missing
-    assert bibliography_entries == len(set(re.findall(r"^@\w+\{([^,]+)", (ROOT / "references.bib").read_text(), re.MULTILINE))) == 534
+    assert len(matrix) == 540 and len(antiparasitic) == 127 and len(interactions) == 19 and len(chemotypes) == 10 and len(safety) == 21 and len(full_text_queue) == 108 and len(manual) == 1408 and len(manual_pmids) == len(manual) and len(manual_pmids & queue_pmids) == 1387 and len(supplementary) == 179 and len(claims) == 370 and not matrix_missing
+    assert bibliography_entries == len(set(re.findall(r"^@\w+\{([^,]+)", (ROOT / "references.bib").read_text(), re.MULTILINE))) == 535
     result = {
         "validated": True,
         "source_count": len(source_ids),
