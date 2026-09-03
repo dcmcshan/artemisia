@@ -26,7 +26,7 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `antiparasitic-evidence.csv` — 124 quantitative and stage-aware parasite/vector assay records with host-control and translation boundaries.
 - `parasite-protein-interactions.csv` — evidence-tiered terpene/terpenoid–parasite-protein interaction map, including direct target evidence, enzyme assays, docking hypotheses, and explicit target gaps.
 - `protein-interaction-protocol.md` — extraction rules, evidence ladder, provenance boundaries, and next-experiment requirements for the interaction map.
-- `evidence-appraisal.csv` and `evidence-appraisal-protocol.md` — deterministic, provisional appraisal of all 124 antiparasitic records across chemistry resolution, phenotype context, host control, mechanism, and translation; not a meta-analytic quality score.
+- `evidence-appraisal.csv` and `evidence-appraisal-protocol.md` — deterministic, provisional appraisal of all 125 antiparasitic records across chemistry resolution, phenotype context, host control, mechanism, and translation; not a meta-analytic quality score.
 - `safety-translation.csv` — preparation-specific safety and clinical-translation boundaries.
 - `references.bib` — citation-ready bibliography for manuscript tooling.
 - `search-log.md` — reproducible literature-search and screening plan.
@@ -41,8 +41,8 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `manual-screening-decisions.csv` — 1,408-record title/abstract screening log with bounded decisions and rationale; all 1,387 priority-queue records are covered, plus 21 historical or out-of-queue records. Full-text eligibility remains open.
 - `extend_screening_pass.py` — reproducible conservative second-pass generator for the 92 target-related records added to the screening ledger; full-text eligibility remains open.
 - `complete_screening_pass.py` — reproducible conservative completion pass covering the remaining queue records without asserting full-text eligibility or quantitative inclusion.
-- `full-text-eligibility-queue.csv` — source-linked full-text gate for all 105 unique antiparasitic source records (124 evidence rows), ranked for malaria, wormwood vermifuge, other parasite, and vector-control verification.
-- `full-text-verification.csv` — fifteen full-text extraction tranches: 48 sources (45 open-access and 3 publisher-full-text records) covering 57 evidence rows, with preparation-specific findings and explicit unresolved quantitative-eligibility gates.
+- `full-text-eligibility-queue.csv` — source-linked full-text gate for all 106 unique antiparasitic source records (125 evidence rows), ranked for malaria, wormwood vermifuge, other parasite, and vector-control verification.
+- `full-text-verification.csv` — sixteen full-text extraction tranches: 49 sources (46 open-access and 3 publisher-full-text records) covering 58 evidence rows, with preparation-specific findings and explicit unresolved quantitative-eligibility gates.
 - `package-audit.json` and `validate_package.py` — machine-readable package integrity audit and its reproducible validator.
 - `review-flow.md` — frozen retrieval counts and living-review flow diagram.
 - `screened-seed-set.csv` — auditable screening decisions for the current seed sources.

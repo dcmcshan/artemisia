@@ -10,7 +10,7 @@
 - [x] Antiparasitic assay evidence includes parasite stage and mixture-level limitations.
 - [x] Safety and translation boundaries included.
 - [x] Testable hypotheses and discriminating experiments included.
-- [x] Add a reproducible provisional appraisal of all 124 antiparasitic records with explicit chemistry, phenotype, host-control, mechanism, and translation dimensions.
+- [x] Add a reproducible provisional appraisal of all 125 antiparasitic records with explicit chemistry, phenotype, host-control, mechanism, and translation dimensions.
 
 ## Evidence and reporting still required before journal submission
 
@@ -24,11 +24,11 @@
 - [ ] Deduplicate records and archive excluded records with reasons.
 - [x] Complete bounded title/abstract screening across all 1,387 priority-queue records; full-text eligibility and quantitative extraction remain open.
 - [ ] Verify every quantitative claim against the primary source and specimen context.
-- [x] Complete and archive fifteen full-text verification tranches for 48 sources (45 open-access and 3 publisher-full-text records; 57 evidence rows), while retaining final eligibility and quantitative pooling as open gates.
+- [x] Complete and archive sixteen full-text verification tranches for 49 sources (46 open-access and 3 publisher-full-text records; 58 evidence rows), while retaining final eligibility and quantitative pooling as open gates.
 - [x] Complete author/year/journal/volume/pages/DOI metadata for the PubMed-linked entries in `references.bib` (non-PubMed and DOI gaps remain explicitly represented).
 - [x] Add a living-review flow diagram with frozen retrieval counts; convert to a final PRISMA-style diagram only after manual screening is complete.
 - [x] Add a PRISMA-ScR reporting checklist mapped to the current package; unresolved items remain explicitly marked open or partial.
-- [x] Add a supplementary compound-by-specimen table; the current 177-record extraction remains bounded and non-exhaustive.
+- [x] Add a supplementary compound-by-specimen table; the current 179-record extraction remains bounded and non-exhaustive.
 - [ ] Resolve *A. argyi* ADS/TPS annotation differences across assembly releases.
 - [x] Pin software versions, scripts, manifests, and checksums for the completed seed/reciprocal/tree diagnostics and the completed two-proteome OrthoFinder result; broad multi-species orthology and common reannotation remain open.
 - [ ] Obtain journal-specific formatting, data-availability, conflict-of-interest, and ethics statements.
