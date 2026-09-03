@@ -47,7 +47,7 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `extend_screening_pass.py` — reproducible conservative second-pass generator for the 92 target-related records added to the screening ledger; full-text eligibility remains open.
 - `complete_screening_pass.py` — reproducible conservative completion pass covering the remaining queue records without asserting full-text eligibility or quantitative inclusion.
 - `full-text-eligibility-queue.csv` — source-linked full-text gate for all 110 unique antiparasitic source records (129 evidence rows), ranked for malaria, wormwood vermifuge, other parasite, and vector-control verification.
-- `full-text-verification.csv` — forty-one full-text extraction tranches: 81 sources covering 96 evidence rows, with preparation-specific findings and explicit unresolved quantitative-eligibility gates.
+- `full-text-verification.csv` — forty-two full-text extraction tranches: 82 sources covering 97 evidence rows, with preparation-specific findings and explicit unresolved quantitative-eligibility gates; the latest publisher-indexed *A. campestris* record retains an inaccessible-tables caveat.
 - `package-audit.json` and `validate_package.py` — machine-readable package integrity audit and its reproducible validator.
 - `review-flow.md` — frozen retrieval counts and living-review flow diagram.
 - `screened-seed-set.csv` — auditable screening decisions for the current seed sources.
