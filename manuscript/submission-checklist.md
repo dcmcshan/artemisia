@@ -13,6 +13,7 @@
 - [x] Add a reproducible provisional appraisal of all 129 antiparasitic records with explicit chemistry, phenotype, host-control, mechanism, and translation dimensions.
 - [x] Convert the submission manuscript to conventional author–year citations with an integrated reference list generated from `references.bib`.
 - [x] Add target-journal title-page, declaration, and cover-letter structures with explicit author-input gates.
+- [x] Build and visually verify a Word submission artifact with embedded figures, tables, citations, references, header/footer, and no high- or medium-severity accessibility findings.
 
 ## Evidence and reporting still required before journal submission
 
