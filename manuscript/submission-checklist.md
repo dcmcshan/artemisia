@@ -11,6 +11,7 @@
 - [x] Safety and translation boundaries included.
 - [x] Testable hypotheses and discriminating experiments included.
 - [x] Add a reproducible provisional appraisal of all 129 antiparasitic records with explicit chemistry, phenotype, host-control, mechanism, and translation dimensions.
+- [x] Convert the submission manuscript to conventional author–year citations with an integrated reference list generated from `references.bib`.
 
 ## Evidence and reporting still required before journal submission
 
