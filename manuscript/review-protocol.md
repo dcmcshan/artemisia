@@ -12,7 +12,7 @@ The archived manual title/abstract decisions are stored in `manual-screening-dec
 
 The full-text gate is archived in `full-text-eligibility-queue.csv`. It covers 110 unique source records underlying the 129-row antiparasitic evidence table and ranks malaria and *A. absinthium* vermifuge sources first. Each row specifies the available full-text route and the chemistry, preparation, parasite-stage, dose, host-control, constituent-attribution, mechanism, and translation checks required before quantitative inclusion.
 
-The completed verification tranches are archived in `full-text-verification.csv`. They cover 78 source records and 91 linked evidence rows. “Full text verified” means that the accessible article was read and the listed preparation, analytical, parasite-model, outcome, and boundary fields were extracted; it does not mean that the study has passed the final inclusion or quantitative-harmonization gate. The remaining 32 queue sources retain the unverified status.
+The completed verification tranches are archived in `full-text-verification.csv`. They cover 79 source records and 94 linked evidence rows. “Full text verified” means that the accessible article was read and the listed preparation, analytical, parasite-model, outcome, and boundary fields were extracted; it does not mean that the study has passed the final inclusion or quantitative-harmonization gate. The remaining 31 queue sources retain the unverified status.
 
 The initial supplementary compound-by-specimen table is archived in `supplementary-compound-specimen.csv`. It is a source-backed extraction of 179 representative records, not a complete genus-wide compound inventory; non-terpene co-occurring volatiles are labeled separately.
 
