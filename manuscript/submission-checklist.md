@@ -28,7 +28,7 @@
 - [x] Run and archive the initial PubMed database searches and result counts.
 - [x] Archive a high-cap retrieval and cross-query deduplication summary.
 - [x] Generate a reproducible title-priority queue for the 4,765-record deduplicated union (1,387 candidates).
-- [ ] Deduplicate records and archive excluded records with reasons.
+- [x] Deduplicate the frozen screening ledger by PMID and archive the 16 explicitly excluded records with reasons in `screening-exclusions.csv`.
 - [x] Complete bounded title/abstract screening across all 1,387 priority-queue records; full-text eligibility and quantitative extraction remain open.
 - [ ] Verify every quantitative claim against the primary source and specimen context.
 - [x] Complete and archive source-level verification for all 114 sources (133 evidence rows), and archive the row-level quantitative eligibility audit with zero pooling candidates.

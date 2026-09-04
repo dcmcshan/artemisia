@@ -24,6 +24,7 @@ flowchart TB
 | Abstracts retrieved | 1,323 | `screening-abstract-summary.json` | retrieval complete |
 | Records without abstract | 64 | `screening-abstract-summary.json` | manual full-record lookup required |
 | Queue records with title/abstract decision | 1,387 of 1,387 | `manual-screening-decisions.csv` | complete at title/abstract level |
+| Explicitly excluded records | 16 | `screening-exclusions.csv` | excluded with recorded rationale; corrections/retractions retained as audit records where applicable |
 | Source-level verification records | 114 of 114 sources; 133 of 133 evidence rows | `full-text-verification.csv` | source-level verification complete |
 | Quantitative eligibility audit | 133 of 133 antiparasitic rows; 0 pooling candidates | `quantitative-eligibility-audit.csv` | descriptive numeric results retained; no pooled estimate |
 | Included after title/abstract screening | — | not yet available | open; final full-text eligibility is required |

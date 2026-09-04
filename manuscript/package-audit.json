@@ -12,6 +12,7 @@
   "parasite_protein_interaction_records": 20,
   "manual_screening_decisions": 1408,
   "manual_screening_queue_decided": 1387,
+  "screening_exclusion_records": 16,
   "pending_queue_records": 0,
   "supplementary_compound_specimen_records": 179,
   "claim_audit_records": 411,
