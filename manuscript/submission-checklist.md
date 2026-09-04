@@ -16,6 +16,7 @@
 - [x] Build and visually verify a Word submission artifact with embedded figures, tables, citations, references, header/footer, and no high- or medium-severity accessibility findings.
 - [x] Enforce the target journal's 150–250-word abstract and 4–6-keyword limits in the package validator.
 - [x] Add a citation-linked malaria/wormwood evidence-anchor table to the concise submission manuscript and verify intact Word table rows across page breaks.
+- [x] Align the submission candidate with the current *Phytochemistry Reviews* guidance for Word source, heading depth, author–year references, figure captions, supplementary files, data provenance, declarations, and cover-letter contents; retain author-specific fields as explicit completion gates.
 
 ## Evidence and reporting still required before journal submission
 
@@ -36,7 +37,7 @@
 - [x] Add a supplementary compound-by-specimen table; the current 179-record extraction remains bounded and non-exhaustive.
 - [ ] Resolve *A. argyi* ADS/TPS annotation differences across assembly releases.
 - [x] Pin software versions, scripts, manifests, and checksums for the completed seed/reciprocal/tree diagnostics and the completed two-proteome OrthoFinder result; broad multi-species orthology and common reannotation remain open.
-- [ ] Obtain journal-specific formatting, data-availability, conflict-of-interest, and ethics statements.
+- [x] Obtain and archive the current journal-specific formatting, data-availability, conflict-of-interest, ethics, figure, supplementary-file, and cover-letter requirements in `journal-targeting.md` and the front/back matter.
 - [ ] Supply and approve author names, affiliations, corresponding-author e-mail, ORCID iDs, CRediT roles, funding, competing interests, acknowledgements, and the target journal’s author-specific cover-letter inputs.
 
 The checked items describe the current draft; unchecked items are not silently treated as complete.
