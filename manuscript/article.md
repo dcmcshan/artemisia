@@ -831,4 +831,4 @@ The audit supports an extensive, source-traceable synthesis but does not justify
 
 ## Data and code availability
 
-All source tables, figures, and code are versioned in this package. Large comparative-genomics inputs and outputs, accessions, retrieval metadata, manifests, and checksums are archived in the linked Terpedia KB study at source commit `5371b1f`.
+All source tables, figures, and code are versioned in this package. Large comparative-genomics inputs and outputs, accessions, retrieval metadata, manifests, and checksums are archived in the linked Terpedia KB study; the exact source commit is recorded in the synchronized snapshot metadata.
