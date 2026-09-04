@@ -376,7 +376,7 @@ The central practical outcome is an evidence architecture. Chemical identity, ti
 
 ## Data and code availability
 
-The complete auditable package is maintained in the Terpedia KB under the review-package directory and linked to the public `artemisia` source repository. The extended evidence-rich draft is retained as `article.md`; this file is the consolidated submission version. Large comparative-genomics inputs and outputs, search snapshots, structured evidence tables, claim audits, and SHA-256 manifests are versioned in the same package.
+The complete auditable package is maintained in the [Terpedia KB review package](https://github.com/Terpedia/kb/tree/docs-clean/research/artemisia_antiparasitic/review-package-2026-09-01) and linked to the public [`artemisia` source repository](https://github.com/dcmcshan/artemisia/tree/main/manuscript). The extended evidence-rich draft is retained as `article.md`; this file is the consolidated submission version. Large comparative-genomics inputs and outputs, search snapshots, structured evidence tables, claim audits, and SHA-256 manifests are versioned in the same package. The frozen source state is identified by commit `1ada072`; the current Terpedia snapshot is maintained on the `docs-clean` branch. No new human or animal data were generated for this review.
 
 ## Statements and Declarations
 

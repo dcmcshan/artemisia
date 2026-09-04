@@ -26,7 +26,7 @@ This file is the completion sheet for the *Phytochemistry Reviews* submission pa
 - **Author contributions:** Authors must assign and approve CRediT roles.
 - **Acknowledgements:** Authors must confirm any people, infrastructure, or institutional support to acknowledge.
 - **AI use:** An AI-assisted workflow supported evidence organization, source-linked drafting, citation conversion, and editorial revision. Human authors must verify the final manuscript and accept responsibility for its content.
-- **Data availability:** The source registry, evidence tables, screening records, comparative-genomics outputs, figures, scripts, PDFs, and checksums are in the Terpedia KB package linked from `manuscript-link.md`.
+- **Data and code availability:** All data used and generated for this review are stored in the [Terpedia KB review package](https://github.com/Terpedia/kb/tree/docs-clean/research/artemisia_antiparasitic/review-package-2026-09-01) and linked to the [pinned `artemisia` source repository](https://github.com/dcmcshan/artemisia/tree/main/manuscript). The package contains the source registry, evidence and appraisal tables, screening records, comparative-genomics inputs/outputs, figures, build/validation scripts, rendered artifacts, and SHA-256 manifest. The frozen source state is identified by commit `1ada072`; the KB snapshot is maintained on the `docs-clean` branch.
 
 ## Cover-letter inputs required by the target journal
 
