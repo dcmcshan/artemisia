@@ -10,7 +10,7 @@
 - [x] Antiparasitic assay evidence includes parasite stage and mixture-level limitations.
 - [x] Safety and translation boundaries included.
 - [x] Testable hypotheses and discriminating experiments included.
-- [x] Add a reproducible provisional appraisal of all 132 antiparasitic records with explicit chemistry, phenotype, host-control, mechanism, and translation dimensions.
+- [x] Add a reproducible provisional appraisal of all 133 antiparasitic records with explicit chemistry, phenotype, host-control, mechanism, and translation dimensions.
 - [x] Convert the submission manuscript to conventional author–year citations with an integrated reference list generated from `references.bib`.
 - [x] Add target-journal title-page, declaration, and cover-letter structures with explicit author-input gates.
 - [x] Build and visually verify a Word submission artifact with embedded figures, tables, citations, references, header/footer, and no high- or medium-severity accessibility findings.
@@ -30,7 +30,7 @@
 - [ ] Deduplicate records and archive excluded records with reasons.
 - [x] Complete bounded title/abstract screening across all 1,387 priority-queue records; full-text eligibility and quantitative extraction remain open.
 - [ ] Verify every quantitative claim against the primary source and specimen context.
-- [x] Complete and archive fifty-five full-text verification records for 95 sources (110 evidence rows), while retaining final eligibility and quantitative pooling as open gates.
+- [x] Complete and archive fifty-six full-text verification records for 96 sources (111 evidence rows), while retaining final eligibility and quantitative pooling as open gates.
 - [x] Complete author/year/journal/volume/pages/DOI metadata for the PubMed-linked entries in `references.bib` (non-PubMed and DOI gaps remain explicitly represented).
 - [x] Add a frozen scoping-review flow diagram with frozen retrieval counts; convert to a final PRISMA-style diagram only after manual screening is complete.
 - [x] Add a PRISMA-ScR reporting checklist mapped to the current package; unresolved items remain explicitly marked open or partial.
