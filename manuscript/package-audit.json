@@ -7,6 +7,8 @@
   "full_text_queue_source_records": 114,
   "full_text_verified_source_records": 114,
   "full_text_verified_evidence_records": 133,
+  "quantitative_eligibility_audit_records": 133,
+  "quantitative_pooling_candidates": 0,
   "parasite_protein_interaction_records": 20,
   "manual_screening_decisions": 1408,
   "manual_screening_queue_decided": 1387,
@@ -22,7 +24,7 @@
   "submission_keyword_count": 6,
   "referential_integrity": "passed",
   "core_file_sha256": {
-    "article.md": "b5bb047c1aafbd09af45473ee85501c963976f6d782179e2ab6508c21600318b",
+    "article.md": "976a1990d214812fe958bf1075bacf67fb040400126c8305ba8b9cf89d9b2efa",
     "sources.json": "27b173d7b283c01eebb2634527f46938df1a80115120b2cfd258cf6f0f3c6a15",
     "evidence-matrix.csv": "999a4689808bc54ab8b983e915725990ab80ad44e1d5f66f3d889b8cbc66dedd",
     "references.bib": "050ba1c6da1be39f8159455fdf18c150da8cf1d25e6872b43f24e337e1863459",

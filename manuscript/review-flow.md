@@ -10,8 +10,8 @@ flowchart TB
   T --> N[64 records without abstract<br/>retained for manual lookup]
   A --> M[Title/abstract screening<br/>1,387 queue decisions; complete]
   N --> M
-  M --> F[Source-level verification and extraction<br/>114 sources / 133 evidence rows; quantitative gates open]
-  F --> S[Final synthesis set<br/>pending]
+  M --> F[Source-level verification and extraction<br/>114 sources / 133 evidence rows; complete]
+  F --> S[Descriptive antiparasitic synthesis<br/>133 rows; no pooled estimate]
 ```
 
 ## Interpretation of counts
@@ -24,7 +24,8 @@ flowchart TB
 | Abstracts retrieved | 1,323 | `screening-abstract-summary.json` | retrieval complete |
 | Records without abstract | 64 | `screening-abstract-summary.json` | manual full-record lookup required |
 | Queue records with title/abstract decision | 1,387 of 1,387 | `manual-screening-decisions.csv` | complete at title/abstract level |
-| Source-level verification records | 114 of 114 sources; 133 of 133 evidence rows | `full-text-verification.csv` | source-level verification complete; quantitative eligibility and harmonization remain open |
+| Source-level verification records | 114 of 114 sources; 133 of 133 evidence rows | `full-text-verification.csv` | source-level verification complete |
+| Quantitative eligibility audit | 133 of 133 antiparasitic rows; 0 pooling candidates | `quantitative-eligibility-audit.csv` | descriptive numeric results retained; no pooled estimate |
 | Included after title/abstract screening | — | not yet available | open; final full-text eligibility is required |
 
 The title-priority threshold is a reproducibility aid and must not be reported as an eligibility criterion. No record is included in the final review solely because it appears in `screening-candidates.csv` or `screening-abstracts.csv`.

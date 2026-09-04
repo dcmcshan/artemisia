@@ -35,9 +35,10 @@ def main():
     appraisal = read_csv("evidence-appraisal.csv")
     full_text_queue = read_csv("full-text-eligibility-queue.csv")
     full_text_verification = read_csv("full-text-verification.csv")
+    quantitative_audit = read_csv("quantitative-eligibility-audit.csv")
     manual = read_csv("manual-screening-decisions.csv")
     claims = read_csv("claim-audit.csv")
-    assert all(None not in row for row in matrix + antiparasitic + interactions + chemotypes + safety + full_text_queue + full_text_verification + manual + supplementary + claims + appraisal)
+    assert all(None not in row for row in matrix + antiparasitic + interactions + chemotypes + safety + full_text_queue + full_text_verification + quantitative_audit + manual + supplementary + claims + appraisal)
     matrix_missing = []
     for row in matrix:
         for source_id in row["source_id"].split("; "):
@@ -65,6 +66,10 @@ def main():
     queue_by_source = {row["source_id"]: row for row in full_text_queue}
     assert all(queue_by_source[source_id]["full_text_status"] == full_text_verification[index]["full_text_status"] for index, source_id in enumerate(verification_ids))
     assert {row["record_id"] for row in appraisal} == {row["record_id"] for row in antiparasitic}
+    assert len(quantitative_audit) == len(antiparasitic) == 133
+    assert {row["record_id"] for row in quantitative_audit} == {row["record_id"] for row in antiparasitic}
+    assert all(row["source_level_verified"] == "yes" for row in quantitative_audit)
+    assert all(row["pooling_decision"] == "descriptive_only_not_poolable" for row in quantitative_audit)
     assert {row["source_id"] for row in appraisal} <= source_ids
     assert all(row["overall_tier"] in {"A_defined_and_mechanistically_supported", "B_characterized_phenotype", "C_phenotype_with_unresolved_attribution"} for row in appraisal)
     screening = json.loads((ROOT / "screening-abstract-summary.json").read_text())
@@ -90,7 +95,7 @@ def main():
     assert triage["records"] == 1387
     manual_screening_complete = len(manual_pmids & queue_pmids) == 1387 and not (queue_pmids - manual_pmids)
     bibliography_entries = len(re.findall(r"^@", (ROOT / "references.bib").read_text(), re.MULTILINE))
-    assert len(matrix) == 557 and len(antiparasitic) == 133 and len(interactions) == 20 and len(chemotypes) == 10 and len(safety) == 21 and len(full_text_queue) == 114 and len(manual) == 1408 and len(manual_pmids) == len(manual) and len(manual_pmids & queue_pmids) == 1387 and len(supplementary) == 179 and len(claims) == 411 and not matrix_missing
+    assert len(matrix) == 557 and len(antiparasitic) == 133 and len(interactions) == 20 and len(chemotypes) == 10 and len(safety) == 21 and len(full_text_queue) == 114 and len(manual) == 1408 and len(manual_pmids) == len(manual) and len(manual_pmids & queue_pmids) == 1387 and len(supplementary) == 179 and len(claims) == 411 and len(quantitative_audit) == 133 and not matrix_missing
     assert bibliography_entries == len(set(re.findall(r"^@\w+\{([^,]+)", (ROOT / "references.bib").read_text(), re.MULTILINE))) == 541
     result = {
         "validated": True,
@@ -102,6 +107,10 @@ def main():
         "full_text_verified_source_records": len(full_text_verification),
         "full_text_verified_evidence_records": sum(
             len(row["record_ids"].split(";")) for row in full_text_verification
+        ),
+        "quantitative_eligibility_audit_records": len(quantitative_audit),
+        "quantitative_pooling_candidates": sum(
+            row["pooling_decision"] != "descriptive_only_not_poolable" for row in quantitative_audit
         ),
         "parasite_protein_interaction_records": len(interactions),
         "manual_screening_decisions": len(manual),

@@ -16,6 +16,7 @@
 - [x] Build and visually verify a Word submission artifact with embedded figures, tables, citations, references, header/footer, and no high- or medium-severity accessibility findings.
 - [x] Enforce the target journal's 150–250-word abstract and 4–6-keyword limits in the package validator.
 - [x] Add a citation-linked malaria/wormwood evidence-anchor table to the concise submission manuscript and verify intact Word table rows across page breaks.
+- [x] Complete a conservative row-level quantitative eligibility audit for all 133 antiparasitic rows; retain numeric results descriptively and document that no row meets the independent-replication, matched-outcome, and variance gate for pooling.
 - [x] Align the submission candidate with the current *Phytochemistry Reviews* guidance for Word source, heading depth, author–year references, figure captions, supplementary files, data provenance, declarations, and cover-letter contents; retain author-specific fields as explicit completion gates.
 
 ## Evidence and reporting still required before journal submission
@@ -30,7 +31,7 @@
 - [ ] Deduplicate records and archive excluded records with reasons.
 - [x] Complete bounded title/abstract screening across all 1,387 priority-queue records; full-text eligibility and quantitative extraction remain open.
 - [ ] Verify every quantitative claim against the primary source and specimen context.
-- [x] Complete and archive source-level verification for all 114 sources (133 evidence rows), while retaining final eligibility and quantitative pooling as open gates.
+- [x] Complete and archive source-level verification for all 114 sources (133 evidence rows), and archive the row-level quantitative eligibility audit with zero pooling candidates.
 - [x] Complete author/year/journal/volume/pages/DOI metadata for the PubMed-linked entries in `references.bib` (non-PubMed and DOI gaps remain explicitly represented).
 - [x] Add a frozen scoping-review flow diagram with frozen retrieval counts; convert to a final PRISMA-style diagram only after manual screening is complete.
 - [x] Add a PRISMA-ScR reporting checklist mapped to the current package; unresolved items remain explicitly marked open or partial.
