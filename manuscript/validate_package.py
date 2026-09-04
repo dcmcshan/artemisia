@@ -36,10 +36,11 @@ def main():
     full_text_queue = read_csv("full-text-eligibility-queue.csv")
     full_text_verification = read_csv("full-text-verification.csv")
     quantitative_audit = read_csv("quantitative-eligibility-audit.csv")
+    quantitative_claim_audit = read_csv("quantitative-claim-audit.csv")
     manual = read_csv("manual-screening-decisions.csv")
     exclusions = read_csv("screening-exclusions.csv")
     claims = read_csv("claim-audit.csv")
-    assert all(None not in row for row in matrix + antiparasitic + interactions + chemotypes + safety + full_text_queue + full_text_verification + quantitative_audit + manual + exclusions + supplementary + claims + appraisal)
+    assert all(None not in row for row in matrix + antiparasitic + interactions + chemotypes + safety + full_text_queue + full_text_verification + quantitative_audit + quantitative_claim_audit + manual + exclusions + supplementary + claims + appraisal)
     matrix_missing = []
     for row in matrix:
         for source_id in row["source_id"].split("; "):
@@ -98,8 +99,11 @@ def main():
     excluded_pmids = {row["pmid"] for row in exclusions}
     expected_excluded_pmids = {row["pmid"] for row in manual if row["decision"].startswith("exclude_")}
     assert len(manual_pmids) == len(manual) and excluded_pmids == expected_excluded_pmids
+    assert len(quantitative_claim_audit) == 68
+    assert {row["claim_id"] for row in quantitative_claim_audit} <= {row["claim_id"] for row in claims}
+    assert all(row["source_records_resolve"] == "yes" and row["audit_status"] == "verified_source_linked" for row in quantitative_claim_audit)
     bibliography_entries = len(re.findall(r"^@", (ROOT / "references.bib").read_text(), re.MULTILINE))
-    assert len(matrix) == 557 and len(antiparasitic) == 133 and len(interactions) == 20 and len(chemotypes) == 10 and len(safety) == 21 and len(full_text_queue) == 114 and len(manual) == 1408 and len(manual_pmids) == len(manual) and len(manual_pmids & queue_pmids) == 1387 and len(exclusions) == 16 and len(supplementary) == 179 and len(claims) == 411 and len(quantitative_audit) == 133 and not matrix_missing
+    assert len(matrix) == 557 and len(antiparasitic) == 133 and len(interactions) == 20 and len(chemotypes) == 10 and len(safety) == 21 and len(full_text_queue) == 114 and len(manual) == 1408 and len(manual_pmids) == len(manual) and len(manual_pmids & queue_pmids) == 1387 and len(exclusions) == 16 and len(supplementary) == 179 and len(claims) == 411 and len(quantitative_audit) == 133 and len(quantitative_claim_audit) == 68 and not matrix_missing
     assert bibliography_entries == len(set(re.findall(r"^@\w+\{([^,]+)", (ROOT / "references.bib").read_text(), re.MULTILINE))) == 541
     result = {
         "validated": True,
@@ -120,6 +124,7 @@ def main():
         "manual_screening_decisions": len(manual),
         "manual_screening_queue_decided": len(manual_pmids & queue_pmids),
         "screening_exclusion_records": len(exclusions),
+        "quantitative_claim_audit_records": len(quantitative_claim_audit),
         "pending_queue_records": len(queue_pmids - manual_pmids),
         "supplementary_compound_specimen_records": len(supplementary),
         "claim_audit_records": len(claims),

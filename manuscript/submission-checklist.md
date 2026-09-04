@@ -30,7 +30,7 @@
 - [x] Generate a reproducible title-priority queue for the 4,765-record deduplicated union (1,387 candidates).
 - [x] Deduplicate the frozen screening ledger by PMID and archive the 16 explicitly excluded records with reasons in `screening-exclusions.csv`.
 - [x] Complete bounded title/abstract screening across all 1,387 priority-queue records; full-text eligibility and quantitative extraction remain open.
-- [ ] Verify every quantitative claim against the primary source and specimen context.
+- [x] Audit all 68 claims containing substantive numeric values against registered sources and scope context; 67 are primary/direct-assay anchored and the single secondary network-meta-analysis statement is explicitly labeled and not used as a primary estimate.
 - [x] Complete and archive source-level verification for all 114 sources (133 evidence rows), and archive the row-level quantitative eligibility audit with zero pooling candidates.
 - [x] Complete author/year/journal/volume/pages/DOI metadata for the PubMed-linked entries in `references.bib` (non-PubMed and DOI gaps remain explicitly represented).
 - [x] Add a frozen scoping-review flow diagram with frozen retrieval counts; convert to a final PRISMA-style diagram only after manual screening is complete.

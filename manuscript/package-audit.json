@@ -13,6 +13,7 @@
   "manual_screening_decisions": 1408,
   "manual_screening_queue_decided": 1387,
   "screening_exclusion_records": 16,
+  "quantitative_claim_audit_records": 68,
   "pending_queue_records": 0,
   "supplementary_compound_specimen_records": 179,
   "claim_audit_records": 411,
@@ -25,7 +26,7 @@
   "submission_keyword_count": 6,
   "referential_integrity": "passed",
   "core_file_sha256": {
-    "article.md": "976a1990d214812fe958bf1075bacf67fb040400126c8305ba8b9cf89d9b2efa",
+    "article.md": "8a59727ed62ce0395f7e777ea357ba6760e571286334b7d84d42a363e74a1be8",
     "sources.json": "27b173d7b283c01eebb2634527f46938df1a80115120b2cfd258cf6f0f3c6a15",
     "evidence-matrix.csv": "999a4689808bc54ab8b983e915725990ab80ad44e1d5f66f3d889b8cbc66dedd",
     "references.bib": "050ba1c6da1be39f8159455fdf18c150da8cf1d25e6872b43f24e337e1863459",

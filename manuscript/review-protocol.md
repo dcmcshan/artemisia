@@ -20,6 +20,8 @@ The completed verification records are archived in `full-text-verification.csv`.
 
 `quantitative-eligibility-audit.csv` makes the no-pooling decision explicit for every antiparasitic row. It records 83 rows with numeric descriptive data, 25 with partial numeric resolution, and 25 that are qualitative or metadata-level; all 133 are source-level verified. A row was not eligible for pooling unless the frozen extraction documented independent cross-study replication, matched taxon/preparation/parasite stage/outcome/unit, and dispersion or variance data. No row met that complete gate. The resulting synthesis reports preparation- and model-specific values descriptively, preserves same-source stage comparisons as non-independent, and does not calculate a pooled efficacy estimate or infer a common terpene effect.
 
+`quantitative-claim-audit.csv` crosswalks the 68 manuscript claims containing substantive numeric values to registered sources and the claim-level inference boundary. Sixty-seven are anchored to primary or direct-assay records; one network-meta-analysis statement is retained explicitly as secondary quantitative context and is not treated as a primary estimate. This distinction is preserved in the submission text and validator output.
+
 The initial supplementary compound-by-specimen table is archived in `supplementary-compound-specimen.csv`. It is a source-backed extraction of 179 representative records, not a complete genus-wide compound inventory; non-terpene co-occurring volatiles are labeled separately.
 
 ## Review questions

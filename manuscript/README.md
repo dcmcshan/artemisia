@@ -31,6 +31,7 @@ This directory is the publication workspace for the *Artemisia* terpene review. 
 - `protein-interaction-protocol.md` — extraction rules, evidence ladder, provenance boundaries, and next-experiment requirements for the interaction map.
 - `evidence-appraisal.csv` and `evidence-appraisal-protocol.md` — deterministic, provisional appraisal of all 133 antiparasitic records across chemistry resolution, phenotype context, host control, mechanism, and translation; not a meta-analytic quality score.
 - `quantitative-eligibility-audit.csv` and `build_quantitative_eligibility_audit.py` — reproducible row-level audit of descriptive numeric resolution and pooling gates for all 133 antiparasitic records; 83 numeric, 25 partial, 25 qualitative/metadata-level, and zero pooling candidates in the frozen snapshot.
+- `quantitative-claim-audit.csv` and `build_quantitative_claim_audit.py` — source crosswalk for 68 claims containing substantive numeric values; 67 are primary/direct-assay anchored and one is explicitly secondary network-meta-analysis context.
 - `safety-translation.csv` — preparation-specific safety and clinical-translation boundaries.
 - `references.bib` — citation-ready bibliography for manuscript tooling; the submission uses the cited subset through Pandoc citeproc.
 - `build_submission_citations.py` — deterministic source-link-to-BibTeX crosswalk used to convert the journal-facing manuscript to conventional citations while preserving URL provenance in `sources.json`.
