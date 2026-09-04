@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build the deterministic, provisional appraisal of antiparasitic records."""
 import csv
+import re
 from pathlib import Path
 
 
@@ -34,11 +35,21 @@ def host_control(row):
     text = row["host_control_or_selectivity"].lower()
     if any(term in text for term in ("no mammalian host control", "host selectivity not", "no non-target safety", "not reported")):
         return "S1_absent_or_unresolved"
-    if any(term in text for term in ("selectivity", "cytotoxic", "cc50", "macrophage", "erythrocyte", "mammalian cell")):
-        return "S3_reported_selectivity_or_host_control"
+
+    # Do not treat a negated phrase such as "no mammalian selectivity panel"
+    # as positive host-control evidence merely because it contains the word
+    # "selectivity".  A positive term is accepted only when it is not
+    # immediately scoped by a clear absence/negation marker.
+    positive_terms = ("selectivity", "cytotoxic", "cc50", "macrophage", "erythrocyte", "mammalian cell")
+    for term in positive_terms:
+        for match in re.finditer(re.escape(term), text):
+            prefix = text[max(0, match.start() - 55):match.start()]
+            if re.search(r"(?:^|[.;])[^.;]*\b(no|not|without|absent|unresolved)\b[^.;]*$", prefix):
+                continue
+            return "S3_reported_selectivity_or_host_control"
     if "not interchangeable with mammalian selectivity" in text:
         return "S1_absent_or_unresolved"
-    if any(term in text for term in ("comparator", "safety", "toxicity", "histopathology", "not interchangeable")):
+    if any(term in text for term in ("comparator", "control", "safety", "toxicity", "histopathology", "adverse", "not interchangeable")):
         return "S2_partial_control"
     return "S1_absent_or_unresolved"
 
