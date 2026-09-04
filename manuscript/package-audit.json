@@ -17,7 +17,7 @@
   "screening_records": 1387,
   "abstracts_retrieved": 1323,
   "records_without_abstract": 64,
-  "manual_screening_complete": false,
+  "manual_screening_complete": true,
   "submission_abstract_words": 250,
   "submission_keyword_count": 6,
   "referential_integrity": "passed",

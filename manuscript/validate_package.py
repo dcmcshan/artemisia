@@ -83,7 +83,12 @@ def main():
     manual_pmids = {row["pmid"] for row in manual}
     assert screening["records"] == len(read_csv("screening-abstracts.csv")) == 1387
     assert screening["abstracts_retrieved"] + screening["no_abstract"] == screening["records"]
+    # The triage file is deliberately a rank-only artifact and therefore keeps
+    # its pending label. The separate manual ledger is the authoritative
+    # title/abstract decision record.
     assert triage["manual_status_for_all_records"] == "pending_manual_review"
+    assert triage["records"] == 1387
+    manual_screening_complete = len(manual_pmids & queue_pmids) == 1387 and not (queue_pmids - manual_pmids)
     bibliography_entries = len(re.findall(r"^@", (ROOT / "references.bib").read_text(), re.MULTILINE))
     assert len(matrix) == 555 and len(antiparasitic) == 131 and len(interactions) == 19 and len(chemotypes) == 10 and len(safety) == 21 and len(full_text_queue) == 112 and len(manual) == 1408 and len(manual_pmids) == len(manual) and len(manual_pmids & queue_pmids) == 1387 and len(supplementary) == 179 and len(claims) == 409 and not matrix_missing
     assert bibliography_entries == len(set(re.findall(r"^@\w+\{([^,]+)", (ROOT / "references.bib").read_text(), re.MULTILINE))) == 539
@@ -108,7 +113,7 @@ def main():
         "screening_records": screening["records"],
         "abstracts_retrieved": screening["abstracts_retrieved"],
         "records_without_abstract": screening["no_abstract"],
-        "manual_screening_complete": False,
+        "manual_screening_complete": manual_screening_complete,
         "submission_abstract_words": len(abstract_words),
         "submission_keyword_count": keyword_count,
         "referential_integrity": "passed",
