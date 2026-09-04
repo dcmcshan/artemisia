@@ -24,6 +24,19 @@ Several important reviews already establish the breadth of the field. Essential-
 
 The gap addressed here is not another catalogue of compounds. It is an evidence model connecting four scales: (i) compound identity and abundance; (ii) biosynthetic enzymes, regulation, and compartment; (iii) phylogeny, genome organization, and chemotype variation; and (iv) parasite phenotype, target evidence, host controls, and translation. Malaria and artemisinin are used as the high-confidence anchor. Wormwood is treated as a distinct vermifuge case because historical santonin chemistry, *A. absinthium* preparations, and modern veterinary nematode assays are related but not interchangeable.
 
+### 1.1 Position relative to prior reviews
+
+The contribution is best understood as an integration and audit layer over established review literatures, not as a replacement for them.
+
+| Prior synthesis | Principal contribution | Extension made here |
+|---|---|---|
+| Abad et al. (2012); Pandey and Singh (2017) | Genus-level essential-oil composition and reported biological activities | Adds less-volatile terpenoids, specimen/preparation fields, parasite-stage stratification, and explicit mixture-versus-constituent attribution |
+| Ivanescu et al. (2015) | Sesquiterpene-lactone chemistry, analysis, and biological-activity context | Links structure-confirmed chemistry to pathway, compartment, host-control, and target-evidence levels |
+| Trendafilova et al. (2021) | Edible *Artemisia* species and selected sesquiterpene lactones | Separates edible-species context from malaria and wormwood vermifuge evidence and records preparation-specific boundaries |
+| Hussain et al. (2024) | Broad traditional-use, phytochemical, pharmacological, and toxicological synthesis | Adds a frozen, source-linked evidence registry, claim audit, provisional appraisal, and bounded comparative-genomics diagnostic |
+
+This comparison also explains the manuscript’s deliberate restraint: the review literature establishes a substantial knowledge base, but it does not make an oil profile equivalent to a purified exposure, a pathway homolog equivalent to native flux, or an *A. absinthium* extract equivalent to an artemisinin-containing *A. annua* preparation [@abad2012artemisia; @pandey2017artemisiaoils; @chandler2015stl; @trendafilova2021edibleartemisia; @hussain2024artemisiareview].
+
 ## 2. Review scope and evidence framework
 
 ### 2.1 Frozen scoping-review design
