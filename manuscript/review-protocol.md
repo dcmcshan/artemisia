@@ -24,6 +24,10 @@ The completed verification records are archived in `full-text-verification.csv`.
 
 The initial supplementary compound-by-specimen table is archived in `supplementary-compound-specimen.csv`. It is a source-backed extraction of 179 representative records, not a complete genus-wide compound inventory; non-terpene co-occurring volatiles are labeled separately.
 
+## AI-assisted workflow and accountability
+
+An AI-assisted workflow supported evidence organization, source-linked drafting, citation conversion, and editorial revision. It did not replace source retrieval, source-level verification, the row-level audits, or human authorship decisions. The submitting authors must independently verify the final manuscript, approve all authorship and declarations, and accept responsibility for the content.
+
 ## Review questions
 
 1. Which mono-, sesqui-, diterpene, triterpene, and sesquiterpene-lactone classes are reported across *Artemisia*?
