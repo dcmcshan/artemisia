@@ -6,7 +6,7 @@ This is the strongest scope match for the current manuscript because the central
 
 Journal page: https://link.springer.com/journal/11101
 
-Submission guidelines: https://link.springer.com/journal/11101/submission-guidelines
+Submission guidelines: https://link.springer.com/journal/11101/submission-guidelines (checked 2026-09-04)
 
 The current Springer guidance identifies this as a review-article venue, asks review authors to provide the search strategy, keywords, and (where applicable) exclusion criteria, requires a title page with authors, affiliations, corresponding-author e-mail, and ORCID iDs where available, limits the abstract to 150–250 words and keywords to 4–6, and requires a Statements and Declarations section. The journal specifies Word submission, no more than three levels of displayed headings, author–year citations, an alphabetized reference list with full DOI links where available, consecutive Arabic numbering for tables, and descriptive figure captions. It also requests a cover letter explaining scope fit, listing three to five relevant original research articles by the authors, and stating whether the submission is unsolicited or associated with a special issue. The package supplies these structures and a Word artifact; author-specific fields remain open until the submitting authors confirm them. The journal’s current research-data policy encourages repository deposition and data citation; this review proactively provides a direct Terpedia KB location and pinned source provenance for all generated evidence tables, screening outputs, comparative-genomics diagnostics, scripts, figures, and checksums.
 

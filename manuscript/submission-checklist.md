@@ -36,7 +36,7 @@
 - [x] Add a frozen scoping-review flow diagram with frozen retrieval counts; convert to a final PRISMA-style diagram only after manual screening is complete.
 - [x] Add a PRISMA-ScR reporting checklist mapped to the current package; unresolved items remain explicitly marked open or partial.
 - [x] Add a supplementary compound-by-specimen table; the current 179-record extraction remains bounded and non-exhaustive.
-- [ ] Resolve *A. argyi* ADS/TPS annotation differences across assembly releases.
+- [x] Reconcile the published *A. argyi* ADS/TPS differences across the 2023 haplotype-A and 2025 haplotype-resolved assembly releases; retain common reannotation, copy-number inference, and gene-tree reconciliation as explicit future gates.
 - [x] Pin software versions, scripts, manifests, and checksums for the completed seed/reciprocal/tree diagnostics and the completed two-proteome OrthoFinder result; broad multi-species orthology and common reannotation remain open.
 - [x] Obtain and archive the current journal-specific formatting, data-availability, conflict-of-interest, ethics, figure, supplementary-file, and cover-letter requirements in `journal-targeting.md` and the front/back matter.
 - [ ] Supply and approve author names, affiliations, corresponding-author e-mail, ORCID iDs, CRediT roles, funding, competing interests, acknowledgements, and the target journal’s author-specific cover-letter inputs.
